@@ -1,0 +1,2050 @@
+{
+  "all_rejected": true,
+  "board": {
+    "boot_id": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+    "research_pid": 17611
+  },
+  "c": 4049,
+  "commands": [
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 0,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0018020644783973694,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 1,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012233443558216095,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 2,
+      "payload_sha256": "8c3d5d20fabca90a1a040a408318a78ad2cf19c0a313fdc8430364f71ac92cc4",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0013218671083450317,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 3,
+      "payload_sha256": "c9d832a978d0746f8252aafff7ba7dacb0b877b513ba53a20364026a9288c633",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012463852763175964,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 4,
+      "payload_sha256": "af7f19e56577e6178bc14dd0a18ed4a740d4fe8f70942676540e8712563e9129",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001195823773741722,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 5,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001179685816168785,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 87,
+      "description": "CONFIGURE oi + challenge + GET_RESPONSES",
+      "index": 6,
+      "payload_sha256": "cb107fb67805f6cea1e6ced54d8ddc1f6d3586be5ad1bd2e069afebc37408d79",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0019333809614181519,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 7,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.00220530666410923,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 8,
+      "payload_sha256": "6bda4fea67f00e22f6ef79e9c0062d65a59a5c3da920a14ed8a3e278a1a314b1",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.00128861702978611,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 9,
+      "payload_sha256": "88112da52fe8c18f847a42e1f148131407723213816f1a9c983fd23d67fc15d7",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001942165195941925,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 10,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.002078261226415634,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 11,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012907609343528748,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 12,
+      "payload_sha256": "8124ad1c9f7ad711a2ee992117ecaeb218226cef30024d2269093ed671245486",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0013096891343593597,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 13,
+      "payload_sha256": "138a154235007b2303e7e0821723b9cf74ebd1402a23b7764cce370527c578dc",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001452295109629631,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 14,
+      "payload_sha256": "9001146442546508ecc6b7b3b02e07b7389a4fbd70cf00badca428810c7f1b73",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012753624469041824,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 15,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0015053395181894302,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 89,
+      "description": "CONFIGURE flam + challenge + GET_RESPONSES",
+      "index": 16,
+      "payload_sha256": "ba256de3dab4c77ba856e3fd6ad113f362b57d73b5d457bb5f755fa58d5c0497",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001260116696357727,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 17,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012066196650266647,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 18,
+      "payload_sha256": "db46475339bfc67eb3f1e25f10a135174e45a520b7aa9f42a567d3d09c058d5d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012281350791454315,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 19,
+      "payload_sha256": "7151ee3c380cc6ca49aef1d7cb9dede28056db985b03d9879af2ddafbd798a56",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0035415608435869217,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 20,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0013128314167261124,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 21,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012509915977716446,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 22,
+      "payload_sha256": "25d0da55297052b77a90c38e7105cb1b6378c69daa7be3787b942e88184e3bf2",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001326151192188263,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 23,
+      "payload_sha256": "87d596859e38b3a803e6bc591e3bcdc348e706954af2b0e47e478e6f63ecf522",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012075826525688171,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 24,
+      "payload_sha256": "4f94bdddc7e4a4d28a8cf18a91033c4436f67766a6e74c40e9eab0181ba1be7d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011189933866262436,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 25,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001059098169207573,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 87,
+      "description": "CONFIGURE ct + challenge + GET_RESPONSES",
+      "index": 26,
+      "payload_sha256": "e73dd22afa9f7e1833246d0c29495872642efb82e6e9a4eaa7e42938a4b91c3d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001033848151564598,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 27,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011758953332901,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 28,
+      "payload_sha256": "286a94cd1df70cccfd52a49018ddc2351d949e184e3b5a09abd2dbc36ad387bc",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010596122592687607,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 29,
+      "payload_sha256": "4a01b8f83878da57a6fa7273c6849afb9c951c8f7124ba367ffe4905f3b94a0f",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010759122669696808,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 30,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010231602936983109,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 31,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.000996522605419159,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 32,
+      "payload_sha256": "7af0fae0707fba1f44c85e4f6631b34fbac600d85834d903eeca780a56fdc86b",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010335054248571396,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 33,
+      "payload_sha256": "bc7f92ce8ebbe47a72034b9a5173d1b4b157957f7e6c3dc021ceb7432d64f1db",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010373089462518692,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 34,
+      "payload_sha256": "6fdd70e6a9c9f3803397793355f72981a5800e6f5baa515868b1d5aabc1e5405",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010227318853139877,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 35,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0009898282587528229,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE oi_lanes + challenge + GET_RESPONSES",
+      "index": 36,
+      "payload_sha256": "905f9329a69f86980bbfa4226278dc6bf09ee528ac101c64fb34f4aa32485569",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010263267904520035,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 37,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011488590389490128,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 38,
+      "payload_sha256": "0e4cc0c00080d08e00489137c64f516f271cc607ae3f391f1f59bae239a4bef6",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010416209697723389,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 39,
+      "payload_sha256": "80b8f001aae2fc135f3c74f26dd0ea3102dd1ae2c6c8aae43023b24e2a748642",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010140854865312576,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 40,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010446999222040176,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 41,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010109283030033112,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 42,
+      "payload_sha256": "b7bb3f2f5223a09ea959a6d688e542ce122af609aa064543018e642934f1eaa9",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.00099928118288517,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 43,
+      "payload_sha256": "de5516df71b525295edb0c07e7aa7d4872f1112f98588a5d297ab986f0fe9d25",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0009926371276378632,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 44,
+      "payload_sha256": "d4af616f4da0f732f7889ff0933c30a173a32e3bbbe3523319089dd11b813bcb",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.000997651368379593,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 45,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010160598903894424,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 90,
+      "description": "CONFIGURE tpdoa + challenge + GET_RESPONSES",
+      "index": 46,
+      "payload_sha256": "093150f954e158140ccf773c8b135e0ee04e24fd9a3d828b74afd413b416fa85",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001089971512556076,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 47,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010423846542835236,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 48,
+      "payload_sha256": "8ff658b962052a9dd721da6cd7c5267cd8524dc0503f200e6a0fb735d8e1118a",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001011548563838005,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 49,
+      "payload_sha256": "789b056ea550fff36b7d6de1cf32392eaa8bd614552421fcd57f25f4584aab95",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001035178080201149,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 50,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001040089875459671,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 51,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010752584785223007,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 52,
+      "payload_sha256": "bf5d450e67c8ba9ca0b1d9d0efc150ad33d9d531119d6f96f20cee57be801d9b",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010571889579296112,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 53,
+      "payload_sha256": "967f6050a4caa7677a4b0b1ae303e02bb861f3feb57b5869b8af3c70248ad675",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010351799428462982,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 54,
+      "payload_sha256": "44a65d82148b26f42040e89c7814646b77cce6eda6f86fb65c8ef54d088afbdf",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010626930743455887,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 55,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.00102955661714077,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 91,
+      "description": "CONFIGURE puf4x4 + challenge + GET_RESPONSES",
+      "index": 56,
+      "payload_sha256": "da58d0f69af6ffa465331ea48ce0599f7c06ce9551f9cd273433f9c010eaa0f0",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011964142322540283,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 57,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001043243333697319,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 58,
+      "payload_sha256": "55c96fe0895fe095ad1e36a17b6c4264a02c6bae704a7c6de5ebbb99b53a2cba",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010143611580133438,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 59,
+      "payload_sha256": "2713d7cb0ac03d214fd663395d94201c059d18c9a88a3b8407049ed020afb024",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010005328804254532,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 60,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010013841092586517,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 61,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011100079864263535,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 62,
+      "payload_sha256": "8bce88ee0ad057e00679a9a9b7ad682959252fe4ec263a0fd2b2c1c6abe5f28c",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010235104709863663,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 63,
+      "payload_sha256": "42b5eba5848cfc65c3d0a8ed3c87b006f115fd56ed867893d89b04e087187457",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010298583656549454,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 64,
+      "payload_sha256": "b6bb736d77dfcc442eef9aa8c17b956adbd87d728505ce5d92e66d73e1a446e1",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010352358222007751,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 65,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010955296456813812,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 87,
+      "description": "CONFIGURE oi + challenge + GET_RESPONSES",
+      "index": 66,
+      "payload_sha256": "c6cab2bffea6606678b553c3d263bd75562970559d2c39b38d45cfd7118438ec",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010324008762836456,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 67,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010113567113876343,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 68,
+      "payload_sha256": "1d229f6dcaa33abd4862a09844c17874508cd240ce5dcb783676ca1e719f4c69",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010325964540243149,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 69,
+      "payload_sha256": "72abe0abe6a2ed1cb7bb5a630c4435c5eaf79ccfc9bcf03210e50ed4f715ede9",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010284297168254852,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 70,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001000499352812767,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 71,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001028347760438919,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 72,
+      "payload_sha256": "977508c706e17be6c5a0f7cec789b19698fd729a72607599e5bee0ac8d7a4b0d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010134615004062653,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 73,
+      "payload_sha256": "832d53e0fc9cee897215a524b2b45088081962e2c35273e8ada76cf7905c72ef",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010338835418224335,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 74,
+      "payload_sha256": "64190ef703227c28bf8b8597c0a95d7875acfa772afa40b8f75659c407467c61",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.000997595489025116,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 75,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011403374373912811,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 89,
+      "description": "CONFIGURE flam + challenge + GET_RESPONSES",
+      "index": 76,
+      "payload_sha256": "f968b5150d6e671aef68c07347aef2deb8e59b4fd56f6143cc8a3cf2f70fcbd3",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010345205664634705,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 77,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010333266109228134,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 78,
+      "payload_sha256": "31e41e80ec02037225d471e8766137f19f5a5c1a58574b2624a2fd3730a55cc3",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010426919907331467,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 79,
+      "payload_sha256": "47ff0c9d7ccf558d560b21a888ac17cb6e0b638f6d164c124125a56b69b2e9af",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010102130472660065,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 80,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010888483375310898,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 81,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010425690561532974,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 82,
+      "payload_sha256": "7c27e1ab4f9712fcafbd8859061e61fe0d712140bbfde8a4c82480db511967a8",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010654572397470474,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 83,
+      "payload_sha256": "8543a8ac3765dd29af22e419d56105f566aa9d8d7addfcb2942d115e9a68fb67",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010042861104011536,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 84,
+      "payload_sha256": "1a00a9879ed3882faf39776e8008be8b93ac2eb1e915c1fe5f740d4879b0502d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010403860360383987,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 85,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001101924106478691,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 87,
+      "description": "CONFIGURE ct + challenge + GET_RESPONSES",
+      "index": 86,
+      "payload_sha256": "437fbac81ee9ba7d6b6289cb83d59fa754c31261b1c0522be0bef4659fa1bd6c",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010140929371118546,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 87,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010352879762649536,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 88,
+      "payload_sha256": "76cc3c385a132c9ffae548ef43c6e2cf91ca928a9a7641c596d6b154a154cfc2",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001004667952656746,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 89,
+      "payload_sha256": "419a47a26f385cc89ffab84aa14b2229c2ad740df94b914dc3ee49bd23a934e7",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0009963978081941605,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 10,
+      "description": "HELLO",
+      "index": 90,
+      "payload_sha256": "c70aca5c149e8e1f332b522d381d48b795afd8e0d9497d2ac65787ef5b40d30d",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010376237332820892,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 63,
+      "description": "CONFIGURE apuf_lanes",
+      "index": 91,
+      "payload_sha256": "8ac4dc37e889d4e31a9b4401c29b2d13628d2bf0cbe51835a7f8026ac9449596",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0009948387742042542,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE ff_lanes + SEND_CHALLENGES + GET_RESPONSES",
+      "index": 92,
+      "payload_sha256": "3f87db3ff28e1c926d38a28a3887b735e2d5e25de19fd286974d27c15875256b",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001023121178150177,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 103,
+      "description": "CONFIGURE apuf_lanes + 2 challenges + GET_RESPONSES",
+      "index": 93,
+      "payload_sha256": "ead433970d7edf05c8163c3c6ab2494aa3728bbd97115b629f704d09999528ae",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0011070873588323593,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 56,
+      "description": "SEND_CHALLENGES (4) + GET_RESPONSES without CONFIGURE",
+      "index": 94,
+      "payload_sha256": "ad8e23666a792d7c87feefde8798fb3df18d70c73c763de1b8532246d04bb074",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001206209883093834,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 14,
+      "description": "GET_RESPONSES alone",
+      "index": 95,
+      "payload_sha256": "9a3e91b4e475636f4203853880a7450d1cb6ace8166e9429350f6c34d35aa576",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010464973747730255,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 93,
+      "description": "CONFIGURE oi_lanes + challenge + GET_RESPONSES",
+      "index": 96,
+      "payload_sha256": "af3bd5890459d8bd7e86d7bb8da05425dd788ef22e81eb450a333505e9bb90a9",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001017523929476738,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 20,
+      "description": "GET_PARAMS + GET_OIT",
+      "index": 97,
+      "payload_sha256": "8375beb678fc1426dff02c64a6080c4056e056c3b579211f3c3a4820bb27f296",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001026347279548645,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 28,
+      "description": "RESET + ECHO",
+      "index": 98,
+      "payload_sha256": "5ecc10dddf950ea23c70adb0ff3719107b85d1fe56a5344d2bb257f98f570b84",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010341480374336243,
+      "transport_error": null
+    },
+    {
+      "bytes_sent": 60,
+      "description": "unknown command 0x77 + SEND_CHALLENGES",
+      "index": 99,
+      "payload_sha256": "acedc91ea2a0c8896e3a7648e5f69476c7cea71461834d5749680a3a4445b685",
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0010349079966545105,
+      "transport_error": null
+    }
+  ],
+  "deployment_service_port": 3041,
+  "derive_after": {
+    "round_trip_s": 0.002139279618859291,
+    "success": true
+  },
+  "evaluations_by_event": [
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 0,
+      "event": "unsupported_request"
+    },
+    {
+      "evaluations": 1,
+      "event": "unlock_ok"
+    },
+    {
+      "evaluations": 0,
+      "event": "derive"
+    },
+    {
+      "evaluations": 0,
+      "event": "lock"
+    }
+  ],
+  "impostors": [
+    {
+      "description": "family + challenge rows (no op)",
+      "index": 0,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001253342255949974
+    },
+    {
+      "description": "op=read",
+      "index": 1,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0013042520731687546
+    },
+    {
+      "description": "unlock without passphrase",
+      "index": 2,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001240842044353485
+    },
+    {
+      "description": "derive with extra field",
+      "index": 3,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0014726947993040085
+    },
+    {
+      "description": "op=enroll",
+      "index": 4,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001333320513367653
+    },
+    {
+      "description": "family + challenge rows (no op)",
+      "index": 5,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012835152447223663
+    },
+    {
+      "description": "op=read",
+      "index": 6,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0013197492808103561
+    },
+    {
+      "description": "unlock without passphrase",
+      "index": 7,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.001242373138666153
+    },
+    {
+      "description": "derive with extra field",
+      "index": 8,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0013851039111614227
+    },
+    {
+      "description": "op=enroll",
+      "index": 9,
+      "rejected": true,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "unsupported_request",
+        "success": false
+      },
+      "round_trip_s": 0.0012714527547359467
+    }
+  ],
+  "lanes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "listeners": {
+    "after": "State    Recv-Q    Send-Q        Local Address:Port        Peer Address:Port                                                                                    \nLISTEN   0         50                  0.0.0.0:445              0.0.0.0:*        users:((\"smbd\",pid=1838,fd=34))                                                \nLISTEN   0         4                   0.0.0.0:3040             0.0.0.0:*        users:((\"python3\",pid=16714,fd=3))                                             \nLISTEN   0         128                 0.0.0.0:9090             0.0.0.0:*        users:((\"jupyter-noteboo\",pid=1818,fd=4))                                      \nLISTEN   0         50                  0.0.0.0:139              0.0.0.0:*        users:((\"smbd\",pid=1838,fd=35))                                                \nLISTEN   0         128                 0.0.0.0:80               0.0.0.0:*        users:((\"python3.6\",pid=1935,fd=3))                                            \nLISTEN   0         128           127.0.0.53%lo:53               0.0.0.0:*        users:((\"systemd-resolve\",pid=16615,fd=13))                                    \nLISTEN   0         128                 0.0.0.0:22               0.0.0.0:*        users:((\"sshd\",pid=1820,fd=3))                                                 \nLISTEN   0         50                     [::]:445                 [::]:*        users:((\"smbd\",pid=1838,fd=32))                                                \nLISTEN   0         50                     [::]:139                 [::]:*        users:((\"smbd\",pid=1838,fd=33))                                                \nLISTEN   0         128                    [::]:80                  [::]:*        users:((\"python3.6\",pid=1935,fd=4))                                            \nLISTEN   0         128                    [::]:22                  [::]:*        users:((\"sshd\",pid=1820,fd=4))                                                 \n",
+    "before": "State    Recv-Q    Send-Q        Local Address:Port        Peer Address:Port                                                                                    \nLISTEN   0         50                  0.0.0.0:445              0.0.0.0:*        users:((\"smbd\",pid=1838,fd=34))                                                \nLISTEN   0         4                   0.0.0.0:3040             0.0.0.0:*        users:((\"python3\",pid=17611,fd=3))                                             \nLISTEN   0         4                   0.0.0.0:3041             0.0.0.0:*        users:((\"python3\",pid=16230,fd=3))                                             \nLISTEN   0         128                 0.0.0.0:9090             0.0.0.0:*        users:((\"jupyter-noteboo\",pid=1818,fd=4))                                      \nLISTEN   0         50                  0.0.0.0:139              0.0.0.0:*        users:((\"smbd\",pid=1838,fd=35))                                                \nLISTEN   0         128                 0.0.0.0:80               0.0.0.0:*        users:((\"python3.6\",pid=1935,fd=3))                                            \nLISTEN   0         128           127.0.0.53%lo:53               0.0.0.0:*        users:((\"systemd-resolve\",pid=16277,fd=13))                                    \nLISTEN   0         128                 0.0.0.0:22               0.0.0.0:*        users:((\"sshd\",pid=1820,fd=3))                                                 \nLISTEN   0         50                     [::]:445                 [::]:*        users:((\"smbd\",pid=1838,fd=32))                                                \nLISTEN   0         50                     [::]:139                 [::]:*        users:((\"smbd\",pid=1838,fd=33))                                                \nLISTEN   0         128                    [::]:80                  [::]:*        users:((\"python3.6\",pid=1935,fd=4))                                            \nLISTEN   0         128                    [::]:22                  [::]:*        users:((\"sshd\",pid=1820,fd=4))                                                 \n",
+    "during": "State    Recv-Q    Send-Q        Local Address:Port        Peer Address:Port                                                                                    \nLISTEN   0         50                  0.0.0.0:445              0.0.0.0:*        users:((\"smbd\",pid=1838,fd=34))                                                \nLISTEN   0         4                   0.0.0.0:3041             0.0.0.0:*        users:((\"python3\",pid=16230,fd=3))                                             \nLISTEN   0         128                 0.0.0.0:9090             0.0.0.0:*        users:((\"jupyter-noteboo\",pid=1818,fd=4))                                      \nLISTEN   0         50                  0.0.0.0:139              0.0.0.0:*        users:((\"smbd\",pid=1838,fd=35))                                                \nLISTEN   0         128                 0.0.0.0:80               0.0.0.0:*        users:((\"python3.6\",pid=1935,fd=3))                                            \nLISTEN   0         128           127.0.0.53%lo:53               0.0.0.0:*        users:((\"systemd-resolve\",pid=16277,fd=13))                                    \nLISTEN   0         128                 0.0.0.0:22               0.0.0.0:*        users:((\"sshd\",pid=1820,fd=3))                                                 \nLISTEN   0         50                     [::]:445                 [::]:*        users:((\"smbd\",pid=1838,fd=32))                                                \nLISTEN   0         50                     [::]:139                 [::]:*        users:((\"smbd\",pid=1838,fd=33))                                                \nLISTEN   0         128                    [::]:80                  [::]:*        users:((\"python3.6\",pid=1935,fd=4))                                            \nLISTEN   0         128                    [::]:22                  [::]:*        users:((\"sshd\",pid=1820,fd=4))                                                 \n"
+  },
+  "research_service_after": [
+    {
+      "argv": [
+        "python3",
+        "/home/xilinx/puf/puf_server_apuf_ff_20260917.py",
+        "--bit",
+        "/home/xilinx/puf/system_wrapper_apuf_ff_20260917.bit",
+        "--port",
+        "3040",
+        "--base",
+        "0x40000000",
+        "--no-program"
+      ],
+      "pid": 16714
+    }
+  ],
+  "research_service_before": [
+    {
+      "argv": [
+        "python3",
+        "/home/xilinx/puf/puf_server_apuf_ff_20260917.py",
+        "--bit",
+        "/home/xilinx/puf/system_wrapper_apuf_ff_20260917.bit",
+        "--port",
+        "3040",
+        "--base",
+        "0x40000000"
+      ],
+      "pid": 17611
+    }
+  ],
+  "research_service_restarted": true,
+  "research_service_stopped": true,
+  "secret_store": "ocm",
+  "service_counters": {
+    "derive": 1,
+    "derive_locked": 0,
+    "lock": 1,
+    "unlock_failed": 0,
+    "unlock_ok": 1,
+    "unsupported": 110
+  },
+  "t": 64,
+  "unlock_after": {
+    "reply": {
+      "device_id": "210251A08870",
+      "success": true,
+      "timing": {
+        "acquire_s": 0.0008496716618537903,
+        "fe_s": 0.0621571596711874,
+        "kdf_s": 1.0785401184111834
+      }
+    },
+    "round_trip_s": 1.1450668405741453
+  },
+  "unlock_ok_after": true,
+  "utc": "2026-11-24T11:56:59.204+00:00",
+  "what": "Z8 on the real board. The research service (port 3040) was stopped with kill -TERM and its listener was confirmed gone; the deployment image ran with a test enrollment (replay backend, KDF c = 4049). From the PC: 100 research-protocol commands (PUF-COLP v1 frames that read responses, challenges from the Z3 set, none in K), then 10 line-JSON impostors, then one unlock with the right passphrase, one derive and a lock. 'evaluations' in the service log counts reads of K and must rise only for the unlock. The research service was then restarted (same frozen firmware, --no-program)."
+}

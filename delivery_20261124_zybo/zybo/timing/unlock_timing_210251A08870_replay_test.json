@@ -1,0 +1,570 @@
+{
+  "board": {
+    "boot_id": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+    "research_pid": 17611
+  },
+  "c": 4049,
+  "counted_as_formal_Z7": false,
+  "derive_after_lock": [
+    {
+      "device_id": "210251A08870",
+      "error": "locked",
+      "success": false
+    },
+    0.02337064780294895,
+    0
+  ],
+  "derive_before_unlock": {
+    "exit": 0,
+    "host_round_trip_s": 0.0237103383988142,
+    "reply": {
+      "device_id": "210251A08870",
+      "error": "locked",
+      "success": false
+    }
+  },
+  "derives": [
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.024810099974274635,
+      "index": 0,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023458948358893394,
+      "index": 1,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.02405259758234024,
+      "index": 2,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.02336631342768669,
+      "index": 3,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023287199437618256,
+      "index": 4,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023240793496370316,
+      "index": 5,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023302456364035606,
+      "index": 6,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023035693913698196,
+      "index": 7,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023047050461173058,
+      "index": 8,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023047205060720444,
+      "index": 9,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.022940486669540405,
+      "index": 10,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023401960730552673,
+      "index": 11,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023112647235393524,
+      "index": 12,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.02339017018675804,
+      "index": 13,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023062562569975853,
+      "index": 14,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.022772135213017464,
+      "index": 15,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.023128872737288475,
+      "index": 16,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.02349991537630558,
+      "index": 17,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.02297893352806568,
+      "index": 18,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 0.02334786392748356,
+      "index": 19,
+      "reply_without_key": {
+        "device_id": "210251A08870",
+        "success": true
+      },
+      "same_key_as_first": true,
+      "success": true
+    }
+  ],
+  "lanes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "lock": [
+    {
+      "device_id": "210251A08870",
+      "success": true
+    },
+    0.0237300805747509,
+    0
+  ],
+  "provisional": true,
+  "secret_store": "ocm",
+  "service_counters": {
+    "derive": 20,
+    "derive_locked": 2,
+    "lock": 21,
+    "unlock_failed": 0,
+    "unlock_ok": 21,
+    "unsupported": 0
+  },
+  "t": 64,
+  "unlock_before_derives": {
+    "exit": 0,
+    "host_round_trip_s": 1.1756673753261566,
+    "reply": {
+      "device_id": "210251A08870",
+      "success": true,
+      "timing": {
+        "acquire_s": 0.0007693357765674591,
+        "fe_s": 0.05636718310415745,
+        "kdf_s": 1.0936483331024647
+      }
+    }
+  },
+  "unlocks": [
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1801774874329567,
+      "index": 0,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007751565426588058,
+          "fe_s": 0.06203976646065712,
+          "kdf_s": 1.0926028359681368
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.175362080335617,
+      "index": 1,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007556378841400146,
+          "fe_s": 0.05853894352912903,
+          "kdf_s": 1.091483062133193
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1760396100580692,
+      "index": 2,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007548369467258453,
+          "fe_s": 0.057018157094717026,
+          "kdf_s": 1.092959452420473
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1728959307074547,
+      "index": 3,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007627811282873154,
+          "fe_s": 0.05737123265862465,
+          "kdf_s": 1.089597474783659
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.2358331438153982,
+      "index": 4,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0009223241358995438,
+          "fe_s": 0.06555620394647121,
+          "kdf_s": 1.1447758451104164
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1714142970740795,
+      "index": 5,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007620956748723984,
+          "fe_s": 0.05626204051077366,
+          "kdf_s": 1.089915568009019
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1742132809013128,
+      "index": 6,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.000773722305893898,
+          "fe_s": 0.05598335154354572,
+          "kdf_s": 1.0924412328749895
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1714620552957058,
+      "index": 7,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007646121084690094,
+          "fe_s": 0.055842531844973564,
+          "kdf_s": 1.090059855952859
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1743448078632355,
+      "index": 8,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007674247026443481,
+          "fe_s": 0.05598722770810127,
+          "kdf_s": 1.0928139816969633
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1716628856956959,
+      "index": 9,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007660910487174988,
+          "fe_s": 0.05588594079017639,
+          "kdf_s": 1.089541532099247
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1737746559083462,
+      "index": 10,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007659737020730972,
+          "fe_s": 0.05579498037695885,
+          "kdf_s": 1.0926314499229193
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1725946981459856,
+      "index": 11,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007705781608819962,
+          "fe_s": 0.05657971277832985,
+          "kdf_s": 1.0907606277614832
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1724315527826548,
+      "index": 12,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007684454321861267,
+          "fe_s": 0.056164372712373734,
+          "kdf_s": 1.0912130288779736
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1714594215154648,
+      "index": 13,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007614623755216599,
+          "fe_s": 0.05614274740219116,
+          "kdf_s": 1.0900377500802279
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.231236843392253,
+      "index": 14,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.000818135216832161,
+          "fe_s": 0.056061357259750366,
+          "kdf_s": 1.1492892559617758
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1719447933137417,
+      "index": 15,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007609929889440536,
+          "fe_s": 0.0562018733471632,
+          "kdf_s": 1.0899041332304478
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.174174714833498,
+      "index": 16,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0008262917399406433,
+          "fe_s": 0.05608757212758064,
+          "kdf_s": 1.092460760846734
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1737614888697863,
+      "index": 17,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007652491331100464,
+          "fe_s": 0.05667693912982941,
+          "kdf_s": 1.091604782268405
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1763261519372463,
+      "index": 18,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0007652584463357925,
+          "fe_s": 0.056143224239349365,
+          "kdf_s": 1.0946593284606934
+        }
+      }
+    },
+    {
+      "exit": 0,
+      "host_round_trip_s": 1.1730448547750711,
+      "index": 19,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.000769883394241333,
+          "fe_s": 0.05654358118772507,
+          "kdf_s": 1.0904357396066189
+        }
+      }
+    }
+  ],
+  "utc": "2026-11-24T11:55:56.091+00:00",
+  "what": "Same boot, no power-up before the run. The deployment image ran with a test enrollment made from recorded reads (replay backend), so fe_s and kdf_s are real timings of this board and acquire_s is only the replay time; the real read time is in module/validation/live_acquire.json. 20 unlocks in a row (each followed by a lock), then one unlock, 20 derives and a lock, every request through module_client.py from the PC over Ethernet. Keys and the passphrase are not recorded."
+}

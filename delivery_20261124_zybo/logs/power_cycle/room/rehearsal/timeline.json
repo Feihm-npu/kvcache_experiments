@@ -1,0 +1,31 @@
+{
+  "run": "power_cycle_rehearsal",
+  "source": "commands.jsonl",
+  "n_calls": 15,
+  "steps": [
+    {
+      "step": "power_cycle_rehearsal",
+      "first_utc": "2026-11-24T12:04:20.452+00:00",
+      "last_utc": "2026-11-24T12:04:55.251+00:00",
+      "n_calls": 15,
+      "failed_calls": 0,
+      "commands": [
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py snapshot",
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py snapshot",
+        "sudo -n kill -TERM 16714",
+        "ss -ltn",
+        "ss -ltn",
+        "ss -ltn",
+        "sudo -n sh -c 'nohup setsid python3 /home/xilinx/puf/puf_server_apuf_ff_20260917.py --bit /home/xilinx/puf/system_wrapper_apuf_ff_20260917.bit --port 3040 --base 0x40000000 >>/home/xilinx/puf/puf_server_apuf_ff_20260917.log 2>&1 </dev/null &'",
+        "ss -ltn",
+        "ss -ltn",
+        "ss -ltn",
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py snapshot",
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py read --challenges /home/xilinx/puf/req1120_20261124/challenges_K.npy --repeats 1 --label rehearsal_same_boot_not_a_power_cycle --out /home/xilinx/puf/req1120_20261124/out/boot_rehearsal",
+        "/home/xilinx/puf/req1120_20261124/out/boot_rehearsal -> /home/fei-zl-share/fei_space/puf_exp/kvcache_experiments/delivery_20261124_zybo/logs/power_cycle/room/rounds/.incoming"
+      ]
+    }
+  ]
+}

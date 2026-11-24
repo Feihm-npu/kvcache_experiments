@@ -1,0 +1,18 @@
+{
+  "all_zero": true,
+  "bytes": 8192,
+  "pages": [
+    {
+      "address": "0xFFFE8000",
+      "all_zero": true,
+      "bytes": 4096,
+      "nonzero_bytes": 0
+    },
+    {
+      "address": "0xFFFE9000",
+      "all_zero": true,
+      "bytes": 4096,
+      "nonzero_bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[2026-11-24T12:07:51.205+00:00] step prepare
+[2026-11-24T12:08:02.820+00:00] step j6_layout
+[2026-11-24T12:08:38.986+00:00] step ocm_check
+[2026-11-24T12:08:45.532+00:00] step cleanup
+[2026-11-24T12:08:52.766+00:00] step final
+{
+  "status": "complete",
+  "steps": {
+    "prepare": "done",
+    "j6_layout": "done",
+    "ocm_check": "done",
+    "cleanup": "done",
+    "final": "done"
+  }
+}

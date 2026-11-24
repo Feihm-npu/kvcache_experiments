@@ -1,0 +1,61 @@
+{
+  "A_round_without_outage": {
+    "outcome": "refused",
+    "reason": "the board kept answering on SSH: it was not powered off",
+    "record": {
+      "round": 0,
+      "started_utc": "2026-11-24T12:04:24.782+00:00",
+      "t_power_off_request": 10733267.926045235,
+      "t_ssh_gone": null,
+      "t_usb_gone": null,
+      "usb_jtag_present_before": true,
+      "valid": false
+    }
+  },
+  "B_post_power_up_path": {
+    "array_shape": {
+      "apuf_lanes": [
+        1,
+        4096,
+        4
+      ],
+      "ff_lanes": [
+        1,
+        4096,
+        4
+      ]
+    },
+    "frozen_service_running": true,
+    "note": "same boot: the PL was reconfigured from the frozen bitstream by the tool, which is NOT a power cycle; this read is a rehearsal of the post-power-up path and is not Z2 data",
+    "raw_data": "rounds/boot_rehearsal",
+    "read_complete": true,
+    "read_duration_s": {
+      "apuf_lanes": 0.5339658446609974,
+      "ff_lanes": 0.5370672922581434
+    },
+    "research_listener_gone_before_restart": true,
+    "research_service_argv": [
+      "python3",
+      "/home/xilinx/puf/puf_server_apuf_ff_20260917.py",
+      "--bit",
+      "/home/xilinx/puf/system_wrapper_apuf_ff_20260917.bit",
+      "--port",
+      "3040",
+      "--base",
+      "0x40000000"
+    ],
+    "research_service_pid": 18533,
+    "research_service_started_by_tool": true,
+    "same_boot_as_before": true,
+    "xadc_temperature_C": {
+      "apuf_lanes": 57.952203368964,
+      "ff_lanes": 57.952203368964
+    }
+  },
+  "board": {
+    "boot_id": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+    "eth0_mac": "00:0a:35:00:1e:53",
+    "host": "xilinx@192.168.1.2"
+  },
+  "usb_jtag_serial_present": true
+}

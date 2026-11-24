@@ -1,0 +1,1 @@
+{"backend": "hardware", "device_id": "<board 2 serial>", "command": ["python3", "module_client.py", "--host", "<board 2 address>", "--port", "3041"], "timeout_seconds": 60}

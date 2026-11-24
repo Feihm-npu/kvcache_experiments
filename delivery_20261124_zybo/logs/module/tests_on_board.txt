@@ -1,0 +1,57 @@
+ok
+test_good_file_round_trips (test_module.EnrollmentValidation) ... {"board_monotonic_s": 10733704.838593584, "evaluations": 2, "event": "read", "index": 1, "of": 9, "seconds": 0.005955476313829422}
+{"board_monotonic_s": 10733704.844982192, "evaluations": 4, "event": "read", "index": 2, "of": 9, "seconds": 0.006026364862918854}
+{"board_monotonic_s": 10733704.851350032, "evaluations": 6, "event": "read", "index": 3, "of": 9, "seconds": 0.006034152582287788}
+{"board_monotonic_s": 10733704.857628675, "evaluations": 8, "event": "read", "index": 4, "of": 9, "seconds": 0.005952393636107445}
+{"board_monotonic_s": 10733704.863945594, "evaluations": 10, "event": "read", "index": 5, "of": 9, "seconds": 0.005998991429805756}
+{"board_monotonic_s": 10733704.870244712, "evaluations": 12, "event": "read", "index": 6, "of": 9, "seconds": 0.005976879969239235}
+{"board_monotonic_s": 10733704.876487508, "evaluations": 14, "event": "read", "index": 7, "of": 9, "seconds": 0.005919281393289566}
+{"board_monotonic_s": 10733704.882800488, "evaluations": 16, "event": "read", "index": 8, "of": 9, "seconds": 0.005998218432068825}
+{"board_monotonic_s": 10733704.889044186, "evaluations": 18, "event": "read", "index": 9, "of": 9, "seconds": 0.005922369658946991}
+ok
+test_mutations_are_rejected (test_module.EnrollmentValidation) ... {"board_monotonic_s": 10733704.982805895, "evaluations": 2, "event": "read", "index": 1, "of": 9, "seconds": 0.006077015772461891}
+{"board_monotonic_s": 10733704.989093851, "evaluations": 4, "event": "read", "index": 2, "of": 9, "seconds": 0.005929240956902504}
+{"board_monotonic_s": 10733704.995420815, "evaluations": 6, "event": "read", "index": 3, "of": 9, "seconds": 0.00599990040063858}
+{"board_monotonic_s": 10733705.001699017, "evaluations": 8, "event": "read", "index": 4, "of": 9, "seconds": 0.0059528648853302}
+{"board_monotonic_s": 10733705.007954216, "evaluations": 10, "event": "read", "index": 5, "of": 9, "seconds": 0.005932047963142395}
+{"board_monotonic_s": 10733705.014235828, "evaluations": 12, "event": "read", "index": 6, "of": 9, "seconds": 0.0059679653495550156}
+{"board_monotonic_s": 10733705.020553729, "evaluations": 14, "event": "read", "index": 7, "of": 9, "seconds": 0.005999146029353142}
+{"board_monotonic_s": 10733705.026784388, "evaluations": 16, "event": "read", "index": 8, "of": 9, "seconds": 0.005918130278587341}
+{"board_monotonic_s": 10733705.033079073, "evaluations": 18, "event": "read", "index": 9, "of": 9, "seconds": 0.00598527304828167}
+ok
+test_canary_and_foreign_content (test_module.SecretStore) ... ok
+test_leftover_of_earlier_instance_is_erased (test_module.SecretStore) ... ok
+test_memory_store_is_subclass_with_page (test_module.SecretStore) ... ok
+test_slots_and_erasure (test_module.SecretStore) ... ok
+{"board_monotonic_s": 10733705.229780277, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 0.003503197804093361}
+{"board_monotonic_s": 10733705.23349256, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 0.0033089127391576767}
+{"board_monotonic_s": 10733705.237119736, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 0.0033064428716897964}
+{"board_monotonic_s": 10733705.240772972, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 0.0033425576984882355}
+{"board_monotonic_s": 10733705.244339405, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 0.003250494599342346}
+{"board_monotonic_s": 10733705.24792592, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 0.0032845716923475266}
+{"board_monotonic_s": 10733705.251529822, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 0.003299243748188019}
+{"board_monotonic_s": 10733705.255139353, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 0.003298478201031685}
+{"board_monotonic_s": 10733705.258708492, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 0.0032664313912391663}
+test_client_prints_the_board_reply_verbatim (test_module.Sockets) ... ok
+test_client_refuses_bad_input_and_unreachable_board (test_module.Sockets) ... ok
+test_json_impostors_are_rejected (test_module.Sockets) ... ok
+test_overlong_line_and_idle_connection (test_module.Sockets) ... ok
+test_research_protocol_frames_are_all_rejected (test_module.Sockets) ... ok
+test_several_requests_on_one_connection (test_module.Sockets) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 41.213s
+
+OK
+exit=0
+3.6.5 1.13.3
+4930783dbb6a0a4cb5c43dc2521cb763d33c3ec9128c484b5e70645b5fc9995b  module_core.py
+955b0f39873cca943a1a414c58589c8fced469d54e574b04be46a2a76c8b837b  module_serve.py
+21bcbe5085228e023e2a9af14559e3d47b1288f300d9192a19679358fe4d4f4c  module_enroll.py
+c40b53930d878be499886a4e4596bf6b4d337f3f09fd19a1e739136ad6e6dd26  module_calibrate.py
+550bb0d6f62680fc673e3e3cea2d50f386be72c4542ee2ac38b33c587df3534a  module_client.py
+964caa48be74e8144bae3926f5a85a152d42f48ff41dca1cfac5074495ee9d39  research_frames.py
+596661a85b7b271655db522b7bb250bff262c40dc49eb191d6130c6aa37d944f  test_module.py
+00ca5b2ec93521515a05cf88e430c81f2290b826a431fbc7bbe237239a93b2b6  challenges_K.npy
+a057df2c6136e72ed9ae10be55dbcbc2ab12f8a16f15d656e7bc1e17c488c1c5  frozen/puf_server.py
+224cc1fdd3234b070ef7f6568c21fecf1683cbe45508593597e3e2b1bb7b26dd  frozen/system_wrapper_apuf_ff_20260917.bit

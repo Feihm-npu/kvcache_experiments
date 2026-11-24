@@ -1,0 +1,58 @@
+/home/xilinx/puf/req1120_20261124:
+total 6556
+drwxrwxr-x 4 xilinx xilinx    4096 Nov 24 17:12 .
+drwxrwxr-x 7 xilinx xilinx    4096 Nov 24 15:56 ..
+-r--r--r-- 1 xilinx xilinx  262272 Nov 24 16:43 challenges_K.npy
+-r--r--r-- 1 xilinx xilinx 6400128 Nov 24 16:43 crp_challenges.npy
+drwxrwxr-x 4 xilinx xilinx    4096 Nov 24 17:12 module
+drwx------ 7 xilinx xilinx    4096 Nov 24 17:09 out
+-rw-rw-r-- 1 xilinx xilinx   25864 Nov 24 17:12 zybo_board.py
+
+/home/xilinx/puf/req1120_20261124/module:
+total 340
+drwxrwxr-x 4 xilinx xilinx   4096 Nov 24 17:12 .
+drwxrwxr-x 4 xilinx xilinx   4096 Nov 24 17:12 ..
+-rw-r--r-- 1 xilinx xilinx 262272 Nov 24 17:12 challenges_K.npy
+drwx------ 2 xilinx xilinx   4096 Nov 24 17:12 frozen
+drwx------ 2 xilinx xilinx   4096 Nov 24 17:12 logs
+-rw-rw-r-- 1 xilinx xilinx   3808 Nov 24 17:12 module_calibrate.py
+-rw-rw-r-- 1 xilinx xilinx   2849 Nov 24 17:12 module_client.py
+-rw-rw-r-- 1 xilinx xilinx  21822 Nov 24 17:12 module_core.py
+-rw-rw-r-- 1 xilinx xilinx   7015 Nov 24 17:12 module_enroll.py
+-rw-rw-r-- 1 xilinx xilinx  15399 Nov 24 17:12 module_serve.py
+-rw-rw-r-- 1 xilinx xilinx   4774 Nov 24 17:12 research_frames.py
+
+/home/xilinx/puf/req1120_20261124/module/logs:
+total 368
+drwx------ 2 xilinx xilinx  4096 Nov 24 17:12 .
+drwxrwxr-x 4 xilinx xilinx  4096 Nov 24 17:12 ..
+-rw-rw-r-- 1 xilinx xilinx 17416 Nov 24 17:01 closure.log
+-rw-rw-r-- 1 xilinx xilinx  1586 Nov 24 17:12 j6_modified.log
+-rw-rw-r-- 1 xilinx xilinx  1600 Nov 24 17:12 j6_owner.log
+-rw-rw-r-- 1 xilinx xilinx 17583 Nov 24 16:59 matrix_lanes01234567_t64.log
+-rw-rw-r-- 1 xilinx xilinx 17639 Nov 24 16:57 matrix_lanes0123_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18288 Nov 24 16:58 matrix_lanes0123_t32.log
+-rw-rw-r-- 1 xilinx xilinx 18769 Nov 24 16:58 matrix_lanes0123_t64.log
+-rw-rw-r-- 1 xilinx xilinx 18731 Nov 24 16:59 matrix_lanes04_t32.log
+-rw-rw-r-- 1 xilinx xilinx 18804 Nov 24 16:54 matrix_lanes0_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18811 Nov 24 16:54 matrix_lanes0_t64.log
+-rw-rw-r-- 1 xilinx xilinx 18174 Nov 24 16:54 matrix_lanes0_t8.log
+-rw-rw-r-- 1 xilinx xilinx 18797 Nov 24 16:55 matrix_lanes1_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18800 Nov 24 16:55 matrix_lanes2_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18818 Nov 24 16:56 matrix_lanes3_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18746 Nov 24 16:58 matrix_lanes4567_t64.log
+-rw-rw-r-- 1 xilinx xilinx 18578 Nov 24 16:56 matrix_lanes4_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18636 Nov 24 16:56 matrix_lanes5_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18375 Nov 24 16:57 matrix_lanes6_t16.log
+-rw-rw-r-- 1 xilinx xilinx 18794 Nov 24 16:57 matrix_lanes7_t16.log
+-rw-rw-r-- 1 xilinx xilinx  8716 Nov 24 17:00 timing.log
+ls: cannot access '/home/xilinx/puf/req1120_20261124/replay': No such file or directory
+ls: cannot access '/home/xilinx/puf/req1120_20261124/module/out': No such file or directory
+/home/xilinx/puf/req1120_20261124/out:
+boot_rehearsal
+crp_board1
+idle_post
+idle_pre
+sweep
+
+find-done

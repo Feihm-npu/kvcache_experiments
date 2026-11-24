@@ -1,0 +1,118 @@
+{"backend": "replay", "bitstream_sha256": null, "board_monotonic_s": 10734242.73059092, "enrollment_sha256": "f3a713cfd9e842a8b65965f49a2d94b16e4a6aff9dfffba771e56dc903d0ca6c", "euid": 0, "event": "startup", "iterations": 4049, "k_file_sha256": "00ca5b2ec93521515a05cf88e430c81f2290b826a431fbc7bbe237239a93b2b6", "k_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5", "lanes": [0, 1, 2, 3], "m": 13, "module_core_sha256": "4930783dbb6a0a4cb5c43dc2521cb763d33c3ec9128c484b5e70645b5fc9995b", "module_serve_sha256": "955b0f39873cca943a1a414c58589c8fced469d54e574b04be46a2a76c8b837b", "pid": 16230, "pl_programmed_by_module": null, "python": "3.6.5", "research_firmware_sha256": null, "secret_store": "on-chip memory (OCM) at 0xFFFE8000, one 4 KiB page", "store_leftover_erased": false, "t": 64}
+{"board_monotonic_s": 10734242.731506633, "event": "listening", "host": "0.0.0.0", "port": 3041}
+{"board_monotonic_s": 10734250.09029303, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.091735344, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.092966536, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.094332077, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.09555904, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.096748035, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.09794346, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.10079338, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.102153325, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.103389056, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.10534468, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.107452802, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.108779592, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.110125689, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.111486465, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.112744914, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.11427902, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.11552493, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.116729531, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.118046395, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.1215763, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.122849053, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.124089928, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.125423316, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.126595648, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.12767463, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.128717436, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.129760686, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.13095861, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.132050928, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.133086246, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.13409649, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.135129008, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.136170054, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.137202544, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.13820118, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.139226563, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.140349591, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.141415436, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.142431928, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.14348538, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.14450048, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.145506704, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.146506421, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.147504892, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.148524992, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.149558693, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.150639584, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.151675219, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.152717976, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.15375357, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.154770536, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.155892283, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.156937122, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.1579713, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.159058608, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.160230093, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.161311246, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.162338411, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.163354006, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.164358526, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.165466163, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.166512264, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.167552697, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.168590458, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.169618284, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.170706488, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.171743307, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.17278612, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.173819331, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.174821902, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.175849184, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.176862849, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.177904572, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.178907722, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.1799465, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.181087496, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.182133166, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.183177097, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.184193533, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.185221149, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.186329104, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.187392035, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.188407352, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.189455744, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.19053046, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.191574292, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.19262606, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.193626273, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.19463017, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.19565917, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.196670797, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.197695276, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.198802019, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.199821094, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.201053927, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.2020846, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.203124316, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.204152927, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.20520022, "evaluations": 0, "event": "unsupported_request", "reason": "research-protocol frame (magic PUF1)"}
+{"board_monotonic_s": 10734250.206436912, "evaluations": 0, "event": "unsupported_request", "reason": "not a JSON object with an op"}
+{"board_monotonic_s": 10734250.207742259, "evaluations": 0, "event": "unsupported_request", "op": "read", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.208985422, "evaluations": 0, "event": "unsupported_request", "op": "unlock", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.210430222, "evaluations": 0, "event": "unsupported_request", "op": "derive", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.2117931, "evaluations": 0, "event": "unsupported_request", "op": "enroll", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.21309005, "evaluations": 0, "event": "unsupported_request", "reason": "not a JSON object with an op"}
+{"board_monotonic_s": 10734250.214405648, "evaluations": 0, "event": "unsupported_request", "op": "read", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.215660332, "evaluations": 0, "event": "unsupported_request", "op": "unlock", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.216976695, "evaluations": 0, "event": "unsupported_request", "op": "derive", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734250.218316855, "evaluations": 0, "event": "unsupported_request", "op": "enroll", "reason": "unknown op or unexpected fields"}
+{"board_monotonic_s": 10734251.362306006, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0008496716618537903, "fe_s": 0.0621571596711874, "kdf_s": 1.0785401184111834}}
+{"board_monotonic_s": 10734251.365426565, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734251.366924757, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734252.775667032, "derive": 1, "derive_locked": 0, "event": "signal", "lock": 1, "signum": 15, "unlock_failed": 0, "unlock_ok": 1, "unsupported": 110}
+{"board_monotonic_s": 10734252.776308917, "derive": 1, "derive_locked": 0, "event": "stopped", "lock": 1, "unlock_failed": 0, "unlock_ok": 1, "unsupported": 110}
+{"board_monotonic_s": 10734252.77680944, "derive": 1, "derive_locked": 0, "event": "stopped", "lock": 1, "unlock_failed": 0, "unlock_ok": 1, "unsupported": 110}

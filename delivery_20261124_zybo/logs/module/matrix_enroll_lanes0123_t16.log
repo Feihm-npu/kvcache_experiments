@@ -1,0 +1,12 @@
+{"backend": "replay", "device_id": "210251A08870", "ecc_bytes": 26, "evaluations": 9, "lanes": [0, 1, 2, 3], "m": 13, "seconds_per_read": [0.0007065329700708389, 0.0007811784744262695, 0.0007710177451372147, 0.0007390696555376053, 0.0007191319018602371, 0.0007264800369739532, 0.000711904838681221, 0.0007201600819826126, 0.0007120855152606964], "sha256": "748f7cfd64478cf7f2d01835bb896636d2c3c1b563f1c8b55a0c2a0c197f9d64", "t": 16, "written": "/home/xilinx/puf/req1120_20261124/module/out/test_lanes0123_t16.json"}
+{"backend": "replay", "bitstream_sha256": null, "board_monotonic_s": 10734039.243697928, "device_id": "210251A08870", "event": "start", "k_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5", "lanes": [0, 1, 2, 3], "module_core_sha256": "4930783dbb6a0a4cb5c43dc2521cb763d33c3ec9128c484b5e70645b5fc9995b", "module_enroll_sha256": "21bcbe5085228e023e2a9af14559e3d47b1288f300d9192a19679358fe4d4f4c", "pl_programmed_by_module": null, "research_firmware_sha256": null, "t": 16}
+{"board_monotonic_s": 10734039.267869888, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 0.0007065329700708389}
+{"board_monotonic_s": 10734039.268991522, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 0.0007811784744262695}
+{"board_monotonic_s": 10734039.270080224, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 0.0007710177451372147}
+{"board_monotonic_s": 10734039.27112976, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 0.0007390696555376053}
+{"board_monotonic_s": 10734039.272148484, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 0.0007191319018602371}
+{"board_monotonic_s": 10734039.273168556, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 0.0007264800369739532}
+{"board_monotonic_s": 10734039.274173608, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 0.000711904838681221}
+{"board_monotonic_s": 10734039.275183592, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 0.0007201600819826126}
+{"board_monotonic_s": 10734039.276189804, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 0.0007120855152606964}
+{"board_monotonic_s": 10734039.344807409, "evaluations": 9, "event": "written", "path": "/home/xilinx/puf/req1120_20261124/module/out/test_lanes0123_t16.json"}

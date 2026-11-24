@@ -1,0 +1,19 @@
+{
+  "run": "boards",
+  "source": "commands.jsonl",
+  "n_calls": 3,
+  "steps": [
+    {
+      "step": "boards",
+      "first_utc": "2026-11-24T11:58:17.552+00:00",
+      "last_utc": "2026-11-24T11:58:21.963+00:00",
+      "n_calls": 3,
+      "failed_calls": 0,
+      "commands": [
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py snapshot"
+      ]
+    }
+  ]
+}

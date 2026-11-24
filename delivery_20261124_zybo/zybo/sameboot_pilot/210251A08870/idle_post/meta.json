@@ -1,0 +1,1557 @@
+{
+  "array_shape": {
+    "apuf_lanes": [
+      20,
+      4096,
+      4
+    ],
+    "ff_lanes": [
+      20,
+      4096,
+      4
+    ]
+  },
+  "bitstream_sha256": "224cc1fdd3234b070ef7f6568c21fecf1683cbe45508593597e3e2b1bb7b26dd",
+  "boot_id_end": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+  "boot_id_start": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+  "challenge_dtype": "int8",
+  "challenge_file": "/home/xilinx/puf/req1120_20261124/challenges_K.npy",
+  "challenge_shape": [
+    4096,
+    64
+  ],
+  "challenges_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5",
+  "complete": true,
+  "counted_as_Z2": false,
+  "eth0_mac": "00:0a:35:00:1e:53",
+  "hello": {
+    "board": "Zybo Z7-10",
+    "clock_MHz": 100,
+    "families": [
+      "ct",
+      "flam",
+      "puf4x4",
+      "oi",
+      "oi_lanes",
+      "tpdoa",
+      "apuf_lanes",
+      "ff_lanes"
+    ],
+    "fw_version": "pynq-ps-apuf64-multifamily-1.2-apuf-xor-ff",
+    "part": "xc7z010clg400-1",
+    "physical_core": "shared APUF, four independent APUFs, four feed-forward APUFs, 24-stage 4x4 PUF, and TP-DOA race core"
+  },
+  "is_frozen_K": true,
+  "k_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5",
+  "kind": "research_mode_raw_lanes",
+  "label": "idle_post",
+  "params": {
+    "apuf_lanes": {
+      "challenge_mapping": "the same unmodified 64-bit challenge drives every lane",
+      "lanes": 4,
+      "n": 64,
+      "outputs": "four raw lane responses followed by their XOR",
+      "physical_core": "four independent 64-stage LUT-preserved APUFs"
+    },
+    "ff_lanes": {
+      "challenge_mapping": "the intermediate arbiter after stage 15 controls switch stage 32",
+      "feed_stage": 32,
+      "feed_tap": 15,
+      "lanes": 4,
+      "n": 64,
+      "outputs": "four raw lane responses followed by their XOR",
+      "physical_core": "four independent 64-stage feed-forward APUFs"
+    }
+  },
+  "raw_response_processing": "save wire bytes 0..3 in lane order; drop the service's XOR byte",
+  "read_order": "for each repeat: apuf_lanes then ff_lanes (whole challenge file, fixed order)",
+  "reads": [
+    {
+      "after": {
+        "board_monotonic_s": 10733210.965798654,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:43:48.341213Z",
+        "uptime_s": 10733210.96,
+        "xadc_die_temperature_C": 57.460040283028,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2686.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 0,
+      "before": {
+        "board_monotonic_s": 10733210.43289856,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:43:47.808316Z",
+        "uptime_s": 10733210.43,
+        "xadc_die_temperature_C": 57.336999511544,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2685.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 0,
+      "read_duration_s": 0.5286586247384548,
+      "read_start_board_monotonic_s": 10733210.433557296,
+      "repeat_index": 0
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733216.525825743,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:43:53.901248Z",
+        "uptime_s": 10733216.52,
+        "xadc_die_temperature_C": 56.844836425608,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2681.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 0,
+      "before": {
+        "board_monotonic_s": 10733215.988581883,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:43:53.364000Z",
+        "uptime_s": 10733215.98,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 1,
+      "read_duration_s": 0.5329363644123077,
+      "read_start_board_monotonic_s": 10733215.989242967,
+      "repeat_index": 0
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733222.078429325,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:43:59.453845Z",
+        "uptime_s": 10733222.07,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 1,
+      "before": {
+        "board_monotonic_s": 10733221.541324608,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:43:58.916746Z",
+        "uptime_s": 10733221.54,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 2,
+      "read_duration_s": 0.5327784009277821,
+      "read_start_board_monotonic_s": 10733221.541987998,
+      "repeat_index": 1
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733227.62482741,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:05.000246Z",
+        "uptime_s": 10733227.62,
+        "xadc_die_temperature_C": 56.967877197092,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2682.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 1,
+      "before": {
+        "board_monotonic_s": 10733227.095324965,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:04.470743Z",
+        "uptime_s": 10733227.09,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 3,
+      "read_duration_s": 0.5252346508204937,
+      "read_start_board_monotonic_s": 10733227.095984273,
+      "repeat_index": 1
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733233.177727288,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:10.553145Z",
+        "uptime_s": 10733233.17,
+        "xadc_die_temperature_C": 56.844836425608,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2681.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 2,
+      "before": {
+        "board_monotonic_s": 10733232.643319968,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:10.018743Z",
+        "uptime_s": 10733232.64,
+        "xadc_die_temperature_C": 56.844836425608,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2681.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 4,
+      "read_duration_s": 0.5301029328256845,
+      "read_start_board_monotonic_s": 10733232.643985623,
+      "repeat_index": 2
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733238.725424018,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:16.100846Z",
+        "uptime_s": 10733238.72,
+        "xadc_die_temperature_C": 56.967877197092,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2682.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 2,
+      "before": {
+        "board_monotonic_s": 10733238.197349926,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:15.572775Z",
+        "uptime_s": 10733238.19,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 5,
+      "read_duration_s": 0.5237254668027163,
+      "read_start_board_monotonic_s": 10733238.198017558,
+      "repeat_index": 2
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733244.29724746,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:21.672666Z",
+        "uptime_s": 10733244.29,
+        "xadc_die_temperature_C": 56.967877197092,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2682.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 3,
+      "before": {
+        "board_monotonic_s": 10733243.75177,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:21.127190Z",
+        "uptime_s": 10733243.75,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 6,
+      "read_duration_s": 0.5411643665283918,
+      "read_start_board_monotonic_s": 10733243.752431946,
+      "repeat_index": 3
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733249.854905896,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:27.230322Z",
+        "uptime_s": 10733249.85,
+        "xadc_die_temperature_C": 56.844836425608,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2681.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 3,
+      "before": {
+        "board_monotonic_s": 10733249.325556757,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:26.701059Z",
+        "uptime_s": 10733249.32,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 7,
+      "read_duration_s": 0.5250381790101528,
+      "read_start_board_monotonic_s": 10733249.326325456,
+      "repeat_index": 3
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733255.417586146,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:32.792998Z",
+        "uptime_s": 10733255.41,
+        "xadc_die_temperature_C": 56.967877197092,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2682.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 4,
+      "before": {
+        "board_monotonic_s": 10733254.878436584,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:32.253851Z",
+        "uptime_s": 10733254.87,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 8,
+      "read_duration_s": 0.5349690429866314,
+      "read_start_board_monotonic_s": 10733254.87909371,
+      "repeat_index": 4
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733260.974733075,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:38.350152Z",
+        "uptime_s": 10733260.97,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 4,
+      "before": {
+        "board_monotonic_s": 10733260.445107289,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:37.820545Z",
+        "uptime_s": 10733260.44,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 9,
+      "read_duration_s": 0.5252561364322901,
+      "read_start_board_monotonic_s": 10733260.445788404,
+      "repeat_index": 4
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733266.537771145,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:43.913190Z",
+        "uptime_s": 10733266.53,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 5,
+      "before": {
+        "board_monotonic_s": 10733266.00171466,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:43.377138Z",
+        "uptime_s": 10733266.0,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 10,
+      "read_duration_s": 0.5317092780023813,
+      "read_start_board_monotonic_s": 10733266.002381112,
+      "repeat_index": 5
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733272.095463775,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:49.470877Z",
+        "uptime_s": 10733272.09,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 5,
+      "before": {
+        "board_monotonic_s": 10733271.563714268,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:48.939132Z",
+        "uptime_s": 10733271.56,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 11,
+      "read_duration_s": 0.5274492632597685,
+      "read_start_board_monotonic_s": 10733271.564373527,
+      "repeat_index": 5
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733277.666261643,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:55.041679Z",
+        "uptime_s": 10733277.66,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 6,
+      "before": {
+        "board_monotonic_s": 10733277.131712193,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:44:54.507133Z",
+        "uptime_s": 10733277.13,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 12,
+      "read_duration_s": 0.5302486512809992,
+      "read_start_board_monotonic_s": 10733277.132375613,
+      "repeat_index": 6
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733283.245919932,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:00.621341Z",
+        "uptime_s": 10733283.24,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 6,
+      "before": {
+        "board_monotonic_s": 10733282.708775936,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:00.084192Z",
+        "uptime_s": 10733282.7,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 13,
+      "read_duration_s": 0.5328234601765871,
+      "read_start_board_monotonic_s": 10733282.709434476,
+      "repeat_index": 6
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733288.807223974,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:06.182645Z",
+        "uptime_s": 10733288.8,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 7,
+      "before": {
+        "board_monotonic_s": 10733288.27772493,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:05.653147Z",
+        "uptime_s": 10733288.27,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 14,
+      "read_duration_s": 0.5251554269343615,
+      "read_start_board_monotonic_s": 10733288.278389672,
+      "repeat_index": 7
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733294.375983804,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:11.751401Z",
+        "uptime_s": 10733294.37,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 7,
+      "before": {
+        "board_monotonic_s": 10733293.843577024,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:11.218995Z",
+        "uptime_s": 10733293.84,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 15,
+      "read_duration_s": 0.5280780848115683,
+      "read_start_board_monotonic_s": 10733293.844237568,
+      "repeat_index": 7
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733299.947409311,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:17.322829Z",
+        "uptime_s": 10733299.94,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 8,
+      "before": {
+        "board_monotonic_s": 10733299.410582798,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:16.786018Z",
+        "uptime_s": 10733299.41,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 16,
+      "read_duration_s": 0.5325091034173965,
+      "read_start_board_monotonic_s": 10733299.4112604,
+      "repeat_index": 8
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733305.550949482,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:22.926378Z",
+        "uptime_s": 10733305.55,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 8,
+      "before": {
+        "board_monotonic_s": 10733304.983743783,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:22.359171Z",
+        "uptime_s": 10733304.98,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 17,
+      "read_duration_s": 0.5627627968788147,
+      "read_start_board_monotonic_s": 10733304.984413382,
+      "repeat_index": 8
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733311.127023788,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:28.502445Z",
+        "uptime_s": 10733311.12,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 9,
+      "before": {
+        "board_monotonic_s": 10733310.588105163,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:27.963528Z",
+        "uptime_s": 10733310.58,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 18,
+      "read_duration_s": 0.5345884822309017,
+      "read_start_board_monotonic_s": 10733310.588771213,
+      "repeat_index": 9
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733316.695482042,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:34.070900Z",
+        "uptime_s": 10733316.69,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 9,
+      "before": {
+        "board_monotonic_s": 10733316.165661588,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:33.541078Z",
+        "uptime_s": 10733316.16,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 19,
+      "read_duration_s": 0.5255321078002453,
+      "read_start_board_monotonic_s": 10733316.166319922,
+      "repeat_index": 9
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733322.268501438,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:39.643924Z",
+        "uptime_s": 10733322.26,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 10,
+      "before": {
+        "board_monotonic_s": 10733321.735328212,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:39.110752Z",
+        "uptime_s": 10733321.73,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 20,
+      "read_duration_s": 0.528789509087801,
+      "read_start_board_monotonic_s": 10733321.735994283,
+      "repeat_index": 10
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733327.844779233,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:45.220198Z",
+        "uptime_s": 10733327.84,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 10,
+      "before": {
+        "board_monotonic_s": 10733327.309933955,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:44.685447Z",
+        "uptime_s": 10733327.31,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 21,
+      "read_duration_s": 0.530442712828517,
+      "read_start_board_monotonic_s": 10733327.310689395,
+      "repeat_index": 10
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733333.428522473,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:50.803937Z",
+        "uptime_s": 10733333.42,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 11,
+      "before": {
+        "board_monotonic_s": 10733332.890902288,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:50.266331Z",
+        "uptime_s": 10733332.89,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 22,
+      "read_duration_s": 0.5332959406077862,
+      "read_start_board_monotonic_s": 10733332.891573291,
+      "repeat_index": 11
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733339.005599432,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:56.381020Z",
+        "uptime_s": 10733339.0,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 11,
+      "before": {
+        "board_monotonic_s": 10733338.473213345,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:45:55.848634Z",
+        "uptime_s": 10733338.47,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 23,
+      "read_duration_s": 0.5280564539134502,
+      "read_start_board_monotonic_s": 10733338.473875891,
+      "repeat_index": 11
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733344.586895991,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:01.962316Z",
+        "uptime_s": 10733344.58,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 12,
+      "before": {
+        "board_monotonic_s": 10733344.051015629,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:01.426440Z",
+        "uptime_s": 10733344.05,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 24,
+      "read_duration_s": 0.5315031353384256,
+      "read_start_board_monotonic_s": 10733344.05168318,
+      "repeat_index": 12
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733350.175844533,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:07.551265Z",
+        "uptime_s": 10733350.17,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 12,
+      "before": {
+        "board_monotonic_s": 10733349.640710771,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:07.016141Z",
+        "uptime_s": 10733349.64,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 25,
+      "read_duration_s": 0.5307849291712046,
+      "read_start_board_monotonic_s": 10733349.641384065,
+      "repeat_index": 12
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733355.758570883,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:13.133986Z",
+        "uptime_s": 10733355.75,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 13,
+      "before": {
+        "board_monotonic_s": 10733355.223703776,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:12.599124Z",
+        "uptime_s": 10733355.22,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 26,
+      "read_duration_s": 0.5305498484522104,
+      "read_start_board_monotonic_s": 10733355.224365508,
+      "repeat_index": 13
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733361.345646404,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:18.721066Z",
+        "uptime_s": 10733361.34,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 13,
+      "before": {
+        "board_monotonic_s": 10733360.807882473,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:18.183303Z",
+        "uptime_s": 10733360.8,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 27,
+      "read_duration_s": 0.5334539450705051,
+      "read_start_board_monotonic_s": 10733360.808544489,
+      "repeat_index": 13
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733366.976225227,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:24.351639Z",
+        "uptime_s": 10733366.97,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 14,
+      "before": {
+        "board_monotonic_s": 10733366.394349802,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:23.769916Z",
+        "uptime_s": 10733366.39,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1354.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 991.69921875
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 28,
+      "read_duration_s": 0.577496649697423,
+      "read_start_board_monotonic_s": 10733366.395163508,
+      "repeat_index": 14
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733372.565114249,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:29.940528Z",
+        "uptime_s": 10733372.56,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 14,
+      "before": {
+        "board_monotonic_s": 10733372.028187344,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:29.403594Z",
+        "uptime_s": 10733372.02,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 29,
+      "read_duration_s": 0.532688170671463,
+      "read_start_board_monotonic_s": 10733372.028835377,
+      "repeat_index": 14
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733378.156221207,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:35.531632Z",
+        "uptime_s": 10733378.15,
+        "xadc_die_temperature_C": 56.721795654124,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2680.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 15,
+      "before": {
+        "board_monotonic_s": 10733377.61841564,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:34.993830Z",
+        "uptime_s": 10733377.61,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 30,
+      "read_duration_s": 0.5336305219680071,
+      "read_start_board_monotonic_s": 10733377.619069409,
+      "repeat_index": 15
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733383.745894348,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:41.121316Z",
+        "uptime_s": 10733383.74,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 15,
+      "before": {
+        "board_monotonic_s": 10733383.21376727,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:40.589183Z",
+        "uptime_s": 10733383.21,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1354.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 991.69921875
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 31,
+      "read_duration_s": 0.5270954240113497,
+      "read_start_board_monotonic_s": 10733383.214424176,
+      "repeat_index": 15
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733389.338232702,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:46.713653Z",
+        "uptime_s": 10733389.33,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 16,
+      "before": {
+        "board_monotonic_s": 10733388.802729096,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:46.178152Z",
+        "uptime_s": 10733388.8,
+        "xadc_die_temperature_C": 55.98355102522,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2674.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 32,
+      "read_duration_s": 0.5311893858015537,
+      "read_start_board_monotonic_s": 10733388.80339534,
+      "repeat_index": 16
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733394.924713315,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:52.300129Z",
+        "uptime_s": 10733394.92,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 16,
+      "before": {
+        "board_monotonic_s": 10733394.39656962,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:51.771986Z",
+        "uptime_s": 10733394.39,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 33,
+      "read_duration_s": 0.523827962577343,
+      "read_start_board_monotonic_s": 10733394.397226593,
+      "repeat_index": 16
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733400.527245795,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:57.902662Z",
+        "uptime_s": 10733400.52,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 17,
+      "before": {
+        "board_monotonic_s": 10733399.990801118,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:46:57.366228Z",
+        "uptime_s": 10733399.99,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 34,
+      "read_duration_s": 0.5321362037211657,
+      "read_start_board_monotonic_s": 10733399.991471775,
+      "repeat_index": 17
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733406.14561906,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:03.521039Z",
+        "uptime_s": 10733406.14,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 17,
+      "before": {
+        "board_monotonic_s": 10733405.613900084,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:02.989318Z",
+        "uptime_s": 10733405.61,
+        "xadc_die_temperature_C": 56.229632568188,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2676.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 35,
+      "read_duration_s": 0.5273745320737362,
+      "read_start_board_monotonic_s": 10733405.614560667,
+      "repeat_index": 17
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733411.746699609,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:09.122121Z",
+        "uptime_s": 10733411.74,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 18,
+      "before": {
+        "board_monotonic_s": 10733411.214399008,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:08.589816Z",
+        "uptime_s": 10733411.21,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 36,
+      "read_duration_s": 0.527961228042841,
+      "read_start_board_monotonic_s": 10733411.215057513,
+      "repeat_index": 18
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733417.35578642,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:14.731203Z",
+        "uptime_s": 10733417.35,
+        "xadc_die_temperature_C": 56.844836425608,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2681.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 18,
+      "before": {
+        "board_monotonic_s": 10733416.810150648,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:14.185603Z",
+        "uptime_s": 10733416.81,
+        "xadc_die_temperature_C": 56.352673339672,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2677.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 37,
+      "read_duration_s": 0.5414004009217024,
+      "read_start_board_monotonic_s": 10733416.810846115,
+      "repeat_index": 18
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733422.958317662,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:20.333732Z",
+        "uptime_s": 10733422.95,
+        "xadc_die_temperature_C": 56.844836425608,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2681.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 19,
+      "before": {
+        "board_monotonic_s": 10733422.420159455,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:19.795599Z",
+        "uptime_s": 10733422.42,
+        "xadc_die_temperature_C": 56.106591796704,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2675.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 38,
+      "read_duration_s": 0.5339329820126295,
+      "read_start_board_monotonic_s": 10733422.420841498,
+      "repeat_index": 19
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10733428.588346155,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:25.963767Z",
+        "uptime_s": 10733428.58,
+        "xadc_die_temperature_C": 56.59875488264,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2679.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "array_row": 19,
+      "before": {
+        "board_monotonic_s": 10733428.023701044,
+        "board_wall_clock_utc_unaligned": "2020-11-24T16:47:25.399115Z",
+        "uptime_s": 10733428.02,
+        "xadc_die_temperature_C": 56.475714111156,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2678.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 39,
+      "read_duration_s": 0.5603525191545486,
+      "read_start_board_monotonic_s": 10733428.024358165,
+      "repeat_index": 19
+    }
+  ],
+  "repeats_requested": 20,
+  "research_firmware_sha256": "a057df2c6136e72ed9ae10be55dbcbc2ab12f8a16f15d656e7bc1e17c488c1c5",
+  "tool": {
+    "path": "/home/xilinx/puf/req1120_20261124/zybo_board.py",
+    "sha256": "b1df0e7269ef220cf52339ff0194433354a2a0f37022aa8790275e98a33f6b85"
+  },
+  "true_power_cycles": 0
+}

@@ -1,0 +1,69 @@
+{
+  "as_expected": true,
+  "board": {
+    "boot_id": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+    "research_pid": 18533
+  },
+  "pages_after_stop": {
+    "modified_page": {
+      "address": "0xFFFE9000",
+      "all_zero": true,
+      "bytes": 4096,
+      "nonzero_bytes": 0
+    },
+    "owner_page": {
+      "address": "0xFFFE8000",
+      "all_zero": true,
+      "bytes": 4096,
+      "nonzero_bytes": 0
+    }
+  },
+  "results": {
+    "modified": {
+      "port": 3043,
+      "reply": {
+        "device_id": "210251A08870",
+        "error": "reconstruction",
+        "success": false
+      },
+      "round_trip_s": 0.06135251745581627
+    },
+    "owner": {
+      "port": 3041,
+      "reply": {
+        "device_id": "210251A08870",
+        "success": true,
+        "timing": {
+          "acquire_s": 0.0010090470314025879,
+          "fe_s": 0.07310160808265209,
+          "kdf_s": 0.0007668286561965942
+        }
+      },
+      "round_trip_s": 0.07895178347826004
+    }
+  },
+  "secret_stores": {
+    "modified": "ocm",
+    "owner": "ocm"
+  },
+  "service_counters": {
+    "modified": {
+      "derive": 0,
+      "derive_locked": 0,
+      "lock": 0,
+      "unlock_failed": 1,
+      "unlock_ok": 0,
+      "unsupported": 0
+    },
+    "owner": {
+      "derive": 0,
+      "derive_locked": 0,
+      "lock": 0,
+      "unlock_failed": 0,
+      "unlock_ok": 1,
+      "unsupported": 0
+    }
+  },
+  "utc": "2026-11-24T12:08:38.986+00:00",
+  "what": "Two module_serve.py processes at the same time on the board, ports 3041 and 3043, OCM pages 0xFFFE8000 and 0xFFFE9000, both with a test enrollment from recorded reads (replay backend, c = 1); the second one started from a copy whose ecc_hex differs in one byte."
+}

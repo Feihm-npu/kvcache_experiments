@@ -1,0 +1,71 @@
+{
+  "array_note": "one read per challenge, so the read axis is dropped: apuf_lanes.npy and ff_lanes.npy are int8 (N, 4), the layout the requirement gives for crp_board2; board_read_meta.json describes the read",
+  "array_sha256": {
+    "apuf_lanes": "1c88c9de018f1705819b239eb0dd5d904f8c77823b49ed495e5a1f138ab69418",
+    "ff_lanes": "5b3de41590d74871d0456d2897a7f82578dae2f59a8874cca84087df4418d3ef"
+  },
+  "array_shape": {
+    "apuf_lanes": [
+      100000,
+      4
+    ],
+    "ff_lanes": [
+      100000,
+      4
+    ]
+  },
+  "bitstream_sha256": "224cc1fdd3234b070ef7f6568c21fecf1683cbe45508593597e3e2b1bb7b26dd",
+  "board": {
+    "boot_id": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+    "eth0_mac": "00:0a:35:00:1e:53",
+    "index": 1,
+    "serial": "210251A08870",
+    "uptime_days": 124.1977
+  },
+  "board_read_meta": "board_read_meta.json",
+  "challenge_generation": {
+    "N_after_dedup": 100000,
+    "challenge_dtype": "int8",
+    "challenge_shape": [
+      100000,
+      64
+    ],
+    "challenges_npy_sha256": "def29c4141c2760ffcf5ef7ab850f53080de4fd4f2229d6208dc156acd88eace",
+    "challenges_raw_sha256": "3c66523a7df30edbab19526a020288c6a6872e4e5af4d8175b4275a4c55b925f",
+    "generated": 100000,
+    "generator": "np.random.default_rng(20261120).integers(0, 2, (100000, 64), dtype=np.int8)",
+    "removed_rows_equal_to_K": 0,
+    "seed": 20261120
+  },
+  "host_imported_utc": "2026-11-24T10:57:53.827+00:00",
+  "raw_response_processing": "save wire bytes 0..3 in lane order; drop the service's XOR byte",
+  "read_duration_s": {
+    "apuf_lanes": 11.900478793308139,
+    "ff_lanes": 11.876378607004881
+  },
+  "read_order": "for each repeat: apuf_lanes then ff_lanes (whole challenge file, fixed order)",
+  "reads_per_challenge": 1,
+  "requirement": "Z3 challenge set read on board 1; Z3 itself asks for board 2, which is absent",
+  "research_firmware_sha256": "a057df2c6136e72ed9ae10be55dbcbc2ab12f8a16f15d656e7bc1e17c488c1c5",
+  "schema": "req_1120.zybo.crp/1",
+  "xadc_die_temperature_C": {
+    "apuf_lanes": [
+      57.58308105451201,
+      57.58308105451201
+    ],
+    "ff_lanes": [
+      57.460040283028,
+      57.58308105451201
+    ]
+  },
+  "xadc_vccint_mV": {
+    "apuf_lanes": [
+      992.431640625,
+      993.1640625
+    ],
+    "ff_lanes": [
+      993.1640625,
+      993.1640625
+    ]
+  }
+}

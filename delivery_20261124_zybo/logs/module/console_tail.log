@@ -1,0 +1,9 @@
+[2026-11-24T11:57:47.004+00:00] step cleanup
+[2026-11-24T11:57:54.178+00:00] step final
+{
+  "status": "complete",
+  "steps": {
+    "cleanup": "done",
+    "final": "done"
+  }
+}

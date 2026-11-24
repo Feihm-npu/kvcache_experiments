@@ -1,0 +1,17 @@
+[2026-11-24T12:15:04.749+00:00] step verify
+{
+  "status": "complete",
+  "steps": {
+    "crp_board1": "done",
+    "idle_post": "done",
+    "idle_pre": "done",
+    "import crp_board1": "n/a",
+    "import idle_post": "n/a",
+    "import idle_pre": "n/a",
+    "import sweep": "n/a",
+    "snapshot": "done",
+    "sweep": "done",
+    "upload": "done",
+    "verify": "done"
+  }
+}

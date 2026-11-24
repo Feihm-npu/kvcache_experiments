@@ -1,0 +1,69 @@
+{"backend": "replay", "bitstream_sha256": null, "board_monotonic_s": 10734185.431065524, "enrollment_sha256": "77d4d5198b3ac3312147a432bae408c519485d538061767c0cd0e46bf65a5c88", "euid": 0, "event": "startup", "iterations": 4049, "k_file_sha256": "00ca5b2ec93521515a05cf88e430c81f2290b826a431fbc7bbe237239a93b2b6", "k_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5", "lanes": [0, 1, 2, 3], "m": 13, "module_core_sha256": "4930783dbb6a0a4cb5c43dc2521cb763d33c3ec9128c484b5e70645b5fc9995b", "module_serve_sha256": "955b0f39873cca943a1a414c58589c8fced469d54e574b04be46a2a76c8b837b", "pid": 15704, "pl_programmed_by_module": null, "python": "3.6.5", "research_firmware_sha256": null, "secret_store": "on-chip memory (OCM) at 0xFFFE8000, one 4 KiB page", "store_leftover_erased": false, "t": 64}
+{"board_monotonic_s": 10734185.431986192, "event": "listening", "host": "0.0.0.0", "port": 3041}
+{"board_monotonic_s": 10734186.998173213, "evaluations": 0, "event": "derive_locked"}
+{"board_monotonic_s": 10734188.177588118, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007751565426588058, "fe_s": 0.06203976646065712, "kdf_s": 1.0926028359681368}}
+{"board_monotonic_s": 10734188.2017256, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734189.376443475, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007556378841400146, "fe_s": 0.05853894352912903, "kdf_s": 1.091483062133193}}
+{"board_monotonic_s": 10734189.40026033, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734190.575192347, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007548369467258453, "fe_s": 0.057018157094717026, "kdf_s": 1.092959452420473}}
+{"board_monotonic_s": 10734190.599272484, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734191.771083644, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007627811282873154, "fe_s": 0.05737123265862465, "kdf_s": 1.089597474783659}}
+{"board_monotonic_s": 10734191.795346988, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734193.03050867, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0009223241358995438, "fe_s": 0.06555620394647121, "kdf_s": 1.1447758451104164}}
+{"board_monotonic_s": 10734193.054318637, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734194.225081952, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007620956748723984, "fe_s": 0.05626204051077366, "kdf_s": 1.089915568009019}}
+{"board_monotonic_s": 10734194.249109287, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734195.4222953, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.000773722305893898, "fe_s": 0.05598335154354572, "kdf_s": 1.0924412328749895}}
+{"board_monotonic_s": 10734195.446325552, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734196.616753668, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007646121084690094, "fe_s": 0.055842531844973564, "kdf_s": 1.090059855952859}}
+{"board_monotonic_s": 10734196.641031612, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734197.814574195, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007674247026443481, "fe_s": 0.05598722770810127, "kdf_s": 1.0928139816969633}}
+{"board_monotonic_s": 10734197.838752275, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734199.0094431, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007660910487174988, "fe_s": 0.05588594079017639, "kdf_s": 1.089541532099247}}
+{"board_monotonic_s": 10734199.03394898, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734200.206719592, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007659737020730972, "fe_s": 0.05579498037695885, "kdf_s": 1.0926314499229193}}
+{"board_monotonic_s": 10734200.23099828, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734201.402675347, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007705781608819962, "fe_s": 0.05657971277832985, "kdf_s": 1.0907606277614832}}
+{"board_monotonic_s": 10734201.426628295, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734202.598141069, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007684454321861267, "fe_s": 0.056164372712373734, "kdf_s": 1.0912130288779736}}
+{"board_monotonic_s": 10734202.622501222, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734203.793131305, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007614623755216599, "fe_s": 0.05614274740219116, "kdf_s": 1.0900377500802279}}
+{"board_monotonic_s": 10734203.81711482, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734205.047162589, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.000818135216832161, "fe_s": 0.056061357259750366, "kdf_s": 1.1492892559617758}}
+{"board_monotonic_s": 10734205.071456788, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734206.2428281, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007609929889440536, "fe_s": 0.0562018733471632, "kdf_s": 1.0899041332304478}}
+{"board_monotonic_s": 10734206.266736604, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734207.440661607, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0008262917399406433, "fe_s": 0.05608757212758064, "kdf_s": 1.092460760846734}}
+{"board_monotonic_s": 10734207.464578994, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734208.637467138, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007652491331100464, "fe_s": 0.05667693912982941, "kdf_s": 1.091604782268405}}
+{"board_monotonic_s": 10734208.66198322, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734209.837865116, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007652584463357925, "fe_s": 0.056143224239349365, "kdf_s": 1.0946593284606934}}
+{"board_monotonic_s": 10734209.862299051, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734211.034816016, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.000769883394241333, "fe_s": 0.05654358118772507, "kdf_s": 1.0904357396066189}}
+{"board_monotonic_s": 10734211.058818316, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734212.233695844, "evaluations": 1, "event": "unlock_ok", "timing": {"acquire_s": 0.0007693357765674591, "fe_s": 0.05636718310415745, "kdf_s": 1.0936483331024647}}
+{"board_monotonic_s": 10734212.258354813, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.282886932, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.305760987, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.330165807, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.353628946, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.376908123, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.400199616, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.423122948, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.446384788, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.46923529, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.492351636, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.515581252, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.538639655, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.562054412, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.585425394, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.607969541, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.631245464, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.654547324, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.677643228, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.700794855, "evaluations": 0, "event": "derive"}
+{"board_monotonic_s": 10734212.724454693, "evaluations": 0, "event": "lock"}
+{"board_monotonic_s": 10734212.747897329, "evaluations": 0, "event": "derive_locked"}
+{"board_monotonic_s": 10734214.154391812, "derive": 20, "derive_locked": 2, "event": "signal", "lock": 21, "signum": 15, "unlock_failed": 0, "unlock_ok": 21, "unsupported": 0}
+{"board_monotonic_s": 10734214.155048894, "derive": 20, "derive_locked": 2, "event": "stopped", "lock": 21, "unlock_failed": 0, "unlock_ok": 21, "unsupported": 0}
+{"board_monotonic_s": 10734214.155552648, "derive": 20, "derive_locked": 2, "event": "stopped", "lock": 21, "unlock_failed": 0, "unlock_ok": 21, "unsupported": 0}

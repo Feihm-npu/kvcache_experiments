@@ -1,0 +1,13 @@
+State    Recv-Q    Send-Q        Local Address:Port        Peer Address:Port                                                                                    
+LISTEN   0         50                  0.0.0.0:445              0.0.0.0:*        users:(("smbd",pid=1838,fd=34))                                                
+LISTEN   0         4                   0.0.0.0:3040             0.0.0.0:*        users:(("python3",pid=17611,fd=3))                                             
+LISTEN   0         4                   0.0.0.0:3041             0.0.0.0:*        users:(("python3",pid=16230,fd=3))                                             
+LISTEN   0         128                 0.0.0.0:9090             0.0.0.0:*        users:(("jupyter-noteboo",pid=1818,fd=4))                                      
+LISTEN   0         50                  0.0.0.0:139              0.0.0.0:*        users:(("smbd",pid=1838,fd=35))                                                
+LISTEN   0         128                 0.0.0.0:80               0.0.0.0:*        users:(("python3.6",pid=1935,fd=3))                                            
+LISTEN   0         128           127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=16277,fd=13))                                    
+LISTEN   0         128                 0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=1820,fd=3))                                                 
+LISTEN   0         50                     [::]:445                 [::]:*        users:(("smbd",pid=1838,fd=32))                                                
+LISTEN   0         50                     [::]:139                 [::]:*        users:(("smbd",pid=1838,fd=33))                                                
+LISTEN   0         128                    [::]:80                  [::]:*        users:(("python3.6",pid=1935,fd=4))                                            
+LISTEN   0         128                    [::]:22                  [::]:*        users:(("sshd",pid=1820,fd=4))                                                 

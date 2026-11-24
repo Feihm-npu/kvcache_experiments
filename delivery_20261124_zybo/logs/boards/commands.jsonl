@@ -1,0 +1,3 @@
+{"utc": "2026-11-24T11:58:17.552+00:00", "kind": "ssh", "argv": ["mkdir", "-p", "-m", "700", "/home/xilinx/puf/req1120_20261124"], "returncode": 0, "duration_s": 1.363}
+{"utc": "2026-11-24T11:58:18.936+00:00", "kind": "scp_put", "argv": ["zybo_board.py", "->", "/home/xilinx/puf/req1120_20261124"], "returncode": 0, "duration_s": 1.384}
+{"utc": "2026-11-24T11:58:21.963+00:00", "kind": "ssh", "argv": ["python3", "/home/xilinx/puf/req1120_20261124/zybo_board.py", "snapshot"], "returncode": 0, "duration_s": 3.027}

@@ -1,0 +1,96 @@
+{
+  "J0": {
+    "status": "done",
+    "note": "Jetson 批次已交付，状态与说明见 delivery_20261124/requirements_status.json；本批未改动。"
+  },
+  "J1": {
+    "status": "partial",
+    "note": "Jetson 批次已交付，状态与说明见 delivery_20261124/requirements_status.json；本批未改动。"
+  },
+  "J2": {
+    "status": "partial",
+    "note": "Jetson 批次已交付，状态与说明见 delivery_20261124/requirements_status.json；本批未改动。"
+  },
+  "J3": {
+    "status": "done",
+    "note": "Jetson 批次已交付，状态与说明见 delivery_20261124/requirements_status.json；本批未改动。"
+  },
+  "J4": {
+    "status": "partial",
+    "note": "Jetson 批次已交付，状态与说明见 delivery_20261124/requirements_status.json；本批未改动。"
+  },
+  "J5": {
+    "status": "partial",
+    "note": "Jetson 批次已交付，状态与说明见 delivery_20261124/requirements_status.json；本批未改动。"
+  },
+  "J6": {
+    "status": "blocked",
+    "note": "仍缺两块板的正式 enrollment.json（等 Z2 之后的 lanes 和 t）和板 2。本批交付了 Z6 客户端 module_client.py（实板回路中按 J6 的调用方式测过）、J6 的四个模块配置模板（zybo/module/configs/）以及 owner+modified 两个服务同时运行在板 1 上的布局验证（zybo/module/validation/j6_two_services.json）。"
+  },
+  "Z1": {
+    "status": "partial",
+    "note": "板 1 已记录（zybo/boards.json）：序列号取板载 Digilent JTAG-SMT2 的 USB iSerial 210251A08870，eth0 MAC 与需求一致（但这个 MAC 是 PYNQ 镜像的默认值，只能标识 SD 卡镜像）；与 0917 采集是同一块板的依据是 boot_id 相同且 uptime 连续（124 天，覆盖 0917、1102、1113）。缺口：板 2 不在场；印字标签没有人读；Device DNA 没有读（内核没有 DNA 节点，冻结的 PL 没有读取通路，读取要操作 eFUSE/devcfg 控制器或 JTAG，留给有人在场的批次）。"
+  },
+  "Z2": {
+    "status": "blocked",
+    "note": "真断电 0 次。本次无人值守：主机上没有可控电源（没有 sudo、没有可开关的插座或 USB 端口电源控制），也没有外部热源；板 2 不在场。另外主机上的 dnsmasq 没有运行，板子一旦断电，重新上电后拿不到 192.168.1.2（只有 PYNQ 的静态地址 192.168.2.99）。已交付：power_cycle_campaign.py（人工或可开关插座两种断电方式；自动计时、不足 60 s 或 boot_id 未变的轮次判为无效；8 项状态机测试通过；在实板上演练过：没有断电的轮次被判无效，上电后的路径——用冻结 bitstream 配置 PL、启动研究服务、读一遍 K——走通，见 logs/power_cycle/room/rehearsal/）。另交付同开机的温度扫描作为补充原始数据（zybo/sameboot_pilot/，用 CPU 负载把芯片从约 57 °C 加热到约 66 °C 再冷却；不是断电数据，不计入 Z2）。",
+    "evidence": [
+      "zybo/tools/power_cycle_campaign.py",
+      "zybo/tools/test_power_cycle.py",
+      "logs/power_cycle/room/rehearsal/rehearsal.json",
+      "zybo/sameboot_pilot/"
+    ]
+  },
+  "Z3": {
+    "status": "blocked",
+    "note": "板 2 不在场，没有采集。补充：同一个挑战集（default_rng(20261120)，去掉与 K 重复的行后 N = 100000）在板 1 上每条读了一遍，zybo/crp_board1/（int8 (N, 4)），便于日后与板 2 对比。"
+  },
+  "Z4": {
+    "status": "blocked",
+    "note": "登记参数 lanes 和 t 还没有给出，所以没有做正式登记；板 1 上也没有用临时参数跑过正式登记。固件已实现并在实板上验证：登记映像 module_enroll.py（真实读取路径用冻结研究固件的函数，--dry-run 读 9 遍 K，无输出）、部署映像 module_serve.py。验证用的是测试登记：由登记映像从本批已录下的 9 遍同开机读数算出，只用于回放后端，用完即删、未交付（zybo/module/validation/reconstruction_matrix.json：16 组 (lanes, t)，每组 91 次，全部满足差错数 ≤ t 才成功）。两点请确认：lanes 编号 0–3 = apuf_lanes、4–7 = ff_lanes；bchlib.BCH(t, m=13) 在 bchlib 2.1.3 上 t 的上限是 64，本批同开机数据里 ff 四条 XOR 的差错最多 73 位、八条全 XOR 最多 114 位，宽 lanes 会超出纠错预算。"
+  },
+  "Z5": {
+    "status": "partial",
+    "note": "板 1：c = 4049，10 次 kdf_s 最小 1.083 s、中位数 1.085 s（zybo/module/calibration.json，用部署服务同一段 KDF 代码、随机的临时根测得）。板 2 不在场，没法在两块板上标定；两块板要用同一个 c，板 2 到位后重标并取较大者。"
+  },
+  "Z6": {
+    "status": "partial",
+    "note": "客户端 module_client.py 已交付：从 stdin 读一行请求，经以太网转发给板子的部署服务（3041），把回复原样打印到 stdout，退出码 0。实板回路中按 J6 的调用方式（子进程 + stdin）测过 20 次 unlock、20 次 derive。只有一块板，other 和 moved 两种配置依赖板 2；四个配置的模板在 zybo/module/configs/。"
+  },
+  "Z7": {
+    "status": "partial",
+    "note": "临时测量，不是正式的 Z7：部署映像用测试登记（回放后端）运行，同一次开机、之前没有上电。连续 20 次 unlock（正确口令）后再 1 次 unlock + 20 次 derive + lock，每次请求经 module_client.py 从 PC 发出：fe_s 56–66 ms，kdf_s 1.09–1.15 s，unlock 往返 1.17–1.24 s，derive 往返中位数 23 ms。回复里的 acquire_s 是回放时间，不是读 PL 的时间（真实读一遍 K、两族共约 1.06 s，见 zybo/module/validation/live_acquire.json）。文件名带 _replay_test；正式的 unlock_timing_<板序列号>.json 等正式登记并在上电之后重做。"
+  },
+  "Z8": {
+    "status": "partial",
+    "note": "实板上做过一次（zybo/interface/closure_210251A08870.json）：先停掉研究服务并确认 3040 没有监听，再向部署服务发 100 条研究协议读取命令（挑战取自 Z3 挑战集，不在 K 内）和 10 条 JSON 伪装，全部被回 unsupported_request；服务日志里读 K 的次数合计为 1，即随后的那一次 unlock，unlock 正常。依据：接口本身的限制——部署映像只认三种请求，研究协议帧一收到 PUF1 就拒绝（代码强制，有实板记录）。这是 PS 软件限制：板上仍有 root SSH、Jupyter 和 JTAG，有管理权限的人可以绕过。部署服务当时用的是测试登记（回放后端）；正式部署后要在上电之后重做。"
+  },
+  "Z9": {
+    "status": "not_started",
+    "note": "没有第三块板。"
+  },
+  "U0": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U1": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U2": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U3": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U4": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U5": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  }
+}

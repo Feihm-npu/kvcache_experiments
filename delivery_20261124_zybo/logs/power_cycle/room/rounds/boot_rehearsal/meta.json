@@ -1,0 +1,151 @@
+{
+  "array_shape": {
+    "apuf_lanes": [
+      1,
+      4096,
+      4
+    ],
+    "ff_lanes": [
+      1,
+      4096,
+      4
+    ]
+  },
+  "bitstream_sha256": "224cc1fdd3234b070ef7f6568c21fecf1683cbe45508593597e3e2b1bb7b26dd",
+  "boot_id_end": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+  "boot_id_start": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+  "challenge_dtype": "int8",
+  "challenge_file": "/home/xilinx/puf/req1120_20261124/challenges_K.npy",
+  "challenge_shape": [
+    4096,
+    64
+  ],
+  "challenges_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5",
+  "complete": true,
+  "counted_as_Z2": false,
+  "eth0_mac": "00:0a:35:00:1e:53",
+  "hello": {
+    "board": "Zybo Z7-10",
+    "clock_MHz": 100,
+    "families": [
+      "ct",
+      "flam",
+      "puf4x4",
+      "oi",
+      "oi_lanes",
+      "tpdoa",
+      "apuf_lanes",
+      "ff_lanes"
+    ],
+    "fw_version": "pynq-ps-apuf64-multifamily-1.2-apuf-xor-ff",
+    "part": "xc7z010clg400-1",
+    "physical_core": "shared APUF, four independent APUFs, four feed-forward APUFs, 24-stage 4x4 PUF, and TP-DOA race core"
+  },
+  "is_frozen_K": true,
+  "k_raw_sha256": "6743daa679eaf86c3cba25c028728774bcf4a80f214b17d9b9e2e31cec55acd5",
+  "kind": "research_mode_raw_lanes",
+  "label": "rehearsal_same_boot_not_a_power_cycle",
+  "params": {
+    "apuf_lanes": {
+      "challenge_mapping": "the same unmodified 64-bit challenge drives every lane",
+      "lanes": 4,
+      "n": 64,
+      "outputs": "four raw lane responses followed by their XOR",
+      "physical_core": "four independent 64-stage LUT-preserved APUFs"
+    },
+    "ff_lanes": {
+      "challenge_mapping": "the intermediate arbiter after stage 15 controls switch stage 32",
+      "feed_stage": 32,
+      "feed_tap": 15,
+      "lanes": 4,
+      "n": 64,
+      "outputs": "four raw lane responses followed by their XOR",
+      "physical_core": "four independent 64-stage feed-forward APUFs"
+    }
+  },
+  "raw_response_processing": "save wire bytes 0..3 in lane order; drop the service's XOR byte",
+  "read_order": "for each repeat: apuf_lanes then ff_lanes (whole challenge file, fixed order)",
+  "reads": [
+    {
+      "after": {
+        "board_monotonic_s": 10734723.75058209,
+        "board_wall_clock_utc_unaligned": "2020-11-24T17:09:01.126024Z",
+        "uptime_s": 10734723.75,
+        "xadc_die_temperature_C": 57.82916259748001,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2689.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 0,
+      "before": {
+        "board_monotonic_s": 10734723.212116612,
+        "board_wall_clock_utc_unaligned": "2020-11-24T17:09:00.587548Z",
+        "uptime_s": 10734723.21,
+        "xadc_die_temperature_C": 57.952203368964,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2690.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "challenges": 4096,
+      "family": "apuf_lanes",
+      "index": 0,
+      "read_duration_s": 0.5339658446609974,
+      "read_start_board_monotonic_s": 10734723.212791283,
+      "repeat_index": 0
+    },
+    {
+      "after": {
+        "board_monotonic_s": 10734724.30099468,
+        "board_wall_clock_utc_unaligned": "2020-11-24T17:09:01.676432Z",
+        "uptime_s": 10734724.3,
+        "xadc_die_temperature_C": 57.706121825996,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2688.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1356.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 993.1640625
+      },
+      "array_row": 0,
+      "before": {
+        "board_monotonic_s": 10734723.7594123,
+        "board_wall_clock_utc_unaligned": "2020-11-24T17:09:01.134886Z",
+        "uptime_s": 10734723.75,
+        "xadc_die_temperature_C": 57.952203368964,
+        "xadc_raw": {
+          "in_temp0_offset": -2219.0,
+          "in_temp0_raw": 2690.0,
+          "in_temp0_scale": 123.040771484,
+          "in_voltage0_vccint_raw": 1355.0,
+          "in_voltage0_vccint_scale": 0.732421875
+        },
+        "xadc_vccint_mV": 992.431640625
+      },
+      "challenges": 4096,
+      "family": "ff_lanes",
+      "index": 1,
+      "read_duration_s": 0.5370672922581434,
+      "read_start_board_monotonic_s": 10734723.760129396,
+      "repeat_index": 0
+    }
+  ],
+  "repeats_requested": 1,
+  "research_firmware_sha256": "a057df2c6136e72ed9ae10be55dbcbc2ab12f8a16f15d656e7bc1e17c488c1c5",
+  "tool": {
+    "path": "/home/xilinx/puf/req1120_20261124/zybo_board.py",
+    "sha256": "b1df0e7269ef220cf52339ff0194433354a2a0f37022aa8790275e98a33f6b85"
+  },
+  "true_power_cycles": 0
+}

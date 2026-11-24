@@ -1,0 +1,23 @@
+[2026-11-24T11:49:48.891+00:00] step matrix
+lanes0_t8 39 / 91 max errors 14 rule True
+lanes0_t16 91 / 91 max errors 14 rule True
+lanes0_t64 91 / 91 max errors 14 rule True
+lanes1_t16 90 / 91 max errors 17 rule True
+lanes2_t16 91 / 91 max errors 14 rule True
+lanes3_t16 91 / 91 max errors 8 rule True
+lanes4_t16 74 / 91 max errors 24 rule True
+lanes5_t16 78 / 91 max errors 19 rule True
+lanes6_t16 56 / 91 max errors 26 rule True
+lanes7_t16 91 / 91 max errors 12 rule True
+lanes0123_t16 0 / 91 max errors 46 rule True
+lanes0123_t32 53 / 91 max errors 46 rule True
+lanes0123_t64 91 / 91 max errors 46 rule True
+lanes4567_t64 89 / 91 max errors 73 rule True
+lanes04_t32 90 / 91 max errors 38 rule True
+lanes01234567_t64 2 / 91 max errors 114 rule True
+{
+  "status": "complete",
+  "steps": {
+    "matrix": "done"
+  }
+}

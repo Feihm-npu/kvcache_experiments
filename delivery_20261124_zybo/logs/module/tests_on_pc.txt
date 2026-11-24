@@ -1,0 +1,154 @@
+test_ecc_side_errors_within_budget_are_corrected (test_module.Bch.test_ecc_side_errors_within_budget_are_corrected) ... ok
+test_rejects_garbage_and_wrong_lengths (test_module.Bch.test_rejects_garbage_and_wrong_lengths) ... ok
+test_selftest_and_limits (test_module.Bch.test_selftest_and_limits) ... ok
+test_hmac_matches_hmac_module (test_module.BitHelpers.test_hmac_matches_hmac_module) ... ok
+test_pack_unpack_match_plain_reference (test_module.BitHelpers.test_pack_unpack_match_plain_reference) ... ok
+test_toeplitz_matches_reference (test_module.BitHelpers.test_toeplitz_matches_reference) ... ok
+test_unlock_key_matches_reference (test_module.BitHelpers.test_unlock_key_matches_reference) ... ok
+test_calibrate (test_module.CommandLine.test_calibrate) ... ok
+test_enroll_dry_run_writes_nothing_and_live_needs_root (test_module.CommandLine.test_enroll_dry_run_writes_nothing_and_live_needs_root) ... ok
+test_enroll_once_no_overwrite_and_output_is_public_only (test_module.CommandLine.test_enroll_once_no_overwrite_and_output_is_public_only) ... ok
+test_serve_image_refuses_bad_enrollment_and_needs_k (test_module.CommandLine.test_serve_image_refuses_bad_enrollment_and_needs_k) ... ok
+test_derive_before_unlock_is_locked (test_module.EndToEnd.test_derive_before_unlock_is_locked) ... {"board_monotonic_s": 10732304.41038989, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 0.00011032819747924805}
+{"board_monotonic_s": 10732304.4105163, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 8.665211498737335e-05}
+{"board_monotonic_s": 10732304.410606768, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.776357233524323e-05}
+{"board_monotonic_s": 10732304.410691496, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.687881588935852e-05}
+{"board_monotonic_s": 10732304.41077378, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.582083344459534e-05}
+{"board_monotonic_s": 10732304.410856854, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.706694304943085e-05}
+{"board_monotonic_s": 10732304.410939235, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.584132254123688e-05}
+{"board_monotonic_s": 10732304.411023868, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.924996316432953e-05}
+{"board_monotonic_s": 10732304.411106495, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.630325853824615e-05}
+ok
+test_enrollment_moved_to_another_device_fails (test_module.EndToEnd.test_enrollment_moved_to_another_device_fails) ... {"board_monotonic_s": 10732304.4239483, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.919330477714539e-05}
+{"board_monotonic_s": 10732304.424072515, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 9.776093065738678e-05}
+{"board_monotonic_s": 10732304.424160983, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.76480883359909e-05}
+{"board_monotonic_s": 10732304.424244508, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.666461169719696e-05}
+{"board_monotonic_s": 10732304.424327347, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.661990821361542e-05}
+{"board_monotonic_s": 10732304.424409578, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.612630724906921e-05}
+{"board_monotonic_s": 10732304.424490424, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.536262273788452e-05}
+{"board_monotonic_s": 10732304.42457114, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.547624409198761e-05}
+{"board_monotonic_s": 10732304.42465208, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.558614015579224e-05}
+ok
+test_failed_unlock_logs_no_distinction (test_module.EndToEnd.test_failed_unlock_logs_no_distinction) ... {"board_monotonic_s": 10732304.442110555, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.44044440984726e-05}
+{"board_monotonic_s": 10732304.44223234, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 9.846501052379608e-05}
+{"board_monotonic_s": 10732304.44233164, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.8519806265831e-05}
+{"board_monotonic_s": 10732304.44241556, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.661618292331696e-05}
+{"board_monotonic_s": 10732304.44249805, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.590092718601227e-05}
+{"board_monotonic_s": 10732304.442579864, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.615424692630768e-05}
+{"board_monotonic_s": 10732304.44266069, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.554516196250916e-05}
+{"board_monotonic_s": 10732304.442741992, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.594376802444458e-05}
+{"board_monotonic_s": 10732304.442823764, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.61076807975769e-05}
+ok
+test_log_holds_no_secrets (test_module.EndToEnd.test_log_holds_no_secrets) ... {"board_monotonic_s": 10732304.46078274, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.43262130022049e-05}
+{"board_monotonic_s": 10732304.460909955, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 0.00010300800204277039}
+{"board_monotonic_s": 10732304.46101882, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 9.66731458902359e-05}
+{"board_monotonic_s": 10732304.46110274, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.645785808563232e-05}
+{"board_monotonic_s": 10732304.461186605, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.745251059532166e-05}
+{"board_monotonic_s": 10732304.461267956, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.56140798330307e-05}
+{"board_monotonic_s": 10732304.461349234, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.572583854198456e-05}
+{"board_monotonic_s": 10732304.461430091, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.52713531255722e-05}
+{"board_monotonic_s": 10732304.461511182, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.548928260803223e-05}
+ok
+test_mixed_family_lanes_need_two_reads (test_module.EndToEnd.test_mixed_family_lanes_need_two_reads) ... {"board_monotonic_s": 10732304.475116856, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.502284228801727e-05}
+{"board_monotonic_s": 10732304.475233298, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 9.27560031414032e-05}
+{"board_monotonic_s": 10732304.475320356, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.739849388599396e-05}
+{"board_monotonic_s": 10732304.47540403, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.652677595615387e-05}
+{"board_monotonic_s": 10732304.475486027, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.602758705615997e-05}
+{"board_monotonic_s": 10732304.475567564, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.575936615467072e-05}
+{"board_monotonic_s": 10732304.475648101, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.523223757743835e-05}
+{"board_monotonic_s": 10732304.475728735, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.541291415691376e-05}
+{"board_monotonic_s": 10732304.475809827, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.579848170280457e-05}
+{"board_monotonic_s": 10732304.483911274, "evaluations": 2, "event": "read", "index": 1, "of": 9, "seconds": 0.00018182769417762756}
+{"board_monotonic_s": 10732304.48410226, "evaluations": 4, "event": "read", "index": 2, "of": 9, "seconds": 0.00016326270997524261}
+{"board_monotonic_s": 10732304.48425408, "evaluations": 6, "event": "read", "index": 3, "of": 9, "seconds": 0.00014195218682289124}
+{"board_monotonic_s": 10732304.484401528, "evaluations": 8, "event": "read", "index": 4, "of": 9, "seconds": 0.0001411493867635727}
+{"board_monotonic_s": 10732304.484548347, "evaluations": 10, "event": "read", "index": 5, "of": 9, "seconds": 0.00014111213386058807}
+{"board_monotonic_s": 10732304.484701255, "evaluations": 12, "event": "read", "index": 6, "of": 9, "seconds": 0.00014199689030647278}
+{"board_monotonic_s": 10732304.48484824, "evaluations": 14, "event": "read", "index": 7, "of": 9, "seconds": 0.0001410599797964096}
+{"board_monotonic_s": 10732304.484994793, "evaluations": 16, "event": "read", "index": 8, "of": 9, "seconds": 0.00014117546379566193}
+{"board_monotonic_s": 10732304.485144231, "evaluations": 18, "event": "read", "index": 9, "of": 9, "seconds": 0.00014396756887435913}
+ok
+test_modified_enrollment_always_fails_and_stays_locked (test_module.EndToEnd.test_modified_enrollment_always_fails_and_stays_locked) ... {"board_monotonic_s": 10732304.49864484, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 8.872151374816895e-05}
+{"board_monotonic_s": 10732304.498745644, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 8.083879947662354e-05}
+{"board_monotonic_s": 10732304.498833029, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.779151201248169e-05}
+{"board_monotonic_s": 10732304.4989167, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.678009569644928e-05}
+{"board_monotonic_s": 10732304.498999568, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.614120841026306e-05}
+{"board_monotonic_s": 10732304.499084244, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.585249841213226e-05}
+{"board_monotonic_s": 10732304.499165082, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.551349699497223e-05}
+{"board_monotonic_s": 10732304.49924596, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.566437125205994e-05}
+{"board_monotonic_s": 10732304.499327082, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.571280002593994e-05}
+ok
+test_unlock_derive_lock_against_reference (test_module.EndToEnd.test_unlock_derive_lock_against_reference) ... {"board_monotonic_s": 10732304.542259164, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.504705667495728e-05}
+{"board_monotonic_s": 10732304.542385623, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 0.00010202638804912567}
+{"board_monotonic_s": 10732304.54247739, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.985904812812805e-05}
+{"board_monotonic_s": 10732304.542560793, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.643923163414001e-05}
+{"board_monotonic_s": 10732304.542643404, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.626786828041077e-05}
+{"board_monotonic_s": 10732304.542724969, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.616542279720306e-05}
+{"board_monotonic_s": 10732304.542806348, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.584318518638611e-05}
+{"board_monotonic_s": 10732304.542887505, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.575377821922302e-05}
+{"board_monotonic_s": 10732304.542968092, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.528811693191528e-05}
+ok
+test_unsupported_requests (test_module.EndToEnd.test_unsupported_requests) ... {"board_monotonic_s": 10732304.558348337, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.993836283683777e-05}
+{"board_monotonic_s": 10732304.558469484, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 9.283609688282013e-05}
+{"board_monotonic_s": 10732304.558557246, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.82553106546402e-05}
+{"board_monotonic_s": 10732304.55864132, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.633119821548462e-05}
+{"board_monotonic_s": 10732304.55872372, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.634609937667847e-05}
+{"board_monotonic_s": 10732304.558804974, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.577240467071533e-05}
+{"board_monotonic_s": 10732304.558895076, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.63963907957077e-05}
+{"board_monotonic_s": 10732304.558976661, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.589906454086304e-05}
+{"board_monotonic_s": 10732304.559060857, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.89891928434372e-05}
+ok
+test_enrollment_matches_reference_formulas (test_module.EnrollmentValidation.test_enrollment_matches_reference_formulas) ... {"board_monotonic_s": 10732304.569055934, "evaluations": 2, "event": "read", "index": 1, "of": 9, "seconds": 0.00018458440899848938}
+{"board_monotonic_s": 10732304.5692304, "evaluations": 4, "event": "read", "index": 2, "of": 9, "seconds": 0.0001506265252828598}
+{"board_monotonic_s": 10732304.569378812, "evaluations": 6, "event": "read", "index": 3, "of": 9, "seconds": 0.00013990700244903564}
+{"board_monotonic_s": 10732304.569524447, "evaluations": 8, "event": "read", "index": 4, "of": 9, "seconds": 0.00013934820890426636}
+{"board_monotonic_s": 10732304.56966952, "evaluations": 10, "event": "read", "index": 5, "of": 9, "seconds": 0.0001392662525177002}
+{"board_monotonic_s": 10732304.56981474, "evaluations": 12, "event": "read", "index": 6, "of": 9, "seconds": 0.00013906322419643402}
+{"board_monotonic_s": 10732304.56995868, "evaluations": 14, "event": "read", "index": 7, "of": 9, "seconds": 0.00013843178749084473}
+{"board_monotonic_s": 10732304.570105596, "evaluations": 16, "event": "read", "index": 8, "of": 9, "seconds": 0.0001415349543094635}
+{"board_monotonic_s": 10732304.570250273, "evaluations": 18, "event": "read", "index": 9, "of": 9, "seconds": 0.00013862736523151398}
+ok
+test_good_file_round_trips (test_module.EnrollmentValidation.test_good_file_round_trips) ... {"board_monotonic_s": 10732304.576073682, "evaluations": 2, "event": "read", "index": 1, "of": 9, "seconds": 0.00018234364688396454}
+{"board_monotonic_s": 10732304.576244585, "evaluations": 4, "event": "read", "index": 2, "of": 9, "seconds": 0.00014806725084781647}
+{"board_monotonic_s": 10732304.576392893, "evaluations": 6, "event": "read", "index": 3, "of": 9, "seconds": 0.00013959035277366638}
+{"board_monotonic_s": 10732304.576537764, "evaluations": 8, "event": "read", "index": 4, "of": 9, "seconds": 0.00013882294297218323}
+{"board_monotonic_s": 10732304.576682225, "evaluations": 10, "event": "read", "index": 5, "of": 9, "seconds": 0.00013924017548561096}
+{"board_monotonic_s": 10732304.576826315, "evaluations": 12, "event": "read", "index": 6, "of": 9, "seconds": 0.00013846904039382935}
+{"board_monotonic_s": 10732304.576969642, "evaluations": 14, "event": "read", "index": 7, "of": 9, "seconds": 0.0001381300389766693}
+{"board_monotonic_s": 10732304.577115975, "evaluations": 16, "event": "read", "index": 8, "of": 9, "seconds": 0.00014100037515163422}
+{"board_monotonic_s": 10732304.577259865, "evaluations": 18, "event": "read", "index": 9, "of": 9, "seconds": 0.00013832002878189087}
+ok
+test_mutations_are_rejected (test_module.EnrollmentValidation.test_mutations_are_rejected) ... {"board_monotonic_s": 10732304.579846628, "evaluations": 2, "event": "read", "index": 1, "of": 9, "seconds": 0.0001522321254014969}
+{"board_monotonic_s": 10732304.580012122, "evaluations": 4, "event": "read", "index": 2, "of": 9, "seconds": 0.00014619901776313782}
+{"board_monotonic_s": 10732304.580160543, "evaluations": 6, "event": "read", "index": 3, "of": 9, "seconds": 0.0001392904669046402}
+{"board_monotonic_s": 10732304.58030548, "evaluations": 8, "event": "read", "index": 4, "of": 9, "seconds": 0.000138772651553154}
+{"board_monotonic_s": 10732304.580450764, "evaluations": 10, "event": "read", "index": 5, "of": 9, "seconds": 0.00013981573283672333}
+{"board_monotonic_s": 10732304.580594717, "evaluations": 12, "event": "read", "index": 6, "of": 9, "seconds": 0.00013859570026397705}
+{"board_monotonic_s": 10732304.580739032, "evaluations": 14, "event": "read", "index": 7, "of": 9, "seconds": 0.00013898499310016632}
+{"board_monotonic_s": 10732304.580883268, "evaluations": 16, "event": "read", "index": 8, "of": 9, "seconds": 0.00013889186084270477}
+{"board_monotonic_s": 10732304.581034616, "evaluations": 18, "event": "read", "index": 9, "of": 9, "seconds": 0.00014115311205387115}
+ok
+test_canary_and_foreign_content (test_module.SecretStore.test_canary_and_foreign_content) ... ok
+test_leftover_of_earlier_instance_is_erased (test_module.SecretStore.test_leftover_of_earlier_instance_is_erased) ... ok
+test_memory_store_is_subclass_with_page (test_module.SecretStore.test_memory_store_is_subclass_with_page) ... ok
+test_slots_and_erasure (test_module.SecretStore.test_slots_and_erasure) ... ok
+{"board_monotonic_s": 10732304.5871682, "evaluations": 1, "event": "read", "index": 1, "of": 9, "seconds": 9.673088788986206e-05}
+{"board_monotonic_s": 10732304.58729017, "evaluations": 2, "event": "read", "index": 2, "of": 9, "seconds": 9.681656956672668e-05}
+{"board_monotonic_s": 10732304.5873769, "evaluations": 3, "event": "read", "index": 3, "of": 9, "seconds": 7.740035653114319e-05}
+{"board_monotonic_s": 10732304.587459952, "evaluations": 4, "event": "read", "index": 4, "of": 9, "seconds": 7.615424692630768e-05}
+{"board_monotonic_s": 10732304.587542305, "evaluations": 5, "event": "read", "index": 5, "of": 9, "seconds": 7.61616975069046e-05}
+{"board_monotonic_s": 10732304.58762438, "evaluations": 6, "event": "read", "index": 6, "of": 9, "seconds": 7.641129195690155e-05}
+{"board_monotonic_s": 10732304.587705402, "evaluations": 7, "event": "read", "index": 7, "of": 9, "seconds": 7.567182183265686e-05}
+{"board_monotonic_s": 10732304.587787056, "evaluations": 8, "event": "read", "index": 8, "of": 9, "seconds": 7.570348680019379e-05}
+{"board_monotonic_s": 10732304.587868582, "evaluations": 9, "event": "read", "index": 9, "of": 9, "seconds": 7.590837776660919e-05}
+test_client_prints_the_board_reply_verbatim (test_module.Sockets.test_client_prints_the_board_reply_verbatim) ... ok
+test_client_refuses_bad_input_and_unreachable_board (test_module.Sockets.test_client_refuses_bad_input_and_unreachable_board) ... ok
+test_json_impostors_are_rejected (test_module.Sockets.test_json_impostors_are_rejected) ... ok
+test_overlong_line_and_idle_connection (test_module.Sockets.test_overlong_line_and_idle_connection) ... ok
+test_research_protocol_frames_are_all_rejected (test_module.Sockets.test_research_protocol_frames_are_all_rejected) ... ok
+test_several_requests_on_one_connection (test_module.Sockets.test_several_requests_on_one_connection) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 11.372s
+
+OK

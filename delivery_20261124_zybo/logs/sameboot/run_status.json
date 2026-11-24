@@ -1,0 +1,156 @@
+{
+  "counted_as_Z2": false,
+  "finished_utc": "2026-11-24T12:15:04.794+00:00",
+  "first_started_utc": "2026-11-24T12:14:27.863+00:00",
+  "frozen_inputs": {
+    "bitstream": {
+      "host_path": "/home/fei-zl-share/fei_space/puf_exp/new_req_09_08/delivery_0916_req/evidence/apuf_ff_image/system_wrapper_apuf_ff_20260917.bit",
+      "sha256": "224cc1fdd3234b070ef7f6568c21fecf1683cbe45508593597e3e2b1bb7b26dd"
+    },
+    "challenges": {
+      "host_path": "/home/fei-zl-share/fei_space/puf_exp/new_req_09_08/delivery_0916_req/data/apuf_ff_20260917/challenges.npy",
+      "sha256": "69324bbc2daf94b7b9c401f3e912f2a675b59bdac9adcd87e0abff3a5ddd1905"
+    },
+    "research_firmware": {
+      "host_path": "/home/fei-zl-share/fei_space/puf_exp/new_req_09_08/delivery_0916_req/evidence/apuf_ff_image/puf_server.py",
+      "sha256": "a057df2c6136e72ed9ae10be55dbcbc2ab12f8a16f15d656e7bc1e17c488c1c5"
+    }
+  },
+  "host": "xilinx@192.168.1.2",
+  "last_started_utc": "2026-11-24T12:15:04.748+00:00",
+  "note": "assembled from timeline.json, which lists every remote call in order; a step that ran in several invocations has several occurrences",
+  "serial": "210251A08870",
+  "steps": {
+    "crp_board1": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:57:52.213+00:00",
+          "last_utc": "2026-11-24T10:57:52.213+00:00",
+          "n_calls": 1
+        }
+      ],
+      "status": "done"
+    },
+    "idle_post": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:43:18.154+00:00",
+          "last_utc": "2026-11-24T11:43:18.154+00:00",
+          "n_calls": 1
+        }
+      ],
+      "status": "done"
+    },
+    "idle_pre": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:57:05.126+00:00",
+          "last_utc": "2026-11-24T10:57:05.126+00:00",
+          "n_calls": 1
+        }
+      ],
+      "status": "done"
+    },
+    "import crp_board1": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:57:53.801+00:00",
+          "last_utc": "2026-11-24T10:57:53.801+00:00",
+          "n_calls": 1
+        }
+      ]
+    },
+    "import idle_post": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:43:19.610+00:00",
+          "last_utc": "2026-11-24T11:43:19.610+00:00",
+          "n_calls": 1
+        }
+      ]
+    },
+    "import idle_pre": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:57:06.644+00:00",
+          "last_utc": "2026-11-24T10:57:06.644+00:00",
+          "n_calls": 1
+        }
+      ]
+    },
+    "import sweep": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:35:02.067+00:00",
+          "last_utc": "2026-11-24T11:35:02.067+00:00",
+          "n_calls": 1
+        }
+      ]
+    },
+    "snapshot": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:52:51.372+00:00",
+          "last_utc": "2026-11-24T10:52:51.372+00:00",
+          "n_calls": 1
+        },
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:43:22.551+00:00",
+          "last_utc": "2026-11-24T11:43:22.551+00:00",
+          "n_calls": 1
+        }
+      ],
+      "status": "done"
+    },
+    "sweep": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:34:59.890+00:00",
+          "last_utc": "2026-11-24T11:34:59.890+00:00",
+          "n_calls": 1
+        }
+      ],
+      "status": "done"
+    },
+    "upload": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:51:56.380+00:00",
+          "last_utc": "2026-11-24T10:52:02.815+00:00",
+          "n_calls": 5
+        },
+        {
+          "failed_calls": 1,
+          "first_utc": "2026-11-24T10:53:04.319+00:00",
+          "last_utc": "2026-11-24T10:53:23.656+00:00",
+          "n_calls": 9
+        },
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T10:58:26.121+00:00",
+          "last_utc": "2026-11-24T11:13:22.824+00:00",
+          "n_calls": 12
+        },
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:39:28.764+00:00",
+          "last_utc": "2026-11-24T11:39:36.471+00:00",
+          "n_calls": 6
+        }
+      ],
+      "status": "done"
+    }
+  },
+  "true_power_cycles": 0
+}

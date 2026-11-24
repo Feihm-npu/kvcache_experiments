@@ -1,0 +1,79 @@
+{
+  "bitstream_path": "/home/xilinx/puf/system_wrapper_apuf_ff_20260917.bit",
+  "bitstream_sha256": "224cc1fdd3234b070ef7f6568c21fecf1683cbe45508593597e3e2b1bb7b26dd",
+  "board_serial_number": null,
+  "boot_id": "9ef6219a-be4f-4d3d-becf-89e4a237cb65",
+  "configuration_provenance": "running argv of the research service, on-disk SHA-256 of the frozen bitstream/firmware, FPGA Manager state; no configuration readback",
+  "cpu_part": [
+    "0xc09"
+  ],
+  "cpuinfo_serial": [
+    "0000000000000000"
+  ],
+  "device_tree_model": null,
+  "established_tcp_3040": [
+    "Recv-Q     Send-Q            Local Address:Port           Peer Address:Port"
+  ],
+  "eth0_addresses": [
+    "eth0             UP             192.168.2.99/24 192.168.1.2/24"
+  ],
+  "eth0_mac": "00:0a:35:00:1e:53",
+  "fpga_manager_state": "operating",
+  "listeners": [
+    "State    Recv-Q    Send-Q        Local Address:Port        Peer Address:Port    ",
+    "LISTEN   0         50                  0.0.0.0:445              0.0.0.0:*       ",
+    "LISTEN   0         4                   0.0.0.0:3040             0.0.0.0:*       ",
+    "LISTEN   0         128                 0.0.0.0:9090             0.0.0.0:*       ",
+    "LISTEN   0         50                  0.0.0.0:139              0.0.0.0:*       ",
+    "LISTEN   0         128                 0.0.0.0:80               0.0.0.0:*       ",
+    "LISTEN   0         128           127.0.0.53%lo:53               0.0.0.0:*       ",
+    "LISTEN   0         128                 0.0.0.0:22               0.0.0.0:*       ",
+    "LISTEN   0         50                     [::]:445                 [::]:*       ",
+    "LISTEN   0         50                     [::]:139                 [::]:*       ",
+    "LISTEN   0         128                    [::]:80                  [::]:*       ",
+    "LISTEN   0         128                    [::]:22                  [::]:*       "
+  ],
+  "numpy": "1.13.3",
+  "python": "3.6.5",
+  "research_firmware_path": "/home/xilinx/puf/puf_server_apuf_ff_20260917.py",
+  "research_firmware_sha256": "a057df2c6136e72ed9ae10be55dbcbc2ab12f8a16f15d656e7bc1e17c488c1c5",
+  "research_processes": [
+    {
+      "argv": [
+        "python3",
+        "/home/xilinx/puf/puf_server_apuf_ff_20260917.py",
+        "--bit",
+        "/home/xilinx/puf/system_wrapper_apuf_ff_20260917.bit",
+        "--port",
+        "3040",
+        "--base",
+        "0x40000000"
+      ],
+      "pid": 17611
+    }
+  ],
+  "soc_family": "Xilinx Zynq",
+  "soc_id": "0x2",
+  "soc_revision": "0x3",
+  "telemetry": {
+    "board_monotonic_s": 10730402.198117672,
+    "board_wall_clock_utc_unaligned": "2020-11-24T15:56:59.573578Z",
+    "uptime_s": 10730402.19,
+    "xadc_die_temperature_C": 57.460040283028,
+    "xadc_raw": {
+      "in_temp0_offset": -2219.0,
+      "in_temp0_raw": 2686.0,
+      "in_temp0_scale": 123.040771484,
+      "in_voltage0_vccint_raw": 1355.0,
+      "in_voltage0_vccint_scale": 0.732421875
+    },
+    "xadc_vccint_mV": 992.431640625
+  },
+  "uname": [
+    "Linux",
+    "pynq",
+    "4.19.0-xilinx",
+    "#1 SMP PREEMPT Wed Jun 10 07:16:45 UTC 2020",
+    "armv7l"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "note": "assembled from timeline.json, which lists every remote call in order; a step that ran in several invocations has several occurrences",
+  "steps": {
+    "boards": {
+      "occurrences": [
+        {
+          "failed_calls": 0,
+          "first_utc": "2026-11-24T11:58:17.552+00:00",
+          "last_utc": "2026-11-24T11:58:21.963+00:00",
+          "n_calls": 3
+        }
+      ],
+      "status": "done"
+    }
+  }
+}

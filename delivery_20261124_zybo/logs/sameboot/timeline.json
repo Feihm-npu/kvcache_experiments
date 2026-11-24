@@ -1,0 +1,175 @@
+{
+  "run": "sameboot",
+  "source": "commands.jsonl",
+  "n_calls": 42,
+  "steps": [
+    {
+      "step": "upload",
+      "first_utc": "2026-11-24T10:51:56.380+00:00",
+      "last_utc": "2026-11-24T10:52:02.815+00:00",
+      "n_calls": 5,
+      "failed_calls": 0,
+      "commands": [
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "challenges_K.npy crp_challenges.npy -> /home/xilinx/puf/req1120_20261124",
+        "chmod 444 /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "sha256sum /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy /home/xilinx/puf/req1120_20261124/zybo_board.py"
+      ]
+    },
+    {
+      "step": "snapshot",
+      "first_utc": "2026-11-24T10:52:51.372+00:00",
+      "last_utc": "2026-11-24T10:52:51.372+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py snapshot"
+      ]
+    },
+    {
+      "step": "upload",
+      "first_utc": "2026-11-24T10:53:04.319+00:00",
+      "last_utc": "2026-11-24T10:53:23.656+00:00",
+      "n_calls": 9,
+      "failed_calls": 1,
+      "commands": [
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "challenges_K.npy crp_challenges.npy -> /home/xilinx/puf/req1120_20261124",
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "rm -f /home/xilinx/puf/req1120_20261124/zybo_board.py /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "challenges_K.npy crp_challenges.npy -> /home/xilinx/puf/req1120_20261124",
+        "chmod 444 /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "sha256sum /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy /home/xilinx/puf/req1120_20261124/zybo_board.py"
+      ]
+    },
+    {
+      "step": "idle_pre",
+      "first_utc": "2026-11-24T10:57:05.126+00:00",
+      "last_utc": "2026-11-24T10:57:05.126+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py read --challenges /home/xilinx/puf/req1120_20261124/challenges_K.npy --repeats 20 --interval 5.0 --label idle_pre --out /home/xilinx/puf/req1120_20261124/out/idle_pre"
+      ]
+    },
+    {
+      "step": "import idle_pre",
+      "first_utc": "2026-11-24T10:57:06.644+00:00",
+      "last_utc": "2026-11-24T10:57:06.644+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "/home/xilinx/puf/req1120_20261124/out/idle_pre -> /home/fei-zl-share/fei_space/puf_exp/kvcache_experiments/delivery_20261124_zybo/zybo/sameboot_pilot/210251A08870/idle_pre.incoming"
+      ]
+    },
+    {
+      "step": "crp_board1",
+      "first_utc": "2026-11-24T10:57:52.213+00:00",
+      "last_utc": "2026-11-24T10:57:52.213+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py read --challenges /home/xilinx/puf/req1120_20261124/crp_challenges.npy --repeats 1 --label crp_board1 --out /home/xilinx/puf/req1120_20261124/out/crp_board1"
+      ]
+    },
+    {
+      "step": "import crp_board1",
+      "first_utc": "2026-11-24T10:57:53.801+00:00",
+      "last_utc": "2026-11-24T10:57:53.801+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "/home/xilinx/puf/req1120_20261124/out/crp_board1 -> /home/fei-zl-share/fei_space/puf_exp/kvcache_experiments/delivery_20261124_zybo/zybo/crp_board1.incoming"
+      ]
+    },
+    {
+      "step": "upload",
+      "first_utc": "2026-11-24T10:58:26.121+00:00",
+      "last_utc": "2026-11-24T11:13:22.824+00:00",
+      "n_calls": 12,
+      "failed_calls": 0,
+      "commands": [
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "rm -f /home/xilinx/puf/req1120_20261124/zybo_board.py /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "challenges_K.npy crp_challenges.npy -> /home/xilinx/puf/req1120_20261124",
+        "chmod 444 /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "sha256sum /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy /home/xilinx/puf/req1120_20261124/zybo_board.py",
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "rm -f /home/xilinx/puf/req1120_20261124/zybo_board.py /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "challenges_K.npy crp_challenges.npy -> /home/xilinx/puf/req1120_20261124",
+        "chmod 444 /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "sha256sum /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy /home/xilinx/puf/req1120_20261124/zybo_board.py"
+      ]
+    },
+    {
+      "step": "sweep",
+      "first_utc": "2026-11-24T11:34:59.890+00:00",
+      "last_utc": "2026-11-24T11:34:59.890+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py sweep --challenges /home/xilinx/puf/req1120_20261124/challenges_K.npy --label sweep --out /home/xilinx/puf/req1120_20261124/out/sweep"
+      ]
+    },
+    {
+      "step": "import sweep",
+      "first_utc": "2026-11-24T11:35:02.067+00:00",
+      "last_utc": "2026-11-24T11:35:02.067+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "/home/xilinx/puf/req1120_20261124/out/sweep -> /home/fei-zl-share/fei_space/puf_exp/kvcache_experiments/delivery_20261124_zybo/zybo/sameboot_pilot/210251A08870/sweep.incoming"
+      ]
+    },
+    {
+      "step": "upload",
+      "first_utc": "2026-11-24T11:39:28.764+00:00",
+      "last_utc": "2026-11-24T11:39:36.471+00:00",
+      "n_calls": 6,
+      "failed_calls": 0,
+      "commands": [
+        "mkdir -p -m 700 /home/xilinx/puf/req1120_20261124/out",
+        "rm -f /home/xilinx/puf/req1120_20261124/zybo_board.py /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "zybo_board.py -> /home/xilinx/puf/req1120_20261124",
+        "challenges_K.npy crp_challenges.npy -> /home/xilinx/puf/req1120_20261124",
+        "chmod 444 /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy",
+        "sha256sum /home/xilinx/puf/req1120_20261124/challenges_K.npy /home/xilinx/puf/req1120_20261124/crp_challenges.npy /home/xilinx/puf/req1120_20261124/zybo_board.py"
+      ]
+    },
+    {
+      "step": "idle_post",
+      "first_utc": "2026-11-24T11:43:18.154+00:00",
+      "last_utc": "2026-11-24T11:43:18.154+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py read --challenges /home/xilinx/puf/req1120_20261124/challenges_K.npy --repeats 20 --interval 5.0 --label idle_post --out /home/xilinx/puf/req1120_20261124/out/idle_post"
+      ]
+    },
+    {
+      "step": "import idle_post",
+      "first_utc": "2026-11-24T11:43:19.610+00:00",
+      "last_utc": "2026-11-24T11:43:19.610+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "/home/xilinx/puf/req1120_20261124/out/idle_post -> /home/fei-zl-share/fei_space/puf_exp/kvcache_experiments/delivery_20261124_zybo/zybo/sameboot_pilot/210251A08870/idle_post.incoming"
+      ]
+    },
+    {
+      "step": "snapshot",
+      "first_utc": "2026-11-24T11:43:22.551+00:00",
+      "last_utc": "2026-11-24T11:43:22.551+00:00",
+      "n_calls": 1,
+      "failed_calls": 0,
+      "commands": [
+        "python3 /home/xilinx/puf/req1120_20261124/zybo_board.py snapshot"
+      ]
+    }
+  ]
+}

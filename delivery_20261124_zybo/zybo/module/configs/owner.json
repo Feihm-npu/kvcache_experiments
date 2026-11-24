@@ -1,0 +1,1 @@
+{"backend": "hardware", "device_id": "210251A08870", "command": ["python3", "module_client.py", "--host", "192.168.1.2", "--port", "3041"], "timeout_seconds": 60}

@@ -1,0 +1,15 @@
+{
+  "challenge_set": "frozen K, raw SHA-256 6743daa6...acd5, read once per family per power-up",
+  "condition": "room",
+  "invalid_rounds": [],
+  "min_power_off_s": 60.0,
+  "power_off_basis": "operator confirmation (process convention, not a measurement)",
+  "raw_response_processing": "save wire bytes 0..3 in lane order; drop the service's XOR byte",
+  "read_order": "apuf_lanes then ff_lanes, one read each",
+  "requirement": "Z2",
+  "rounds": [],
+  "rounds_requested": 20,
+  "schema": "req_1120.zybo.temperature/1",
+  "serial": "210251A08870",
+  "started_utc": "2026-11-24T12:04:19.082+00:00"
+}
