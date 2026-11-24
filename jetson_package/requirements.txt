@@ -1,0 +1,8 @@
+# torch: install the NVIDIA wheel for JetPack 6 (L4T R36.x), not the PyPI build,
+# e.g. from https://developer.download.nvidia.com/compute/redist/jp/v60/pytorch/
+# triton: must support sm_87; the gate triton_smoke.py checks it.
+transformers==4.57.3
+triton
+cryptography
+numpy
+pytest
