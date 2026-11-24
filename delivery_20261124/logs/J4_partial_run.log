@@ -1,0 +1,22 @@
+2026-11-24T18:10:50+08:00
+active
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
++ sudo -n swapon /swapfile
++ set +x
+NAME      TYPE       SIZE USED PRIO
+/swapfile file 8589930496    0   -2
+               total        used        free      shared  buff/cache   available
+Mem:      7990505472  2651000832  4934098944    44601344   405405696  5055823872
+Swap:     8589930496           0  8589930496
++ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python scripts/run_jetson_energy.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/jetson_energy_qwen3_orin_partial_1024_2048.json
++ tee /home/fei/boundkv_req1120_20261124/delivery_20261124/logs/J4_partial.log
+1024 {'plain': (1.5370121024747265, 11.396241088160592), 'quant': (1.2157034962368718, 12.069172287035691), 'ring': (1.2422691194626694, 12.067515009255208)}
+2048 {'plain': (1.96444289994465, 10.07111479467154), 'quant': (1.2442100203712663, 12.171839821339539), 'ring': (1.2856231618100604, 12.173363900388605)}
+wrote /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/jetson_energy_qwen3_orin_partial_1024_2048.json
++ set +x
+2026-11-24T18:16:49+08:00
++ sudo -n swapoff /swapfile
++ set +x
+               total        used        free      shared  buff/cache   available
+Mem:      7990505472  2656395264  4571365376    44544000   762744832  4952907776
+Swap:              0           0           0

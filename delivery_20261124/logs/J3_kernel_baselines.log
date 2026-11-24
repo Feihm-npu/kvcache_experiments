@@ -1,0 +1,4 @@
+N=  1024  ring 5.973  ring_per_head 9.473  quant 2.072  decrypt+attend 6.284  bf16_splitk 2.804  | ring/quant 2.88  ring/bf16 2.13  ring/flash nan  dec/ring 1.05  {'ring_equals_quant': True, 'ring_equals_per_head': True, 'decrypt_attend_equals_quant': True}
+N=  2048  ring 9.657  ring_per_head 16.671  quant 4.313  decrypt+attend 12.107  bf16_splitk 5.205  | ring/quant 2.24  ring/bf16 1.86  ring/flash nan  dec/ring 1.25  {'ring_equals_quant': True, 'ring_equals_per_head': True, 'decrypt_attend_equals_quant': True}
+N=  4096  ring 17.604  ring_per_head 30.758  quant 7.781  decrypt+attend 25.278  bf16_splitk 10.195  | ring/quant 2.26  ring/bf16 1.73  ring/flash nan  dec/ring 1.44  {'ring_equals_quant': True, 'ring_equals_per_head': True, 'decrypt_attend_equals_quant': True}
+wrote /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/kernel_baselines_orin_qwen3step.json

@@ -1,0 +1,9 @@
+P=  1024 plain kernels/step  1536.0  GPU  67.23 ms  busy 44.7%  
+P=  1024 quant kernels/step  1369.0  GPU  42.54 ms  busy 30.5%  _decode_split=2.310 _reduce=0.191 _append_row=0.173
+P=  1024 ring  kernels/step  1369.0  GPU  45.73 ms  busy 32.8%  _decode_split=5.346 _reduce=0.194 _append_row=0.265
+         GPU-time ratios: quant/plain 0.633  ring/plain 0.680  ring/quant 1.075
+P=  2048 plain kernels/step  1536.0  GPU  94.49 ms  busy 62.6%  
+P=  2048 quant kernels/step  1369.0  GPU  44.32 ms  busy 31.9%  _decode_split=4.049 _reduce=0.217 _append_row=0.180
+P=  2048 ring  kernels/step  1369.0  GPU  49.97 ms  busy 35.8%  _decode_split=9.520 _reduce=0.231 _append_row=0.266
+         GPU-time ratios: quant/plain 0.469  ring/plain 0.529  ring/quant 1.128
+{"out": "/home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_decode_profile_qwen3_orin_partial_1024_2048.json"}

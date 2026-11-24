@@ -1,0 +1,7 @@
+P=  1024 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   11.72  quant   12.35 (x1.053)  ring   12.35 (x1.054)  tok/s | T_ring/T_plain=0.949  spread(med)=0.004  tail max/med ring=1.05  ring==quant tokens: True
+P=  2048 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   10.10  quant   12.40 (x1.228)  ring   12.39 (x1.226)  tok/s | T_ring/T_plain=0.816  spread(med)=0.005  tail max/med ring=1.06  ring==quant tokens: True
+
+T_ring/T_plain vs context: {1024: 0.949, 2048: 0.816}
+{"out": "/home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_e2e_verified_qwen3_orin_partial_1024_2048.json"}

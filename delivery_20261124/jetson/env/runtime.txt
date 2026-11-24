@@ -1,0 +1,9 @@
++ uname -a
+Linux feiJetson 5.15.136-tegra #1 SMP PREEMPT Mon May 6 09:56:39 PDT 2024 aarch64 aarch64 aarch64 GNU/Linux
++ jetson_package/.venv/bin/python -
+PyTorch 2.4.0a0+3bcc3cddb5.nv24.07
+CUDA build 12.2
+CUDA device Orin
+CUDA capability (8, 7)
+Transformers 4.57.3
+Triton 3.8.0

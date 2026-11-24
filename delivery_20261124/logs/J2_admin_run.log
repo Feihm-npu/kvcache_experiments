@@ -1,0 +1,35 @@
+J2 admin retry start 2026-11-24T18:07:56+08:00
+
+[2026-11-24T18:07:56+08:00] J2_cupti_admin_preflight
+ sudo -n -H env PYTHONPATH=/home/fei/boundkv_req1120_20261124/jetson_package/src TRITON_CACHE_DIR=/home/fei/boundkv_req1120_20261124/triton_cache_j2_admin PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python -c $'\nimport os\nimport torch\nfrom torch.profiler import ProfilerActivity, profile\nprint(f"EUID {os.geteuid()}")\nx = torch.ones(4096, device="cuda")\nwith profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) as p:\n    x.add_(2)\n    torch.cuda.synchronize()\nevents = [e for e in p.key_averages() if e.device_type.name == "CUDA"]\nprint("CUDA events:", [(e.key, e.self_device_time_total) for e in events])\nassert events and sum(e.self_device_time_total for e in events) > 0\n'
+EUID 0
+CUDA events: [('void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, at::detail::Array<char*, 2> >(int, at::native::CUDAFunctorOnSelf_add<float>, at::detail::Array<char*, 2>)', 6.944999999999709)]
+[2026-11-24T18:07:59+08:00] J2_cupti_admin_preflight exit=0
+
+[2026-11-24T18:07:59+08:00] J2_swap_enable
+ sudo -n swapon /swapfile
+[2026-11-24T18:07:59+08:00] J2_swap_enable exit=0
+NAME      TYPE       SIZE USED PRIO
+/swapfile file 8589930496    0   -2
+               total        used        free      shared  buff/cache   available
+Mem:      7990505472  2659184640  4850245632    44609536   481075200  5047668736
+Swap:     8589930496           0  8589930496
+
+[2026-11-24T18:07:59+08:00] J2_admin_partial
+ sudo -n -H env PYTHONPATH=/home/fei/boundkv_req1120_20261124/jetson_package/src TRITON_CACHE_DIR=/home/fei/boundkv_req1120_20261124/triton_cache_j2_admin PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python scripts/profile_ring_decode.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_decode_profile_qwen3_orin_partial_1024_2048.json
+P=  1024 plain kernels/step  1536.0  GPU  67.23 ms  busy 44.7%  
+P=  1024 quant kernels/step  1369.0  GPU  42.54 ms  busy 30.5%  _decode_split=2.310 _reduce=0.191 _append_row=0.173
+P=  1024 ring  kernels/step  1369.0  GPU  45.73 ms  busy 32.8%  _decode_split=5.346 _reduce=0.194 _append_row=0.265
+         GPU-time ratios: quant/plain 0.633  ring/plain 0.680  ring/quant 1.075
+P=  2048 plain kernels/step  1536.0  GPU  94.49 ms  busy 62.6%  
+P=  2048 quant kernels/step  1369.0  GPU  44.32 ms  busy 31.9%  _decode_split=4.049 _reduce=0.217 _append_row=0.180
+P=  2048 ring  kernels/step  1369.0  GPU  49.97 ms  busy 35.8%  _decode_split=9.520 _reduce=0.231 _append_row=0.266
+         GPU-time ratios: quant/plain 0.469  ring/plain 0.529  ring/quant 1.128
+{"out": "/home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_decode_profile_qwen3_orin_partial_1024_2048.json"}
+[2026-11-24T18:10:49+08:00] J2_admin_partial exit=0
+
+J2 administrator retry end 2026-11-24T18:10:49+08:00
+
+[2026-11-24T18:10:49+08:00] J2_swap_restore
+ sudo -n swapoff /swapfile
+[2026-11-24T18:10:49+08:00] J2_swap_restore exit=0

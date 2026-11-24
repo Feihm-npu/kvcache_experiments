@@ -1,0 +1,76 @@
+{
+  "model": "qwen3_orin",
+  "steps": 16,
+  "per_prefill": {
+    "1024": {
+      "plain": {
+        "kernels_per_step": 1536.0,
+        "gpu_ms_per_step": 67.22739456250007,
+        "gpu_busy_fraction": 0.4474248826288664,
+        "ring_kernel_ms": {
+          "_decode_split": 0.0,
+          "_reduce": 0.0,
+          "_append_row": 0.0
+        }
+      },
+      "quant": {
+        "kernels_per_step": 1369.0,
+        "gpu_ms_per_step": 42.54367681249882,
+        "gpu_busy_fraction": 0.3050159857244392,
+        "ring_kernel_ms": {
+          "_decode_split": 2.310292999999941,
+          "_reduce": 0.19064631250000583,
+          "_append_row": 0.1728601875000406
+        }
+      },
+      "ring": {
+        "kernels_per_step": 1369.0,
+        "gpu_ms_per_step": 45.72896224999887,
+        "gpu_busy_fraction": 0.3284747921843514,
+        "ring_kernel_ms": {
+          "_decode_split": 5.345775999999923,
+          "_reduce": 0.19379568749988027,
+          "_append_row": 0.2648091249998891
+        }
+      },
+      "quant_gpu_ratio_vs_plain": 0.6328324500653786,
+      "ring_gpu_ratio_vs_plain": 0.6802132158711803,
+      "ring_gpu_ratio_vs_quant": 1.0748709485439738
+    },
+    "2048": {
+      "plain": {
+        "kernels_per_step": 1536.0,
+        "gpu_ms_per_step": 94.49132025000024,
+        "gpu_busy_fraction": 0.6260712945330277,
+        "ring_kernel_ms": {
+          "_decode_split": 0.0,
+          "_reduce": 0.0,
+          "_append_row": 0.0
+        }
+      },
+      "quant": {
+        "kernels_per_step": 1369.0,
+        "gpu_ms_per_step": 44.31654950000002,
+        "gpu_busy_fraction": 0.3189173339730976,
+        "ring_kernel_ms": {
+          "_decode_split": 4.049147874999918,
+          "_reduce": 0.21661062499995995,
+          "_append_row": 0.18000668750005444
+        }
+      },
+      "ring": {
+        "kernels_per_step": 1369.0,
+        "gpu_ms_per_step": 49.96939093750046,
+        "gpu_busy_fraction": 0.3584750906464394,
+        "ring_kernel_ms": {
+          "_decode_split": 9.519628999999993,
+          "_reduce": 0.23085531249989014,
+          "_append_row": 0.26582968749996544
+        }
+      },
+      "quant_gpu_ratio_vs_plain": 0.4690012731619115,
+      "ring_gpu_ratio_vs_plain": 0.5288251958517886,
+      "ring_gpu_ratio_vs_quant": 1.127555992090504
+    }
+  }
+}

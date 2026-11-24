@@ -1,0 +1,16 @@
+Restart=always
+MainPID=68780
+Result=success
+NRestarts=1
+ActiveState=active
+SubState=running
+    PID    PPID USER                      STARTED COMMAND
+  68794   68780 root     Tue Nov 24 18:02:44 2026 etherdog
+  68798   68780 root     Tue Nov 24 18:02:44 2026 plc_main
+Nov 24 18:02:34 feiJetson systemd[1]: openplc-runtime.service: A process of this unit has been killed by the OOM killer.
+Nov 24 18:02:38 feiJetson systemd[1]: openplc-runtime.service: Failed with result 'oom-kill'.
+Nov 24 18:02:38 feiJetson systemd[1]: openplc-runtime.service: Consumed 1h 59min 26.977s CPU time.
+Nov 24 18:02:43 feiJetson systemd[1]: openplc-runtime.service: Scheduled restart job, restart counter is at 1.
+Nov 24 18:02:43 feiJetson systemd[1]: Stopped OpenPLC Runtime v4 Service.
+Nov 24 18:02:43 feiJetson systemd[1]: openplc-runtime.service: Consumed 1h 59min 26.977s CPU time.
+Nov 24 18:02:43 feiJetson systemd[1]: Started OpenPLC Runtime v4 Service.

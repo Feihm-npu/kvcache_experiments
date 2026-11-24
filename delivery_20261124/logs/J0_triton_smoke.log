@@ -1,0 +1,24 @@
+{
+ "python": "3.10.12",
+ "torch": "2.4.0a0+3bcc3cddb5.nv24.07",
+ "triton": "3.8.0",
+ "cuda": "12.2",
+ "device": "Orin",
+ "capability": [
+  8,
+  7
+ ],
+ "checks": {
+  "d64_gqa4": {
+   "ring_equals_quant": true,
+   "max_abs_vs_fp64": 5.780267577915055e-07,
+   "first_call_s": 3.1380968040321022
+  },
+  "d128_gqa2": {
+   "ring_equals_quant": true,
+   "max_abs_vs_fp64": 5.338474046712172e-07,
+   "first_call_s": 2.8296503971796483
+  }
+ },
+ "status": "passed"
+}

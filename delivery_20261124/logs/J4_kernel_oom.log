@@ -1,0 +1,147 @@
+Nov 24 17:57:17 feiJetson kernel: pt_main_thread invoked oom-killer: gfp_mask=0x2dc2(GFP_KERNEL|__GFP_HIGHMEM|__GFP_NOWARN|__GFP_ZERO), order=0, oom_score_adj=0
+Nov 24 17:57:17 feiJetson kernel: CPU: 4 PID: 67787 Comm: pt_main_thread Tainted: G           O      5.15.136-tegra #1
+Nov 24 17:57:17 feiJetson kernel: Hardware name: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit/Jetson, BIOS 36.3.0-gcid-36191598 05/06/2024
+Nov 24 17:57:17 feiJetson kernel: Call trace:
+Nov 24 17:57:17 feiJetson kernel:  dump_backtrace+0x0/0x1d0
+Nov 24 17:57:17 feiJetson kernel:  show_stack+0x34/0x50
+Nov 24 17:57:17 feiJetson kernel:  dump_stack_lvl+0x68/0x8c
+Nov 24 17:57:17 feiJetson kernel:  dump_stack+0x18/0x3c
+Nov 24 17:57:17 feiJetson kernel:  dump_header+0x50/0x208
+Nov 24 17:57:17 feiJetson kernel:  oom_kill_process+0x248/0x260
+Nov 24 17:57:17 feiJetson kernel:  out_of_memory+0x1f4/0x560
+Nov 24 17:57:17 feiJetson kernel:  __alloc_pages+0xcc0/0xda0
+Nov 24 17:57:17 feiJetson kernel:  __nvmap_free_sg_table+0x6d8/0x6e0 [nvmap]
+Nov 24 17:57:17 feiJetson kernel:  nvmap_alloc_handle+0x900/0xf90 [nvmap]
+Nov 24 17:57:17 feiJetson kernel:  nvmap_ioctl_alloc+0x154/0x2a0 [nvmap]
+Nov 24 17:57:17 feiJetson kernel:  __traceiter_refcount_free_handle+0x2df0/0x6990 [nvmap]
+Nov 24 17:57:17 feiJetson kernel:  __arm64_sys_ioctl+0xbc/0x100
+Nov 24 17:57:17 feiJetson kernel:  invoke_syscall+0x5c/0x150
+Nov 24 17:57:17 feiJetson kernel:  el0_svc_common.constprop.0+0x64/0x120
+Nov 24 17:57:17 feiJetson kernel:  do_el0_svc+0x74/0xb0
+Nov 24 17:57:17 feiJetson kernel:  el0_svc+0x28/0x90
+Nov 24 17:57:17 feiJetson kernel:  el0t_64_sync_handler+0xac/0x130
+Nov 24 17:57:17 feiJetson kernel:  el0t_64_sync+0x1a4/0x1a8
+Nov 24 17:57:17 feiJetson kernel: Mem-Info:
+Nov 24 17:57:17 feiJetson kernel: active_anon:882 inactive_anon:283001 isolated_anon:0
+                                   active_file:0 inactive_file:66 isolated_file:0
+                                   unevictable:43118 dirty:7 writeback:0
+                                   slab_reclaimable:15617 slab_unreclaimable:21209
+                                   mapped:12196 shmem:10891 pagetables:2446 bounce:0
+                                   kernel_misc_reclaimable:0
+                                   free:24696 free_pcp:82 free_cma:8653
+Nov 24 17:57:17 feiJetson kernel: Node 0 active_anon:3528kB inactive_anon:1132004kB active_file:0kB inactive_file:264kB unevictable:172472kB isolated(anon):0kB isolated(file):0kB mapped:48784kB dirty:28kB writeback:0kB shmem:43564kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 325632kB writeback_tmp:0kB kernel_stack:5152kB pagetables:9784kB all_unreclaimable? yes
+Nov 24 17:57:17 feiJetson kernel: Node 0 DMA free:29784kB min:11376kB low:14220kB high:17064kB reserved_highatomic:0KB active_anon:52kB inactive_anon:218632kB active_file:320kB inactive_file:416kB unevictable:0kB writepending:0kB present:2031616kB managed:1965952kB mlocked:0kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+Nov 24 17:57:17 feiJetson kernel: lowmem_reserve[]: 0 0 4657 4657
+Nov 24 17:57:17 feiJetson kernel: Node 0 Normal free:69000kB min:35724kB low:44140kB high:52556kB reserved_highatomic:0KB active_anon:3476kB inactive_anon:913372kB active_file:60kB inactive_file:480kB unevictable:172472kB writepending:28kB present:6101632kB managed:5837276kB mlocked:146584kB bounce:0kB free_pcp:328kB local_pcp:260kB free_cma:34612kB
+Nov 24 17:57:17 feiJetson kernel: lowmem_reserve[]: 0 0 0 0
+Nov 24 17:57:17 feiJetson kernel: Node 0 DMA: 158*4kB (UM) 185*8kB (UM) 172*16kB (UM) 284*32kB (UM) 33*64kB (UM) 11*128kB (UM) 5*256kB (UM) 7*512kB (UM) 8*1024kB (M) 0*2048kB 0*4096kB 0*8192kB 0*16384kB = 30528kB
+Nov 24 17:57:17 feiJetson kernel: Node 0 Normal: 7065*4kB (UMEC) 2273*8kB (UMEC) 1024*16kB (UMEC) 183*32kB (UMC) 18*64kB (C) 2*128kB (C) 1*256kB (C) 0*512kB 0*1024kB 0*2048kB 0*4096kB 0*8192kB 0*16384kB = 70348kB
+Nov 24 17:57:17 feiJetson kernel: Node 0 hugepages_total=1 hugepages_free=1 hugepages_surp=0 hugepages_size=1048576kB
+Nov 24 17:57:17 feiJetson kernel: Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=32768kB
+Nov 24 17:57:17 feiJetson kernel: Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+Nov 24 17:57:17 feiJetson kernel: Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=64kB
+Nov 24 17:57:17 feiJetson kernel: 26312 total pagecache pages
+Nov 24 17:57:17 feiJetson kernel: 0 pages in swap cache
+Nov 24 17:57:17 feiJetson kernel: Swap cache stats: add 0, delete 0, find 0/0
+Nov 24 17:57:17 feiJetson kernel: Free swap  = 0kB
+Nov 24 17:57:17 feiJetson kernel: Total swap = 0kB
+Nov 24 17:57:17 feiJetson kernel: 2033312 pages RAM
+Nov 24 17:57:17 feiJetson kernel: 0 pages HighMem/MovableOnly
+Nov 24 17:57:17 feiJetson kernel: 82505 pages reserved
+Nov 24 17:57:17 feiJetson kernel: 65536 pages cma reserved
+Nov 24 17:57:17 feiJetson kernel: 0 pages hwpoisoned
+Nov 24 17:57:17 feiJetson kernel: Tasks state (memory values in pages):
+Nov 24 17:57:17 feiJetson kernel: [  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+Nov 24 17:57:17 feiJetson kernel: [    235]     0   235    16221     5636   135168        0          -250 systemd-journal
+Nov 24 17:57:17 feiJetson kernel: [    275]     0   275     3146      564    53248        0             0 nv-tee-supplica
+Nov 24 17:57:17 feiJetson kernel: [    277]     0   277      699      308    45056        0             0 tee-supplicant
+Nov 24 17:57:17 feiJetson kernel: [    307]     0   307     5998      963    69632        0         -1000 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [    354]     0   354     2059     1262    53248        0             0 haveged
+Nov 24 17:57:17 feiJetson kernel: [    358]   129   358     1984      172    57344        0             0 rpcbind
+Nov 24 17:57:17 feiJetson kernel: [    363]   104   363     6572     1591    94208        0             0 systemd-resolve
+Nov 24 17:57:17 feiJetson kernel: [    364]   106   364    22218      620    81920        0             0 systemd-timesyn
+Nov 24 17:57:17 feiJetson kernel: [    387]   123   387     2100      215    61440        0             0 avahi-daemon
+Nov 24 17:57:17 feiJetson kernel: [    389]   105   389     2465      731    65536        0          -900 dbus-daemon
+Nov 24 17:57:17 feiJetson kernel: [    390]     0   390   121845     1403   176128        0             0 NetworkManager
+Nov 24 17:57:17 feiJetson kernel: [    398]     0   398    11238     2931   114688        0             0 networkd-dispat
+Nov 24 17:57:17 feiJetson kernel: [    418]     0   418    59196     1226    98304        0             0 polkitd
+Nov 24 17:57:17 feiJetson kernel: [    422]   107   422    55541      464    73728        0             0 rsyslogd
+Nov 24 17:57:17 feiJetson kernel: [    439]     0   439      560      191    40960        0             0 seatd
+Nov 24 17:57:17 feiJetson kernel: [    462]     0   462     3060      566    53248        0             0 cron
+Nov 24 17:57:17 feiJetson kernel: [    463]     0   463    12434     1154    90112        0             0 systemd-logind
+Nov 24 17:57:17 feiJetson kernel: [    482]     0   482     4200     1248    73728        0             0 wpa_supplicant
+Nov 24 17:57:17 feiJetson kernel: [    511]   123   511     1954       89    57344        0             0 avahi-daemon
+Nov 24 17:57:17 feiJetson kernel: [    528]     0   528    80210      504   135168        0             0 ModemManager
+Nov 24 17:57:17 feiJetson kernel: [    578]     0   578      615      347    45056        0             0 nvfancontrol
+Nov 24 17:57:17 feiJetson kernel: [    849]     0   849     2473      476    57344        0             0 bluetoothd
+Nov 24 17:57:17 feiJetson kernel: [    954]     0   954     3146      567    61440        0             0 nvmemwarning.sh
+Nov 24 17:57:17 feiJetson kernel: [   1046]     0  1046    15896      984   114688        0             0 nvargus-daemon
+Nov 24 17:57:17 feiJetson kernel: [   1048]     0  1048     5548      380    53248        0             0 nvs-service
+Nov 24 17:57:17 feiJetson kernel: [   1057]     0  1057      803       30    40960        0             0 run-cups-browse
+Nov 24 17:57:17 feiJetson kernel: [   1059]     0  1059     1046       32    40960        0             0 run-cupsd
+Nov 24 17:57:17 feiJetson kernel: [   1083]   111  1083     3205      120    61440        0             0 kerneloops
+Nov 24 17:57:17 feiJetson kernel: [   1092]     0  1092     2734      190    57344        0             0 agetty
+Nov 24 17:57:17 feiJetson kernel: [   1093]   111  1093     3205      120    61440        0             0 kerneloops
+Nov 24 17:57:17 feiJetson kernel: [   1095]     0  1095     2734      184    61440        0             0 agetty
+Nov 24 17:57:17 feiJetson kernel: [   1098]     0  1098     3821     1513    69632        0         -1000 sshd
+Nov 24 17:57:17 feiJetson kernel: [   1108]     0  1108     2828      154    49152        0             0 agetty
+Nov 24 17:57:17 feiJetson kernel: [   1277]     0  1277      769      199    36864        0             0 nvphsd
+Nov 24 17:57:17 feiJetson kernel: [   1285]     0  1285      802      310    45056        0             0 nvphsd
+Nov 24 17:57:17 feiJetson kernel: [   1652]     0  1652    25775     1191   102400        0             0 cupsd
+Nov 24 17:57:17 feiJetson kernel: [   1666]     0  1666    48095     1981   126976        0             0 cups-browsed
+Nov 24 17:57:17 feiJetson kernel: [   1799]   108  1799    38377      132    65536        0             0 rtkit-daemon
+Nov 24 17:57:17 feiJetson kernel: [   2238]  1000  2238     4506     1183    77824        0             0 systemd
+Nov 24 17:57:17 feiJetson kernel: [   2239]  1000  2239    43339     1208   106496        0             0 (sd-pam)
+Nov 24 17:57:17 feiJetson kernel: [   2245]  1000  2245    10725      823    81920        0             0 pipewire
+Nov 24 17:57:17 feiJetson kernel: [   2246]  1000  2246     6672      663    77824        0             0 pipewire-media-
+Nov 24 17:57:17 feiJetson kernel: [   2265]  1000  2265     2210      429    61440        0             0 dbus-daemon
+Nov 24 17:57:17 feiJetson kernel: [   2278]  1000  2278    17877     4135   110592        0             0 redis-server
+Nov 24 17:57:17 feiJetson kernel: [   3572]     0  3572    61330      416   106496        0             0 upowerd
+Nov 24 17:57:17 feiJetson kernel: [   3577]     0  3577    98575     1368   122880        0             0 udisksd
+Nov 24 17:57:17 feiJetson kernel: [   8553]     0  8553    75764     1858   176128        0             0 packagekitd
+Nov 24 17:57:17 feiJetson kernel: [  14900]     0 14900   221370    13661   286720        0             0 python3
+Nov 24 17:57:17 feiJetson kernel: [  14915]     0 14915     3078     3019    65536        0             0 etherdog
+Nov 24 17:57:17 feiJetson kernel: [  14919]     0 14919   100061    33859   348160        0             0 plc_main
+Nov 24 17:57:17 feiJetson kernel: [  15628]  1000 15628      718      177    40960        0             0 tegrastats
+Nov 24 17:57:17 feiJetson kernel: [  17383]  1000 17383      718      182    45056        0             0 tegrastats
+Nov 24 17:57:17 feiJetson kernel: [  17604]  1000 17604      718      181    40960        0             0 tegrastats
+Nov 24 17:57:17 feiJetson kernel: [  21419]     0 21419   556002     8769   311296        0          -900 snapd
+Nov 24 17:57:17 feiJetson kernel: [  22386]     0 22386     5998      813    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22387]     0 22387     5998      923    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22388]     0 22388     5998      914    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22389]     0 22389     5998      666    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22390]     0 22390     5998      923    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22391]     0 22391     5998      916    81920        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22392]     0 22392     6084      980    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22393]     0 22393     5998      924    81920        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22395]     0 22395     5998      914    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22396]     0 22396     5998      923    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22397]     0 22397     5998      923    81920        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22399]     0 22399     6084      976    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22400]     0 22400     5998      921    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22401]     0 22401     5998      923    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22402]     0 22402     5998      860    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22403]     0 22403     5998      923    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22404]     0 22404     6084      948    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22405]     0 22405     6020      948    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22406]     0 22406     6084      948    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22407]     0 22407     5998      848    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22408]     0 22408     6020      948    86016        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22410]     0 22410     5998      923    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22411]     0 22411     6020      949    73728        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22412]     0 22412     5998      914    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22425]     0 22425     6020      948    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22426]     0 22426     6084      980    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22427]     0 22427     5998      860    69632        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  22430]     0 22430     6084      980    81920        0             0 systemd-udevd
+Nov 24 17:57:17 feiJetson kernel: [  67008]  1000 67008     3244      403    53248        0             0 bash
+Nov 24 17:57:17 feiJetson kernel: [  67009]  1000 67009     3277      425    53248        0             0 bash
+Nov 24 17:57:17 feiJetson kernel: [  67010]  1000 67010     3244       67    53248        0             0 bash
+Nov 24 17:57:17 feiJetson kernel: [  67012]  1000 67012     2832      138    45056        0             0 tee
+Nov 24 17:57:17 feiJetson kernel: [  67787]  1000 67787  3144859   220843  3297280        0             0 pt_main_thread
+Nov 24 17:57:17 feiJetson kernel: [  67788]  1000 67788     2832      146    49152        0             0 tee
+Nov 24 17:57:17 feiJetson kernel: [  68139]     0 68139     2726      192    57344        0             0 sleep
+Nov 24 17:57:17 feiJetson kernel: [  68246]  1000 68246     3244      402    49152        0             0 bash
+Nov 24 17:57:17 feiJetson kernel: [  68314]  1000 68314     2831      146    45056        0             0 sleep
+Nov 24 17:57:17 feiJetson kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-1019.scope,task=pt_main_thread,pid=67787,uid=1000
+Nov 24 17:57:17 feiJetson kernel: Out of memory: Killed process 67787 (pt_main_thread) total-vm:12579436kB, anon-rss:872500kB, file-rss:10872kB, shmem-rss:0kB, UID:1000 pgtables:3220kB oom_score_adj:0

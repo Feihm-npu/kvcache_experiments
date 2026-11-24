@@ -1,0 +1,291 @@
+Experiment start 2026-11-24T17:44:45+08:00
+
+[2026-11-24T17:44:45+08:00] J0_source
+ sha256sum -c /home/fei/boundkv_req1120_20261124/source_sha256.txt
+jetson_package/README.md: OK
+jetson_package/configs/module_hardware.example.json: OK
+jetson_package/configs/module_simulator.example.json: OK
+jetson_package/requirements.txt: OK
+jetson_package/scripts/jetson_power.py: OK
+jetson_package/scripts/profile_ring_decode.py: OK
+jetson_package/scripts/run_cold_tier_cost.py: OK
+jetson_package/scripts/run_jetson_energy.py: OK
+jetson_package/scripts/run_kernel_baselines.py: OK
+jetson_package/scripts/run_ring_e2e_verified.py: OK
+jetson_package/scripts/run_root_module_binding.py: OK
+jetson_package/scripts/triton_smoke.py: OK
+jetson_package/src/puf4secure_kvcache/__init__.py: OK
+jetson_package/src/puf4secure_kvcache/cold_tier.py: OK
+jetson_package/src/puf4secure_kvcache/harness_guard.py: OK
+jetson_package/src/puf4secure_kvcache/model_utils.py: OK
+jetson_package/src/puf4secure_kvcache/puf_sim.py: OK
+jetson_package/src/puf4secure_kvcache/ring_attn.py: OK
+jetson_package/src/puf4secure_kvcache/ring_install.py: OK
+jetson_package/src/puf4secure_kvcache/root_module.py: OK
+jetson_package/tests/test_cold_tier.py: OK
+jetson_package/tests/test_ring_kernel_contract.py: OK
+jetson_package/tests/test_ring_pad_uniqueness.py: OK
+jetson_package/tests/test_root_module.py: OK
+[2026-11-24T17:44:45+08:00] J0_source exit=0
+
+[2026-11-24T17:44:45+08:00] J0_revision
+ cat /home/fei/boundkv_req1120_20261124/source_revision.txt
+c58529890029da22bcabb4fc8693423a931dcb96
+[2026-11-24T17:44:45+08:00] J0_revision exit=0
+
+[2026-11-24T17:44:45+08:00] J0_model
+ bash -c set\ -e\;\ snap=\$\(cat\ \"\$1/refs/main\"\)\;\ file=\"\$1/snapshots/\$snap/model.safetensors\"\;\ printf\ \"%s\\n\"\ \"\$snap\"\;\ stat\ -Lc\ \"%n\ %s\ bytes\"\ \"\$file\"\;\ test\ -r\ \"\$file\" _ /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B
+c1899de289a04d12100db370d81485cdf75e47ca
+/home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca/model.safetensors 1503300328 bytes
+[2026-11-24T17:44:45+08:00] J0_model exit=0
+
+[2026-11-24T17:44:45+08:00] J0_board
+ bash -c tr\ -d\ \"\\000\"\ \</proc/device-tree/model\;\ printf\ \"\\n\"
+NVIDIA Jetson Orin NX Engineering Reference Developer Kit
+[2026-11-24T17:44:45+08:00] J0_board exit=0
+
+[2026-11-24T17:44:45+08:00] J0_board_compatible
+ bash -c tr\ \"\\000\"\ \"\\n\"\ \</proc/device-tree/compatible
+nvidia,p3768-0000+p3767-0001
+nvidia,p3767-0001
+nvidia,tegra234
+[2026-11-24T17:44:45+08:00] J0_board_compatible exit=0
+
+[2026-11-24T17:44:45+08:00] J0_l4t
+ cat /etc/nv_tegra_release
+# R36 (release), REVISION: 3.0, GCID: 36923193, BOARD: generic, EABI: aarch64, DATE: Fri Jul 19 23:24:25 UTC 2024
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia
+[2026-11-24T17:44:45+08:00] J0_l4t exit=0
+
+[2026-11-24T17:44:45+08:00] J0_jetpack
+ dpkg-query -W nvidia-jetpack nvidia-l4t-core
+nvidia-jetpack	6.0+b106
+nvidia-l4t-core	36.3.0-20240719161631
+[2026-11-24T17:44:45+08:00] J0_jetpack exit=0
+
+[2026-11-24T17:44:45+08:00] J0_maxn
+ bash -c set\ -ex\;\ sudo\ -n\ nvpmodel\ -m\ 0\;\ sudo\ -n\ jetson_clocks
++ sudo -n nvpmodel -m 0
++ sudo -n jetson_clocks
+[2026-11-24T17:44:45+08:00] J0_maxn exit=0
+
+[2026-11-24T17:44:45+08:00] J0_nvpmodel
+ nvpmodel -q
+NV Power Mode: MAXN
+0
+[2026-11-24T17:44:45+08:00] J0_nvpmodel exit=0
+
+[2026-11-24T17:44:45+08:00] J0_clocks
+ sudo -n jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Jetson Orin NX Engineering Reference Developer Kit
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1984000 MaxFreq=1984000 CurrentFreq=1984000 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1984000 MaxFreq=1984000 CurrentFreq=1984000 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1984000 MaxFreq=1984000 CurrentFreq=1984000 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1984000 MaxFreq=1984000 CurrentFreq=1984000 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1984000 MaxFreq=1984000 CurrentFreq=1984000 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1984000 MaxFreq=1984000 CurrentFreq=1984000 IdleStates: WFI=0 c7=0 
+GPU MinFreq=765000000 MaxFreq=765000000 CurrentFreq=765000000
+EMC MinFreq=204000000 MaxFreq=3199000000 CurrentFreq=3199000000 FreqOverride=1
+DLA0_CORE:   Online=1 MinFreq=0 MaxFreq=614400000 CurrentFreq=614400000
+DLA0_FALCON: Online=1 MinFreq=0 MaxFreq=294400000 CurrentFreq=294400000
+PVA0_VPS0: Online=1 MinFreq=0 MaxFreq=1190400000 CurrentFreq=1190400000
+PVA0_AXI:  Online=1 MinFreq=0 MaxFreq=857600000 CurrentFreq=857600000
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=81
+NV Power Mode: MAXN
+[2026-11-24T17:44:45+08:00] J0_clocks exit=0
+
+[2026-11-24T17:44:45+08:00] J0_memory
+ free -b
+               total        used        free      shared  buff/cache   available
+Mem:      7990505472  1703387136   331735040    44601344  5955383296  5976440832
+Swap:              0           0           0
+[2026-11-24T17:44:45+08:00] J0_memory exit=0
+
+[2026-11-24T17:44:45+08:00] J0_freeze
+ pip freeze
+accelerate==1.15.0
+certifi==2026.11.20
+cffi==2.1.1
+charset-normalizer==3.5.3
+cryptography==50.0.2
+exceptiongroup==1.3.2
+filelock==4.1.0
+fsspec==2026.9.0
+hf-xet==1.8.0
+huggingface_hub==0.36.2
+idna==3.20
+iniconfig==2.3.1
+Jinja2==3.1.6
+MarkupSafe==3.0.4
+mpmath==1.3.0
+networkx==3.4.2
+numpy==1.26.4
+packaging==26.4
+pluggy==1.7.0
+psutil==7.2.2
+pycparser==3.11
+Pygments==2.21.0
+pytest==9.2.0
+PyYAML==6.0.4
+regex==2026.9.29
+requests==2.34.2
+safetensors==0.8.0
+sympy==1.14.0
+tokenizers==0.22.2
+tomli==2.5.0
+torch @ file:///home/fei/boundkv_req1120_20261124/torch-2.4.0a0%2B3bcc3cddb5.nv24.07.16234504-cp310-cp310-linux_aarch64.whl
+tqdm==4.70.1
+transformers==4.57.3
+triton==3.8.0
+typing_extensions==4.16.0
+urllib3==2.8.0
+[2026-11-24T17:44:46+08:00] J0_freeze exit=0
+
+[2026-11-24T17:44:46+08:00] J0_smoke
+ python scripts/triton_smoke.py
+{
+ "python": "3.10.12",
+ "torch": "2.4.0a0+3bcc3cddb5.nv24.07",
+ "triton": "3.8.0",
+ "cuda": "12.2",
+ "device": "Orin",
+ "capability": [
+  8,
+  7
+ ],
+ "checks": {
+  "d64_gqa4": {
+   "ring_equals_quant": true,
+   "max_abs_vs_fp64": 5.780267577915055e-07,
+   "first_call_s": 3.1380968040321022
+  },
+  "d128_gqa2": {
+   "ring_equals_quant": true,
+   "max_abs_vs_fp64": 5.338474046712172e-07,
+   "first_call_s": 2.8296503971796483
+  }
+ },
+ "status": "passed"
+}
+[2026-11-24T17:45:00+08:00] J0_smoke exit=0
+
+[2026-11-24T17:45:00+08:00] J0_smoke_status
+ python -c import\ json\,\ sys\;\ result\ =\ json.load\(open\(sys.argv\[1\]\)\)\;\ print\(\"smoke\ status\ =\"\,\ result\[\"status\"\]\)\;\ sys.exit\(result\[\"status\"\]\ \!=\ \"passed\"\) /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/tests/triton_smoke.json
+smoke status = passed
+[2026-11-24T17:45:00+08:00] J0_smoke_status exit=0
+
+[2026-11-24T17:45:00+08:00] J0_pytest
+ python -m pytest -q tests
+..............................................................           [100%]
+62 passed in 12.06s
+[2026-11-24T17:45:13+08:00] J0_pytest exit=0
+
+[2026-11-24T17:45:13+08:00] J1
+ python scripts/run_ring_e2e_verified.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 4096 --repeats 5 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_e2e_verified_qwen3_orin.json
+P=  1024 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   12.05  quant   12.65 (x1.050)  ring   12.61 (x1.047)  tok/s | T_ring/T_plain=0.955  spread(med)=0.005  tail max/med ring=1.06  ring==quant tokens: True
+P=  2048 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   10.13  quant   12.70 (x1.254)  ring   12.68 (x1.252)  tok/s | T_ring/T_plain=0.799  spread(med)=0.008  tail max/med ring=1.05  ring==quant tokens: True
+run.sh: line 17: 67423 Killed                  "$@" 2>&1
+     67424 Done                    | tee "$file"
+[2026-11-24T17:49:42+08:00] J1 exit=137
+
+[2026-11-24T17:49:42+08:00] J2
+ python scripts/profile_ring_decode.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 4096 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_decode_profile_qwen3_orin.json
+WARNING:2026-11-24 17:49:56 67604:67604 init.cpp:174] function cbapi->getCuptiStatus() failed with error CUPTI_ERROR_INSUFFICIENT_PRIVILEGES (35)
+WARNING:2026-11-24 17:49:56 67604:67604 init.cpp:175] CUPTI initialization failed - CUDA profiler activities will be missing
+INFO:2026-11-24 17:49:56 67604:67604 init.cpp:177] If you see CUPTI_ERROR_INSUFFICIENT_PRIVILEGES, refer to https://developer.nvidia.com/nvidia-development-tools-solutions-err-nvgpuctrperm-cupti
+P=  1024 plain kernels/step     0.0  GPU   0.00 ms  busy  0.0%  
+P=  1024 quant kernels/step     0.0  GPU   0.00 ms  busy  0.0%  
+P=  1024 ring  kernels/step     0.0  GPU   0.00 ms  busy  0.0%  
+Traceback (most recent call last):
+  File "/home/fei/boundkv_req1120_20261124/jetson_package/scripts/profile_ring_decode.py", line 117, in <module>
+    main()
+  File "/home/fei/boundkv_req1120_20261124/jetson_package/scripts/profile_ring_decode.py", line 101, in main
+    row[f"{mode}_gpu_ratio_vs_plain"] = (row[mode]["gpu_ms_per_step"]
+ZeroDivisionError: float division by zero
+[2026-11-24T17:50:39+08:00] J2 exit=1
+
+[2026-11-24T17:50:39+08:00] J3
+ python scripts/run_kernel_baselines.py --tag orin_qwen3step --contexts 1024 2048 4096 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/kernel_baselines_orin_qwen3step.json
+N=  1024  ring 5.973  ring_per_head 9.473  quant 2.072  decrypt+attend 6.284  bf16_splitk 2.804  | ring/quant 2.88  ring/bf16 2.13  ring/flash nan  dec/ring 1.05  {'ring_equals_quant': True, 'ring_equals_per_head': True, 'decrypt_attend_equals_quant': True}
+N=  2048  ring 9.657  ring_per_head 16.671  quant 4.313  decrypt+attend 12.107  bf16_splitk 5.205  | ring/quant 2.24  ring/bf16 1.86  ring/flash nan  dec/ring 1.25  {'ring_equals_quant': True, 'ring_equals_per_head': True, 'decrypt_attend_equals_quant': True}
+N=  4096  ring 17.604  ring_per_head 30.758  quant 7.781  decrypt+attend 25.278  bf16_splitk 10.195  | ring/quant 2.26  ring/bf16 1.73  ring/flash nan  dec/ring 1.44  {'ring_equals_quant': True, 'ring_equals_per_head': True, 'decrypt_attend_equals_quant': True}
+wrote /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/kernel_baselines_orin_qwen3step.json
+[2026-11-24T17:51:17+08:00] J3 exit=0
+
+[2026-11-24T17:51:17+08:00] J4_probe
+ python scripts/jetson_power.py --probe
+{
+  "rails": [
+    {
+      "label": "VDD_IN",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in1_input",
+        "/sys/class/hwmon/hwmon1/curr1_input"
+      ]
+    },
+    {
+      "label": "VDD_CPU_GPU_CV",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in2_input",
+        "/sys/class/hwmon/hwmon1/curr2_input"
+      ]
+    },
+    {
+      "label": "VDD_SOC",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in3_input",
+        "/sys/class/hwmon/hwmon1/curr3_input"
+      ]
+    },
+    {
+      "label": "ina3221:in4",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in4_input",
+        "/sys/class/hwmon/hwmon1/curr4_input"
+      ]
+    }
+  ],
+  "platform": {
+    "nvpmodel": "NV Power Mode: MAXN\n0",
+    "l4t_release": "# R36 (release), REVISION: 3.0, GCID: 36923193, BOARD: generic, EABI: aarch64, DATE: Fri Jul 19 23:24:25 UTC 2024\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia",
+    "jetson_model": "NVIDIA Jetson Orin NX Engineering Reference Developer Kit\u0000",
+    "thermal_zones": {
+      "thermal_zone0": "61968",
+      "thermal_zone1": "58656",
+      "thermal_zone2": "58781",
+      "thermal_zone3": "58281",
+      "thermal_zone4": "58187",
+      "thermal_zone5": "59437",
+      "thermal_zone6": "61343",
+      "thermal_zone7": "59812",
+      "thermal_zone8": "61968"
+    },
+    "power_rails_discovered": [
+      "VDD_IN",
+      "VDD_CPU_GPU_CV",
+      "VDD_SOC",
+      "ina3221:in4"
+    ]
+  }
+}
+[2026-11-24T17:51:17+08:00] J4_probe exit=0
+
+[2026-11-24T17:51:17+08:00] J4
+ python scripts/run_jetson_energy.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 4096 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/jetson_energy_qwen3_orin.json
+1024 {'plain': (1.5327539725219004, 11.442886772378504), 'quant': (1.2205660409260706, 12.10703855321515), 'ring': (1.243586174153854, 12.092765513907716)}
+2048 {'plain': (1.9824312106603716, 10.008344000193665), 'quant': (1.2680980324949003, 11.948554258539856), 'ring': (1.3040629442903897, 11.938070563122979)}
+run.sh: line 17: 67787 Killed                  "$@" 2>&1
+     67788 Done                    | tee "$file"
+[2026-11-24T17:57:18+08:00] J4 exit=137
+J5 blocked because J1 did not produce its JSON.
+
+Experiment end 2026-11-24T17:57:18+08:00

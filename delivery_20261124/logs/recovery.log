@@ -1,0 +1,111 @@
+Recovery start 2026-11-24T17:57:22+08:00
+
+[2026-11-24T17:57:23+08:00] swap_enable
+ sudo -n swapon /swapfile
+[2026-11-24T17:57:23+08:00] swap_enable exit=0
+NAME      TYPE       SIZE USED PRIO
+/swapfile file 8589930496    0   -2
+               total        used        free      shared  buff/cache   available
+Mem:      7990505472  2658078720  5110587392    44601344   221839360  5079371776
+Swap:     8589930496           0  8589930496
+
+[2026-11-24T17:57:23+08:00] cuda_allocator_preflight
+ env PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python -c $'\nimport torch\nx = torch.empty(1024, device="cuda")\ntorch.cuda.synchronize()\nsegments = torch.cuda.memory_snapshot()\nprint("allocator:", torch.cuda.get_allocator_backend())\nprint("expandable:", [s["is_expandable"] for s in segments])\nassert any(s["is_expandable"] for s in segments)\n'
+allocator: native
+expandable: [True]
+[2026-11-24T17:57:26+08:00] cuda_allocator_preflight exit=0
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
+[2026-11-24T17:57:26+08:00] J0_retry_smoke
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python /home/fei/boundkv_req1120_20261124/jetson_package/scripts/triton_smoke.py
+{
+ "python": "3.10.12",
+ "torch": "2.4.0a0+3bcc3cddb5.nv24.07",
+ "triton": "3.8.0",
+ "cuda": "12.2",
+ "device": "Orin",
+ "capability": [
+  8,
+  7
+ ],
+ "checks": {
+  "d64_gqa4": {
+   "ring_equals_quant": true,
+   "max_abs_vs_fp64": 5.780267577915055e-07,
+   "first_call_s": 0.015107796061784029
+  },
+  "d128_gqa2": {
+   "ring_equals_quant": true,
+   "max_abs_vs_fp64": 5.338474046712172e-07,
+   "first_call_s": 0.009600796969607472
+  }
+ },
+ "status": "passed"
+}
+[2026-11-24T17:57:30+08:00] J0_retry_smoke exit=0
+
+[2026-11-24T17:57:30+08:00] J0_retry_smoke_status
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python -c import\ json\;\ status\ =\ json.load\(open\(\"triton_smoke.json\"\)\)\[\"status\"\]\;\ print\(status\)\;\ raise\ SystemExit\(status\ \!=\ \"passed\"\)
+passed
+[2026-11-24T17:57:30+08:00] J0_retry_smoke_status exit=0
+
+[2026-11-24T17:57:30+08:00] J0_retry_pytest
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python -m pytest -q tests
+..............................................................           [100%]
+62 passed in 3.74s
+[2026-11-24T17:57:34+08:00] J0_retry_pytest exit=0
+
+[2026-11-24T17:57:34+08:00] J2_cupti_preflight
+ sudo -n capsh --caps=cap_setuid\,cap_setgid\,cap_setpcap=ep\ cap_sys_admin=eip --keep=1 --user=fei --addamb=cap_sys_admin -- -c exec\ \"\$@\" -- /usr/bin/env HOME=/home/fei PYTHONPATH=/home/fei/boundkv_req1120_20261124/jetson_package/src TRITON_CACHE_DIR=/home/fei/boundkv_req1120_20261124/triton_cache PYTHONUNBUFFERED=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python -c $'\nimport os\nimport torch\nfrom torch.profiler import ProfilerActivity, profile\nprint(f"EUID {os.geteuid()}")\nx = torch.ones(4096, device="cuda")\nwith profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) as p:\n    x.add_(2)\n    torch.cuda.synchronize()\nevents = [e for e in p.key_averages() if e.device_type.name == "CUDA"]\nprint("CUDA events:", [(e.key, e.self_device_time_total) for e in events])\nassert events and sum(e.self_device_time_total for e in events) > 0\n'
+EUID 1000
+WARNING:2026-11-24 17:57:36 68412:68412 init.cpp:174] function cbapi->getCuptiStatus() failed with error CUPTI_ERROR_INSUFFICIENT_PRIVILEGES (35)
+WARNING:2026-11-24 17:57:36 68412:68412 init.cpp:175] CUPTI initialization failed - CUDA profiler activities will be missing
+INFO:2026-11-24 17:57:36 68412:68412 init.cpp:177] If you see CUPTI_ERROR_INSUFFICIENT_PRIVILEGES, refer to https://developer.nvidia.com/nvidia-development-tools-solutions-err-nvgpuctrperm-cupti
+CUDA events: []
+Traceback (most recent call last):
+  File "<string>", line 12, in <module>
+AssertionError
+[2026-11-24T17:57:37+08:00] J2_cupti_preflight exit=1
+
+[2026-11-24T17:57:37+08:00] J1_retry
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python scripts/run_ring_e2e_verified.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 4096 --repeats 5 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_e2e_verified_qwen3_orin.json
+P=  1024 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   11.77  quant   12.46 (x1.059)  ring   12.44 (x1.057)  tok/s | T_ring/T_plain=0.946  spread(med)=0.005  tail max/med ring=1.05  ring==quant tokens: True
+P=  2048 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   10.06  quant   12.44 (x1.236)  ring   12.45 (x1.237)  tok/s | T_ring/T_plain=0.808  spread(med)=0.006  tail max/med ring=1.06  ring==quant tokens: True
+recovery.sh: line 19: 68428 Killed                  "$@" 2>&1
+     68429 Done                    | tee "$logs/$id.log"
+[2026-11-24T18:02:35+08:00] J1_retry exit=137
+
+[2026-11-24T18:02:35+08:00] J1_partial
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python scripts/run_ring_e2e_verified.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 --repeats 5 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_e2e_verified_qwen3_orin_partial_1024_2048.json
+P=  1024 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   11.72  quant   12.35 (x1.053)  ring   12.35 (x1.054)  tok/s | T_ring/T_plain=0.949  spread(med)=0.004  tail max/med ring=1.05  ring==quant tokens: True
+P=  2048 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   10.10  quant   12.40 (x1.228)  ring   12.39 (x1.226)  tok/s | T_ring/T_plain=0.816  spread(med)=0.005  tail max/med ring=1.06  ring==quant tokens: True
+
+T_ring/T_plain vs context: {1024: 0.949, 2048: 0.816}
+{"out": "/home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_e2e_verified_qwen3_orin_partial_1024_2048.json"}
+[2026-11-24T18:06:59+08:00] J1_partial exit=0
+
+[2026-11-24T18:06:59+08:00] J5
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python scripts/run_cold_tier_cost.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 --dtypes fp32 --threads 1 --e2e /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/ring_e2e_verified_qwen3_orin_partial_1024_2048.json --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/cold_tier_cost_qwen3_orin_partial_1024_2048.json
+raw AES-256-GCM single core: 1.01 GB/s
+P=  1024 fp32: 0.22 GiB  seal 1t:0.31s  open 1t:0.34s  entry 46ms  recompute 1.99s  load/recompute 0.19  per-step-AEAD slowdown x5.2
+P=  2048 fp32: 0.44 GiB  seal 1t:1.83s  open 1t:0.64s  entry 87ms  recompute 5.17s  load/recompute 0.14  per-step-AEAD slowdown x9.0
+{"out": "/home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/cold_tier_cost_qwen3_orin_partial_1024_2048.json"}
+[2026-11-24T18:07:53+08:00] J5 exit=0
+
+[2026-11-24T18:07:53+08:00] J4_retry
+ /home/fei/boundkv_req1120_20261124/jetson_package/.venv/bin/python scripts/run_jetson_energy.py --model-cache-dir /home/fei/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B --tag qwen3_orin --prefills 1024 2048 4096 --out /home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/jetson_energy_qwen3_orin.json
+Terminated
+[2026-11-24T18:07:54+08:00] J4_retry exit=143
+
+Recovery phase end 2026-11-24T18:07:54+08:00
+
+[2026-11-24T18:07:54+08:00] swap_restore
+ sudo -n swapoff /swapfile
+[2026-11-24T18:07:55+08:00] swap_restore exit=0
+               total        used        free      shared  buff/cache   available
+Mem:      7990505472  2651406336  4916350976    44617728   422748160  5055201280
+Swap:              0           0           0

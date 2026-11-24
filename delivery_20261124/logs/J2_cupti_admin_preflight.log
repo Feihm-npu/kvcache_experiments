@@ -1,0 +1,2 @@
+EUID 0
+CUDA events: [('void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, at::detail::Array<char*, 2> >(int, at::native::CUDAFunctorOnSelf_add<float>, at::detail::Array<char*, 2>)', 6.944999999999709)]

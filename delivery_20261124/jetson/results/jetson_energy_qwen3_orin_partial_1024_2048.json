@@ -1,0 +1,379 @@
+{
+ "model": "qwen3_orin",
+ "new_tokens": 64,
+ "rounds": 5,
+ "platform": {
+  "nvpmodel": "NV Power Mode: MAXN\n0",
+  "l4t_release": "# R36 (release), REVISION: 3.0, GCID: 36923193, BOARD: generic, EABI: aarch64, DATE: Fri Jul 19 23:24:25 UTC 2024\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia",
+  "jetson_model": "NVIDIA Jetson Orin NX Engineering Reference Developer Kit\u0000",
+  "thermal_zones": {
+   "thermal_zone0": "57843",
+   "thermal_zone1": "54843",
+   "thermal_zone2": "55156",
+   "thermal_zone3": "54781",
+   "thermal_zone4": "54562",
+   "thermal_zone5": "55656",
+   "thermal_zone6": "57906",
+   "thermal_zone7": "55906",
+   "thermal_zone8": "57968"
+  },
+  "power_rails_discovered": [
+   "VDD_IN",
+   "VDD_CPU_GPU_CV",
+   "VDD_SOC",
+   "ina3221:in4"
+  ]
+ },
+ "idle": {
+  "source": "sysfs_hwmon",
+  "detail": "single rail VDD_IN",
+  "elapsed_s": 20.005494982004166,
+  "samples": 390,
+  "sample_interval_ms": 50,
+  "energy_j": 154.14304381363223,
+  "mean_power_w": 7.705035239182573,
+  "window": "idle baseline"
+ },
+ "per_prefill": {
+  "1024": {
+   "plain": {
+    "rounds": [
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.605359781999141,
+      "samples": 109,
+      "sample_interval_ms": 50,
+      "energy_j": 97.38992700009928,
+      "mean_power_w": 17.374429258377656,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.634301718790084,
+      "samples": 110,
+      "sample_interval_ms": 50,
+      "energy_j": 98.3687745583825,
+      "mean_power_w": 17.458911408724898,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.632213098928332,
+      "samples": 110,
+      "sample_interval_ms": 50,
+      "energy_j": 98.57233977542576,
+      "mean_power_w": 17.50152880298183,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.615886809071526,
+      "samples": 110,
+      "sample_interval_ms": 50,
+      "energy_j": 98.82602908111436,
+      "mean_power_w": 17.59758208115545,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.5749868070706725,
+      "samples": 109,
+      "sample_interval_ms": 50,
+      "energy_j": 98.13960451640702,
+      "mean_power_w": 17.603558163032424,
+      "tokens": 64
+     }
+    ],
+    "median_joules_per_token": 1.5370121024747265,
+    "median_tokens_per_s": 11.396241088160592
+   },
+   "quant": {
+    "rounds": [
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.290227495832369,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 77.56495452027649,
+      "mean_power_w": 14.661931756504236,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.324176122900099,
+      "samples": 104,
+      "sample_interval_ms": 50,
+      "energy_j": 78.21578402425898,
+      "mean_power_w": 14.690683068849074,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.302766293985769,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 77.79024815500709,
+      "mean_power_w": 14.669748550531889,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.3281049460638314,
+      "samples": 104,
+      "sample_interval_ms": 50,
+      "energy_j": 78.60986491897279,
+      "mean_power_w": 14.753813168985397,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.28581182891503,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 77.8050237591598,
+      "mean_power_w": 14.719597722632159,
+      "tokens": 64
+     }
+    ],
+    "median_joules_per_token": 1.2157034962368718,
+    "median_tokens_per_s": 12.069172287035691
+   },
+   "ring": {
+    "rounds": [
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.3378487408626825,
+      "samples": 104,
+      "sample_interval_ms": 50,
+      "energy_j": 79.55998796584362,
+      "mean_power_w": 14.904878693318956,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.324805806856602,
+      "samples": 104,
+      "sample_interval_ms": 50,
+      "energy_j": 79.70944236590844,
+      "mean_power_w": 14.969455273517926,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.285239498829469,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 79.1195389379701,
+      "mean_power_w": 14.969906085711507,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.303494543069974,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 79.50522364561084,
+      "mean_power_w": 14.991101244650014,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.279629539931193,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 79.31680277198177,
+      "mean_power_w": 15.023175806576662,
+      "tokens": 64
+     }
+    ],
+    "median_joules_per_token": 1.2422691194626694,
+    "median_tokens_per_s": 12.067515009255208
+   }
+  },
+  "2048": {
+   "plain": {
+    "rounds": [
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 6.35942817106843,
+      "samples": 124,
+      "sample_interval_ms": 50,
+      "energy_j": 125.74918839377526,
+      "mean_power_w": 19.773662821738966,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 6.349396120058373,
+      "samples": 124,
+      "sample_interval_ms": 50,
+      "energy_j": 125.64164207471167,
+      "mean_power_w": 19.787967186012736,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 6.361121681984514,
+      "samples": 124,
+      "sample_interval_ms": 50,
+      "energy_j": 125.7243455964576,
+      "mean_power_w": 19.764493100725385,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 6.352646069834009,
+      "samples": 124,
+      "sample_interval_ms": 50,
+      "energy_j": 125.73049479890314,
+      "mean_power_w": 19.79183058787791,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 6.354807914001867,
+      "samples": 124,
+      "sample_interval_ms": 50,
+      "energy_j": 125.6968687850916,
+      "mean_power_w": 19.77980616977224,
+      "tokens": 64
+     }
+    ],
+    "median_joules_per_token": 1.96444289994465,
+    "median_tokens_per_s": 10.07111479467154
+   },
+   "quant": {
+    "rounds": [
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.266823597019538,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 79.67735798495004,
+      "mean_power_w": 15.128161503270954,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.2441251061391085,
+      "samples": 102,
+      "sample_interval_ms": 50,
+      "energy_j": 79.00941061082307,
+      "mean_power_w": 15.06627111514361,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.2580383031163365,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 80.15281572261539,
+      "mean_power_w": 15.243863034453435,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.243772594025359,
+      "samples": 102,
+      "sample_interval_ms": 50,
+      "energy_j": 79.04786817133052,
+      "mean_power_w": 15.074617892735462,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.265975313959643,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 79.62944130376104,
+      "mean_power_w": 15.121499163254773,
+      "tokens": 64
+     }
+    ],
+    "median_joules_per_token": 1.2442100203712663,
+    "median_tokens_per_s": 12.171839821339539
+   },
+   "ring": {
+    "rounds": [
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.2635271090548486,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 82.25620437479313,
+      "mean_power_w": 15.627582545036718,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.245175714837387,
+      "samples": 102,
+      "sample_interval_ms": 50,
+      "energy_j": 81.451113203243,
+      "mean_power_w": 15.52876731523725,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.257380007999018,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 82.53303254062992,
+      "mean_power_w": 15.69850998312035,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.249692832119763,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 82.42687275733118,
+      "mean_power_w": 15.701275368533935,
+      "tokens": 64
+     },
+     {
+      "source": "sysfs_hwmon",
+      "detail": "single rail VDD_IN",
+      "elapsed_s": 5.2696488259825855,
+      "samples": 103,
+      "sample_interval_ms": 50,
+      "energy_j": 82.27988235584387,
+      "mean_power_w": 15.613921358507577,
+      "tokens": 64
+     }
+    ],
+    "median_joules_per_token": 1.2856231618100604,
+    "median_tokens_per_s": 12.173363900388605
+   }
+  }
+ }
+}

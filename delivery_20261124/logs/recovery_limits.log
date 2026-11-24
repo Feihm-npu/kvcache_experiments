@@ -1,0 +1,2 @@
+[2026-11-24T18:05:36+08:00] Supervisor will cancel the queued full J4 retry before measurements.
+[2026-11-24T18:07:54+08:00] Sent SIGTERM to experiment pid 69610 to prevent a new 4096-token attempt after the system OOM.

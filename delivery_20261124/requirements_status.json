@@ -1,0 +1,90 @@
+{
+  "J0": {
+    "status": "done",
+    "note": "实测模块为 Jetson Orin NX 8GB（P3767-0001），JetPack 6.0 / L4T 36.3，MAXN。板上核验了源码 SHA-256。首轮和临时内存环境中，Triton 冒烟均通过，pytest 均为 62 项通过。"
+  },
+  "J1": {
+    "status": "partial",
+    "note": "交付 1024 和 2048 档的 5 轮交错测量原始 JSON，两档的计时检查均通过。4096 档首轮和重试均触发内核 OOM。重试使用临时 /swapfile 和 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True。第二次 OOM 波及 OpenPLC，systemd 自动重启了该服务。"
+  },
+  "J2": {
+    "status": "partial",
+    "note": "以管理员身份完成 1024 和 2048 档的 CUPTI GPU 计时，使用临时 swap 与可扩展内存段。普通账号和仅加 CAP_SYS_ADMIN 的尝试都因 CUPTI 权限失败，日志已记录。系统级 OOM 后取消了模型测量的 4096 档追加尝试。"
+  },
+  "J3": {
+    "status": "done",
+    "note": "使用默认 Qwen3-0.6B 全层几何测完 1024、2048、4096 三档。三档的内置逐位一致性检查均通过。当前环境缺少脚本可选的 FlashAttention-2 对照。"
+  },
+  "J4": {
+    "status": "partial",
+    "note": "交付 1024 和 2048 档的 VDD_IN 解码能耗原始 JSON。每个配置 5 轮，每轮 64 个解码步，空闲基线单列。首轮 4096 档触发内核 OOM。两档重测使用临时 swap 与可扩展内存段。"
+  },
+  "J5": {
+    "status": "partial",
+    "note": "交付 1024 和 2048 档的 FP32、单线程冷层原始 JSON，两档均读入同批 J1 的实测解码时延。4096 档缺少 J1 实测输入，并受系统级 OOM 限制。"
+  },
+  "J6": {
+    "status": "blocked",
+    "note": "缺少 Z4–Z6 的两块 Zybo 硬件根模块、登记数据与客户端，四种硬件配置尚未具备。"
+  },
+  "Z1": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z2": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z3": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z4": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z5": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z6": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z7": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z8": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "Z9": {
+    "status": "not_started",
+    "note": "由 Zybo 批次采集和交付。"
+  },
+  "U0": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U1": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U2": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U3": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U4": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  },
+  "U5": {
+    "status": "not_started",
+    "note": "由 U200 批次采集和交付。"
+  }
+}

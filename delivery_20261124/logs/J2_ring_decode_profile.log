@@ -1,0 +1,12 @@
+WARNING:2026-11-24 17:49:56 67604:67604 init.cpp:174] function cbapi->getCuptiStatus() failed with error CUPTI_ERROR_INSUFFICIENT_PRIVILEGES (35)
+WARNING:2026-11-24 17:49:56 67604:67604 init.cpp:175] CUPTI initialization failed - CUDA profiler activities will be missing
+INFO:2026-11-24 17:49:56 67604:67604 init.cpp:177] If you see CUPTI_ERROR_INSUFFICIENT_PRIVILEGES, refer to https://developer.nvidia.com/nvidia-development-tools-solutions-err-nvgpuctrperm-cupti
+P=  1024 plain kernels/step     0.0  GPU   0.00 ms  busy  0.0%  
+P=  1024 quant kernels/step     0.0  GPU   0.00 ms  busy  0.0%  
+P=  1024 ring  kernels/step     0.0  GPU   0.00 ms  busy  0.0%  
+Traceback (most recent call last):
+  File "/home/fei/boundkv_req1120_20261124/jetson_package/scripts/profile_ring_decode.py", line 117, in <module>
+    main()
+  File "/home/fei/boundkv_req1120_20261124/jetson_package/scripts/profile_ring_decode.py", line 101, in main
+    row[f"{mode}_gpu_ratio_vs_plain"] = (row[mode]["gpu_ms_per_step"]
+ZeroDivisionError: float division by zero

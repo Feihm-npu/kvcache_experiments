@@ -1,0 +1,4 @@
+raw AES-256-GCM single core: 1.01 GB/s
+P=  1024 fp32: 0.22 GiB  seal 1t:0.31s  open 1t:0.34s  entry 46ms  recompute 1.99s  load/recompute 0.19  per-step-AEAD slowdown x5.2
+P=  2048 fp32: 0.44 GiB  seal 1t:1.83s  open 1t:0.64s  entry 87ms  recompute 5.17s  load/recompute 0.14  per-step-AEAD slowdown x9.0
+{"out": "/home/fei/boundkv_req1120_20261124/delivery_20261124/jetson/results/cold_tier_cost_qwen3_orin_partial_1024_2048.json"}

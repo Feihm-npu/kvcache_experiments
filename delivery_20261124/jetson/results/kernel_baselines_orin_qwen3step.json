@@ -1,0 +1,91 @@
+{
+ "device": "Orin",
+ "kv_heads": 224,
+ "q_heads": 448,
+ "head_dim": 128,
+ "block_n": 32,
+ "splits": 32,
+ "rounds": 7,
+ "iters": 20,
+ "geometry": "orin_qwen3step: 224 KV heads x GQA 2, head dim 128",
+ "per_context": {
+  "1024": {
+   "median_ms": {
+    "ring": 5.973487854003906,
+    "ring_per_head": 9.473120212554932,
+    "quant": 2.072208046913147,
+    "decrypt+attend": 6.284336090087891,
+    "bf16_splitk": 2.8044639825820923
+   },
+   "spread": {
+    "ring": 0.0019419169890555932,
+    "ring_per_head": 0.0006637782973439858,
+    "quant": 0.003636668846773397,
+    "decrypt+attend": 0.005886393173246829,
+    "bf16_splitk": 0.02311742012906904
+   },
+   "ring_over_quant": 2.8826680134276472,
+   "per_head_over_quant": 4.571510194966433,
+   "ring_over_bf16_splitk": 2.1299927155791347,
+   "ring_over_flash_bf16": null,
+   "decrypt_attend_over_ring": 1.0520379790971919,
+   "checks": {
+    "ring_equals_quant": true,
+    "ring_equals_per_head": true,
+    "decrypt_attend_equals_quant": true
+   }
+  },
+  "2048": {
+   "median_ms": {
+    "ring": 9.657487869262695,
+    "ring_per_head": 16.670527458190918,
+    "quant": 4.312719821929932,
+    "decrypt+attend": 12.107183933258057,
+    "bf16_splitk": 5.204992055892944
+   },
+   "spread": {
+    "ring": 0.00037608834545815433,
+    "ring_per_head": 0.0008446644125120171,
+    "quant": 0.009857338699878124,
+    "decrypt+attend": 0.0005682810630152374,
+    "bf16_splitk": 0.0022194261372846962
+   },
+   "ring_over_quant": 2.2393033324712928,
+   "per_head_over_quant": 3.8654325220530783,
+   "ring_over_bf16_splitk": 1.8554279748282732,
+   "ring_over_flash_bf16": null,
+   "decrypt_attend_over_ring": 1.2536576899870737,
+   "checks": {
+    "ring_equals_quant": true,
+    "ring_equals_per_head": true,
+    "decrypt_attend_equals_quant": true
+   }
+  },
+  "4096": {
+   "median_ms": {
+    "ring": 17.603967666625977,
+    "ring_per_head": 30.757887840270996,
+    "quant": 7.780927896499634,
+    "decrypt+attend": 25.277888298034668,
+    "bf16_splitk": 10.194576263427734
+   },
+   "spread": {
+    "ring": 0.0005362125494972723,
+    "ring_per_head": 0.0002044525448249182,
+    "quant": 0.0005448961420231669,
+    "decrypt+attend": 0.04106797508030982,
+    "bf16_splitk": 0.06137694218070555
+   },
+   "ring_over_quant": 2.262450944256325,
+   "per_head_over_quant": 3.9529845603771614,
+   "ring_over_bf16_splitk": 1.726797388311162,
+   "ring_over_flash_bf16": null,
+   "decrypt_attend_over_ring": 1.4359199458175043,
+   "checks": {
+    "ring_equals_quant": true,
+    "ring_equals_per_head": true,
+    "decrypt_attend_equals_quant": true
+   }
+  }
+ }
+}

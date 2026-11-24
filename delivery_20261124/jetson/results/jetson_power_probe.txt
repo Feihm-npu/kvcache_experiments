@@ -1,0 +1,58 @@
+{
+  "rails": [
+    {
+      "label": "VDD_IN",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in1_input",
+        "/sys/class/hwmon/hwmon1/curr1_input"
+      ]
+    },
+    {
+      "label": "VDD_CPU_GPU_CV",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in2_input",
+        "/sys/class/hwmon/hwmon1/curr2_input"
+      ]
+    },
+    {
+      "label": "VDD_SOC",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in3_input",
+        "/sys/class/hwmon/hwmon1/curr3_input"
+      ]
+    },
+    {
+      "label": "ina3221:in4",
+      "kind": "volt_curr",
+      "paths": [
+        "/sys/class/hwmon/hwmon1/in4_input",
+        "/sys/class/hwmon/hwmon1/curr4_input"
+      ]
+    }
+  ],
+  "platform": {
+    "nvpmodel": "NV Power Mode: MAXN\n0",
+    "l4t_release": "# R36 (release), REVISION: 3.0, GCID: 36923193, BOARD: generic, EABI: aarch64, DATE: Fri Jul 19 23:24:25 UTC 2024\n# KERNEL_VARIANT: oot\nTARGET_USERSPACE_LIB_DIR=nvidia\nTARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia",
+    "jetson_model": "NVIDIA Jetson Orin NX Engineering Reference Developer Kit\u0000",
+    "thermal_zones": {
+      "thermal_zone0": "61968",
+      "thermal_zone1": "58656",
+      "thermal_zone2": "58781",
+      "thermal_zone3": "58281",
+      "thermal_zone4": "58187",
+      "thermal_zone5": "59437",
+      "thermal_zone6": "61343",
+      "thermal_zone7": "59812",
+      "thermal_zone8": "61968"
+    },
+    "power_rails_discovered": [
+      "VDD_IN",
+      "VDD_CPU_GPU_CV",
+      "VDD_SOC",
+      "ina3221:in4"
+    ]
+  }
+}

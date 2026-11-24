@@ -1,0 +1,4 @@
+P=  1024 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   11.77  quant   12.46 (x1.059)  ring   12.44 (x1.057)  tok/s | T_ring/T_plain=0.946  spread(med)=0.005  tail max/med ring=1.05  ring==quant tokens: True
+P=  2048 | checks: compiles(probe)=[0, 0, 0] compiles(timed)=[0, 0, 0] launch/step=[0, 84, 84] geo_match=True
+         plain   10.06  quant   12.44 (x1.236)  ring   12.45 (x1.237)  tok/s | T_ring/T_plain=0.808  spread(med)=0.006  tail max/med ring=1.06  ring==quant tokens: True

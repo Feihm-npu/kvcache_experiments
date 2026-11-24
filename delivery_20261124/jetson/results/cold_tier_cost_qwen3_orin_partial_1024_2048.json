@@ -1,0 +1,52 @@
+{
+  "model": "qwen3_orin",
+  "page_tokens": 256,
+  "aead": "AES-256-GCM (OpenSSL via cryptography), random 96-bit nonce",
+  "per_prefill": {
+    "1024": {
+      "recompute_prefill_s": 1.9860925029497594,
+      "ring_decode_step_ms_from_e2e": 80.94778819940984,
+      "fp32": {
+        "plaintext_bytes": 234881024,
+        "seal_s": {
+          "1": 0.30726029304787517
+        },
+        "open_s": {
+          "1": 0.3360847618896514
+        },
+        "sealed_bytes": 234887416,
+        "size_overhead": 2.7213777814560913e-05,
+        "open_GBps_best": 0.6988743633581335,
+        "seal_GBps_best": 0.7644366334162237,
+        "hot_entry_s": 0.04600128997117281,
+        "load_total_s": 0.3820860518608242,
+        "load_vs_recompute": 0.19238079359010074,
+        "per_step_aead_slowdown": 5.151870846201844,
+        "two_tier_breakeven_steps": 1.1368740722207353
+      }
+    },
+    "2048": {
+      "recompute_prefill_s": 5.169154169037938,
+      "ring_decode_step_ms_from_e2e": 80.71584301069379,
+      "fp32": {
+        "plaintext_bytes": 469762048,
+        "seal_s": {
+          "1": 1.825131034012884
+        },
+        "open_s": {
+          "1": 0.6448971370700747
+        },
+        "sealed_bytes": 469774712,
+        "size_overhead": 2.695832933707898e-05,
+        "open_GBps_best": 0.7284294207511043,
+        "seal_GBps_best": 0.25738538178661197,
+        "hot_entry_s": 0.08672675909474492,
+        "load_total_s": 0.7316238961648196,
+        "load_vs_recompute": 0.14153648203164088,
+        "per_step_aead_slowdown": 8.98972188129949,
+        "two_tier_breakeven_steps": 1.1344815383872935
+      }
+    }
+  },
+  "raw_aes_gcm_single_core_GBps": 1.010046212521051
+}
